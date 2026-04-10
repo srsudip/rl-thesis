@@ -1,0 +1,10 @@
+.env
+venv/
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+data/generated_*.csv
+data/session_state.json
+data/hitl_state.json
+data/exports/

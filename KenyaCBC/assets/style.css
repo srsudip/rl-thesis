@@ -1,0 +1,300 @@
+/* Kenya CBC v6 — vibrant palette: electric blue / emerald / vivid orange */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+    --bg: #F8FAFC;
+    --bg-alt: #F1F5F9;
+    --card-bg: #fff;
+    --text: #0F172A;
+    --text-secondary: #334155;
+    --text-muted: #64748B;
+    --border: #E2E8F0;
+    --border-light: #F1F5F9;
+    --primary: #1E3A8A;
+    --stem: #2563EB;
+    --stem-light: #DBEAFE;
+    --social: #10B981;
+    --social-light: #D1FAE5;
+    --arts: #F97316;
+    --arts-light: #FFF7ED;
+    --highlight: #FEF9C3;
+    --radius: 10px;
+    --shadow-sm: 0 1px 3px rgba(30, 58, 138, .07);
+    --shadow-md: 0 3px 12px rgba(30, 58, 138, .10);
+    --font: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono: 'IBM Plex Mono', 'SF Mono', monospace;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 13.5px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font);
+    font-weight: 600;
+    letter-spacing: -.01em;
+    color: var(--primary)
+}
+
+.card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    background: var(--card-bg);
+    transition: box-shadow .2s
+}
+
+.card:hover {
+    box-shadow: var(--shadow-md)
+}
+
+.card-header {
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border-light);
+    font-weight: 600;
+    font-size: .7rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    padding: .55rem .9rem
+}
+
+.card-body {
+    padding: 1rem
+}
+
+.table {
+    font-size: .82rem;
+    margin-bottom: 0
+}
+
+.table th {
+    font-weight: 600;
+    font-size: .65rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--text-secondary);
+    background: var(--bg-alt) !important;
+    border: none;
+    padding: .4rem .5rem
+}
+
+.table td {
+    vertical-align: middle;
+    border-color: var(--border-light);
+    padding: .38rem .5rem
+}
+
+.table-hover tbody tr:hover {
+    background: var(--bg)
+}
+
+.slip-table {
+    table-layout: fixed;
+    width: 100%
+}
+
+.slip-table th:nth-child(1),
+.slip-table td:nth-child(1) {
+    width: 40px
+}
+
+.slip-table th:nth-child(2),
+.slip-table td:nth-child(2) {
+    width: auto
+}
+
+.slip-table th:nth-child(3),
+.slip-table td:nth-child(3) {
+    width: 80px;
+    text-align: center
+}
+
+.slip-table th:nth-child(4),
+.slip-table td:nth-child(4) {
+    width: 44px;
+    text-align: center
+}
+
+.slip-table th:nth-child(5),
+.slip-table td:nth-child(5) {
+    width: 34px;
+    text-align: center
+}
+
+.btn {
+    font-family: var(--font);
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: .82rem;
+    transition: all .15s
+}
+
+.btn-dark {
+    background: var(--primary);
+    border-color: var(--primary)
+}
+
+.btn-dark:hover {
+    background: #1D4ED8;
+    border-color: #1D4ED8
+}
+
+.btn-outline-dark {
+    border-color: var(--border);
+    color: var(--text-secondary)
+}
+
+.btn-outline-dark:hover {
+    background: var(--bg-alt);
+    border-color: #bbb;
+    color: var(--text)
+}
+
+.form-control,
+.Select-control {
+    border-radius: 7px !important;
+    border-color: var(--border) !important;
+    font-size: .85rem
+}
+
+input:focus,
+.form-control:focus {
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, .2) !important;
+    border-color: var(--stem) !important
+}
+
+.badge {
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: .72rem;
+    border-radius: 5px;
+    padding: .3em .55em
+}
+
+.progress {
+    border-radius: 6px;
+    background: var(--bg-alt);
+    height: 20px
+}
+
+.progress-bar {
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: .72rem
+}
+
+.alert {
+    border-radius: var(--radius);
+    border: 1px solid var(--border-light);
+    font-size: .85rem
+}
+
+.score-cell {
+    font-family: var(--mono);
+    font-weight: 500;
+    text-align: center;
+    border-radius: 4px;
+    padding: 1px 7px;
+    display: inline-block;
+    min-width: 34px;
+    font-size: .78rem
+}
+
+.pw-rec-box {
+    border-radius: var(--radius);
+    padding: .9rem 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: .8rem
+}
+
+.home-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, #1D4ED8 100%);
+    color: #fff;
+    border-radius: var(--radius);
+    padding: 2rem 2rem 1.5rem;
+    position: relative;
+    overflow: hidden
+}
+
+.home-hero::after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(96, 165, 250, .25) 0%, transparent 70%);
+    border-radius: 50%
+}
+
+.home-hero h5 {
+    font-weight: 700;
+    letter-spacing: -.02em;
+    margin-bottom: .3rem;
+    color: #fff;
+    position: relative;
+    z-index: 1
+}
+
+.home-hero p,
+.home-hero small {
+    color: rgba(255, 255, 255, .5);
+    font-size: .82rem;
+    margin: 0;
+    font-weight: 300;
+    position: relative;
+    z-index: 1
+}
+
+.stat-card {
+    text-align: center;
+    padding: 1.1rem .8rem
+}
+
+.stat-card .stat-value {
+    font-family: var(--mono);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--text)
+}
+
+.stat-card .stat-label {
+    font-size: .65rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--text-muted);
+    margin-top: .2rem;
+    font-weight: 500
+}
+
+::-webkit-scrollbar {
+    width: 5px
+}
+
+::-webkit-scrollbar-track {
+    background: transparent
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px
+}
+
+.dash-dropdown .Select-control {
+    border-color: var(--border) !important;
+    background: var(--card-bg)
+}

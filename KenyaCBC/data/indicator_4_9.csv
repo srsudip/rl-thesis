@@ -1,0 +1,1123 @@
+﻿indicator_id;strand_id;indicator_code;indicator_text
+401101;401001;ENG_IND_1_1;Ability to listen actively to a variety of oral texts to gain information.
+401102;401001;ENG_IND_1_2;Ability to listen and participate actively in conversations in various settings for self-expression and effective communication.
+401103;401001;ENG_IND_1_3;Ability to speak accurately with expression and at the right speed, with minimum hesitation for fluency in communication.
+401201;401002;ENG_IND_2_1;Ability to read about 300 words fluently and accurately, at the right speed and with expression for effective communication.
+401202;401002;ENG_IND_2_2;Ability to read grade-appropriate visuals, print and digital texts for comprehension and information.
+401203;401002;ENG_IND_2_3;Ability to read a variety of grade-appropriate visual, digital and print texts for lifelong learning.
+401301;401003;ENG_IND_3_1;Ability to use grammatical forms to communicate ideas, opinions and emotions appropriately in different settings for effective communication.
+401401;401004;ENG_IND_4_1;Ability to use punctuation, paragraphing and spelling correctly for effective communication.
+401402;401004;ENG_IND_4_2;Ability to write a variety of writings using the correct formats for effective communication.
+401403;401004;ENG_IND_4_3;Ability to write creative works clearly and expressively for effective communication.
+402101;402001;KIS_KSL_IND_1_1;Kuweza kuwasiliana kwa matamshi bora (Matamshi ya sauti zinazokaribiana: p/b, t/d, k/g, ch/j)
+402102;402001;KIS_KSL_IND_1_2;Kuweza kuzungumza kwa ufasaha (Kwa kutumia maneno ya upole na mazungumzo ya kimikakati)
+402103;402001;KIS_KSL_IND_1_3;Kuweza kusikiliza na kujibu ipasavyo (Maamkizi na maagano, ushairi, masimulizi)
+402104;402001;KIS_KSL_IND_1_4;Kuweza kutumia lugha kiubunifu (Vitendawili, methali, nahau, visawe, tashbihi)
+402201;402002;KIS_KSL_IND_2_1;Kuweza kusoma kwa ufasaha (Ulumbi, umbo, wahusika, matumizi ya msamiati mwafaka, kutoa muhtasari)
+402202;402002;KIS_KSL_IND_2_2;Kuweza kusoma kwa kina. (Matumizi ya kamusi: mpangilio na maana za maneno)
+402203;402002;KIS_KSL_IND_2_3;Kuweza kusoma kwa ufasaha. (Matamshi bora, kiwango kifaaacho cha sauti, kasi ifaayo, ishara zifaazo)
+402204;402002;KIS_KSL_IND_2_4;Kuweza kusoma kwa mapana. (Kutambua na kuchagua matini ya kusoma, kutambua ujumbe na matumizi ya lugha)
+402205;402002;KIS_KSL_IND_2_5;Kuweza kusoma kidijitali. (Kufungua faili ya kidijitali, matumizi ya vifaa vya kidijitali, kukarakana kwenye tovuti, volumu, kuchagua na kusoma matini, kutambua ujumbe na matumizi ya lugha.)
+402301;402003;KIS_KSL_IND_3_1;Kuweza kuandika aina mbalimbali za insha (wasifu, masimulizi, maelezo na barua ya kirafiki) kwa kuzingatia vipengele vifuatavyo: muundo, ujumbe, mtindo na kanuni zifaazo za uandishi.
+402302;402003;KIS_KSL_IND_3_2;Kuweza kuandika kwa tarakilishi. (Sehemu za tarakilishi, kufungua na kufunga tarakilishi, kuhifadhi).
+402401;402004;KIS_KSL_IND_4_1;Kuweza kutambua na kutumia vinyume vya maneno na kuvitumia katika matini.
+402402;402004;KIS_KSL_IND_4_2;Kuweza kutambua na kutumia viambishi vya nyakati katika vitenzi. (Wakati uliopita, uliopo na ujao)
+402403;402004;KIS_KSL_IND_4_3;Kuweza kutambua maneno yaliyokanushwa, viambishi vya ukanushaji na kukanusha maneno ipasavyo. (Wakati uliopita, uliopo na ujao)
+402404;402004;KIS_KSL_IND_4_4;Kuweza kutambua na kutumia aina mbalimbali za maneno katika lugha ya Kiswahili. (Vitenzi, viwakilishi, vielezi, viunganishi, vihusishi na vihisishi)
+402405;402004;KIS_KSL_IND_4_5;Kuweza kutambua viambishi vya ngeli, nomino za ngeli na kutumia upatanisho wa kisarufi ipasavyo. (A-WA, U-I, KI-VI, LI-YA na LI-LI)
+402406;402004;KIS_KSL_IND_4_6;Kuweza kutambua na kutumia vitenzi katika kauli mbalimbali. (kauli ya kutenda, kutendea na kutendwa)
+404101;404001;AGRI_IND_1_1;Ability to explain conservation of resources of four resources in the environment (soil, water, fuel, wild animals).
+404102;404001;AGRI_IND_1_2;Ability to conserve four resources in the environment (soil, water, fuel, wild animals).
+404103;404001;AGRI_IND_1_3;Ability to show four aspects of responsibility in conservation of environmental resources (offers leadership, observes safety, shows initiative, shows dutifulness in tasks).
+404201;404002;AGRI_IND_2_1;Ability to describe food production processes at household level (direct sowing of seeds, growing of fruits, uses of domestic animals, balanced diet, boiling and shallow frying).
+404202;404002;AGRI_IND_2_2;Ability to carry out various food production processes at household level (direct sowing of seeds, growing of fruits, uses of domestic animals, balanced diet, boiling and shallow frying).
+404203;404002;AGRI_IND_2_3;Ability to exhibit integrity in carrying out food production processes (utilising resources prudently, is accountable, shows honesty, applies ethically acceptable procedures).
+404301;404003;AGRI_IND_3_1;Ability to describe practices that promote hygiene (personal hygiene, domestic hygiene and cleaning personal protective equipment).
+404302;404003;AGRI_IND_3_2;Ability to apply health practices to promote hygiene (personal hygiene, domestic hygiene and cleaning personal protective equipment).
+404303;404003;AGRI_IND_3_3;Ability to exhibit responsibility while undertaking health practices that promote hygiene (respects other learners’ property, offers leadership, accepts consequences, cares for property).
+404401;404004;AGRI_IND_4_1;Ability to use tacking stitches in making an item (makes appropriate choice of stitch, makes the stitch, ensures evenness of the stitch and firmness of stitch to the purpose).
+404402;404004;AGRI_IND_4_2;Ability to work in unity in making an item (sharing resources, working in teams, appreciating efforts of others, respects others’ opinions).
+405101;405001;SCI_TECH_IND_1_1;Ability to identify characteristics of plants and animals.
+405102;405001;SCI_TECH_IND_1_2;Ability to describe functions of external parts of a plant.
+405103;405001;SCI_TECH_IND_1_3;Ability to identify parts of the human digestive system.
+405104;405001;SCI_TECH_IND_1_4;Ability to develop a plan of maintaining a healthy human digestive system.
+405201;405002;SCI_TECH_IND_2_1;Ability to describe the properties of the three states of matter.
+405202;405002;SCI_TECH_IND_2_2;Ability to manage solid waste in the environment.
+405203;405002;SCI_TECH_IND_2_3;Ability to outline the importance of conserving water at home and school.
+405301;405003;SCI_TECH_IND_3_1;Ability to demonstrate the effects of force on objects in nature.
+405302;405003;SCI_TECH_IND_3_2;Ability to identify sources of light in nature.
+405303;405003;SCI_TECH_IND_3_3;Ability to explain the use of light in day-to-day life.
+405304;405003;SCI_TECH_IND_3_4;Ability to demonstrate uses of heat in day-to-day life.
+405305;405003;SCI_TECH_IND_3_5;Ability to describe safety measures when using heat.
+406101;406001;MATH_IND_1_1;Ability to use place value and total value of numbers up to tens of thousands.
+406102;406001;MATH_IND_1_2;Ability to read and write numbers in symbols and words.
+406103;406001;MATH_IND_1_3;Ability to order and round off numbers up to 1000.
+406104;406001;MATH_IND_1_4;Ability to identify factors and multiples of numbers up to 50.
+406105;406001;MATH_IND_1_5;Ability to make patterns involving even and odd numbers up to 100.
+406106;406001;MATH_IND_1_6;Ability to represent Hindu Arabic numerals using Roman numerals up to 'X'.
+406107;406001;MATH_IND_1_7;Ability to add up to two 4-digit numbers with single and double regrouping.
+406108;406001;MATH_IND_1_8;Ability to create patterns involving addition, subtraction and multiplication.
+406109;406001;MATH_IND_1_9;Ability to subtract up to two 4-digit numbers with single and double regrouping.
+406110;406001;MATH_IND_1_10;Ability to multiply up to a two-digit number by a two-digit number with and without regrouping.
+406111;406001;MATH_IND_1_11;Ability to divide up to a two-digit number by a one-digit number with and without remainder.
+406112;406001;MATH_IND_1_12;Ability to identify different types of fractions.
+406113;406001;MATH_IND_1_13;Ability to convert improper fractions to mixed fractions and mixed fractions to improper fractions.
+406114;406001;MATH_IND_1_14;Ability to identify a tenth or a hundredth in a decimal number.
+406201;406002;MATH_IND_2_1;Ability to estimate and measure length in centimetres.
+406202;406002;MATH_IND_2_2;Ability to establish the relationship between metres and centimetres.
+406203;406002;MATH_IND_2_3;Ability to convert centimetres to metres and metres to centimetres.
+406204;406002;MATH_IND_2_4;Ability to add, subtract, multiply and divide length in centimetres and metres.
+406205;406002;MATH_IND_2_5;Ability to calculate the area of squares and rectangles as a product of number of rows and columns.
+406206;406002;MATH_IND_2_6;Ability to work out the volume of cubes and cuboids by piling blocks.
+406207;406002;MATH_IND_2_7;Ability to measure, add and subtract capacity in litres.
+406208;406002;MATH_IND_2_8;Ability to measure, add and subtract mass of different objects in kilograms.
+406209;406002;MATH_IND_2_9;Ability to read, tell and estimate time in a.m. and p.m.
+406210;406002;MATH_IND_2_10;Ability to work out addition and subtraction involving units of time.
+406211;406002;MATH_IND_2_11;Ability to convert shillings to cents and cents to shillings.
+406212;406002;MATH_IND_2_12;Ability to work out the total cost of items in the shopping list of not more than ten thousand shillings.
+406301;406003;MATH_IND_3_1;Ability to demonstrate a clockwise and an anti-clockwise turn in the environment.
+406302;406003;MATH_IND_3_2;Ability to demonstrate a quarter turn, half turn and full turn in the environment.
+406303;406003;MATH_IND_3_3;Ability to identify angles from the objects in the environment.
+406304;406003;MATH_IND_3_4;Ability to draw the shapes of rectangles, squares, triangles, circles and ovals.
+406305;406003;MATH_IND_3_5;Ability to make patterns using squares, rectangles and triangles.
+406306;406003;MATH_IND_3_6;Ability to identify properties of triangles, squares and rectangles.
+406401;406004;MATH_IND_4_1;Ability to identify and collect data of at most 10 items.
+406402;406004;MATH_IND_4_2;Ability to record and interpret the raw data from the table.
+407101;407001;REL_CRE_IND_1_1;Ability to make right choices in day-to-day life
+407102;407001;REL_CRE_IND_1_2;Ability to list three attributes of God
+407201;407002;REL_CRE_IND_2_1;Ability to retell Bible stories
+407202;407002;REL_CRE_IND_2_2;Ability to list lessons learnt from the Bible stories
+407203;407002;REL_CRE_IND_2_3;Ability to apply lessons learnt from the Bible stories in daily life
+407301;407003;REL_CRE_IND_3_1;Ability to retell the annunciation of the birth of Jesus Christ
+407302;407003;REL_CRE_IND_3_2;Ability to retell the birth of John the Baptist
+407303;407003;REL_CRE_IND_3_3;Ability to retell three miracles performed by Jesus Christ
+407304;407003;REL_CRE_IND_3_4;Ability to list lessons learnt from the miracles of Jesus Christ
+407305;407003;REL_CRE_IND_3_5;Ability to apply lessons learnt from the teachings of Jesus Christ in daily life
+407401;407004;REL_CRE_IND_4_1;Ability to explain how Christian values enhance harmonious co-existence
+407402;407004;REL_CRE_IND_4_2;Ability to apply acquired Christian values in day-to-day life
+407501;407005;REL_CRE_IND_5_1;Ability to participate in church activities
+407502;407005;REL_CRE_IND_5_2;Ability to list the 12 disciples of Jesus Christ
+407503;407005;REL_CRE_IND_5_3;Ability to recite the Lord's Prayer and pray for others
+407504;407005;REL_CRE_IND_5_4;Ability to utilise the fruit of the Holy Spirit in making right decisions
+407601;407006;REL_CRE_IND_6_1;Ability to use social media responsibly
+408101;408001;REL_IRE_IND_1_1;Ability to read and recite seven selected surahs
+408102;408001;REL_IRE_IND_1_2;Ability to explain the basic meaning of the selected surahs
+408201;408002;REL_IRE_IND_2_1;Ability to read the selected hadith
+408202;408002;REL_IRE_IND_2_2;Ability to deduce the teachings from the selected hadith
+408301;408003;REL_IRE_IND_3_1;Ability to identify and use the attributes of Allah in supplication
+408302;408003;REL_IRE_IND_3_2;Ability to apply the virtues of the prophets in day-to-day life
+408401;408004;REL_IRE_IND_4_1;Ability to perform swalah while adhering to all its rules
+408501;408005;REL_IRE_IND_5_1;Ability to assess the significance of kindness to Allah's creatures and Islamic code of dressing and uphold positive use of media
+408502;408005;REL_IRE_IND_5_2;Ability to describe the evils of begging
+408601;408006;REL_IRE_IND_6_1;Ability to uphold obligations to family members
+408701;408007;REL_IRE_IND_7_1;Ability to describe the events of Prophet's mission in Makkah
+409101;409001;REL_HIN_IND_1_1;Ability to state water bodies that are considered sacred as mentioned in the Scriptures
+409102;409001;REL_HIN_IND_1_2;Ability to identify the role of water in our daily lives
+409103;409001;REL_HIN_IND_1_3;Ability to specify the names of plants that are considered sacred in each faith
+409201;409002;REL_HIN_IND_2_1;Ability to identify the contributions of Enlightened Beings
+409202;409002;REL_HIN_IND_2_2;Ability to implement teachings of Enlightened Beings
+409301;409003;REL_HIN_IND_3_1;Ability to explain the lessons learnt from the Scriptures
+409302;409003;REL_HIN_IND_3_2;Ability to apply the teachings of the Scriptures
+409401;409004;REL_HIN_IND_4_1;Ability to recite prayers
+409402;409004;REL_HIN_IND_4_2;Ability to identify prayers performed for different occasions
+409501;409005;REL_HIN_IND_5_1;Ability to state the importance of integrity in their daily lives
+409502;409005;REL_HIN_IND_5_2;Ability to identify elements of integrity among peers and in society
+409503;409005;REL_HIN_IND_5_3;Ability to state all ideal practices of a passenger during boarding and alighting for safety
+409601;409006;REL_HIN_IND_6_1;Ability to name the types of Pranayam
+409602;409006;REL_HIN_IND_6_2;Ability to display simple body postures
+409701;409007;REL_HIN_IND_7_1;Ability to identify Principles of Dharma according to Sanatan/Vedic
+409801;409008;REL_HIN_IND_8_1;Ability to identify the rites and rituals during the celebration of different festivals
+409802;409008;REL_HIN_IND_8_2;Ability to relate the days of the week with the corresponding planets
+410101;410001;CRE_ARTS_IND_1_1;Ability to create and/or execute various Creative Arts tasks such as rhythmic patterns, drawings, paintings, Netball skills, montages, clay modelling, and simple melodies.
+410201;410002;CRE_ARTS_IND_2_1;Ability to perform and/or display Creative Arts skills such as recorder melodies, photography techniques, athletic techniques, various songs, and aquatic or animal-based games.
+410301;410003;CRE_ARTS_IND_3_1;Ability to display, critique, participate in, or analyse various Creative Arts items such as drawings, paintings, photographs, Kenyan folk arts, sports activities, and cultural expressions.
+412101;412001;SOC_STUD_IND_1_1;Ability to use the four cardinal points to give direction of places.
+412102;412001;SOC_STUD_IND_1_2;Ability to identify the main physical features in the county.
+412103;412001;SOC_STUD_IND_1_3;Ability to explain how the four seasons influence human activities in the county.
+412104;412001;SOC_STUD_IND_1_4;Ability to explain the importance of the main historic built environments in the county.
+412201;412002;SOC_STUD_IND_2_1;Ability to explain the benefits of interdependence of people in the county.
+412202;412002;SOC_STUD_IND_2_2;Ability to describe patterns of population distribution in the county.
+412301;412003;SOC_STUD_IND_3_1;Ability to identify the six aspects of traditional culture in the county.
+412302;412003;SOC_STUD_IND_3_2;Ability to describe aspects of traditional culture in the county.
+412303;412003;SOC_STUD_IND_3_3;Ability to narrate the history of the school.
+412401;412004;SOC_STUD_IND_4_1;Ability to explain the importance of economic activities carried out in the county.
+412402;412004;SOC_STUD_IND_4_2;Ability to identify industries in the county.
+412403;412004;SOC_STUD_IND_4_3;Ability to identify the projects that can be initiated at school.
+412501;412005;SOC_STUD_IND_5_1;Ability to identify qualities of good citizenship in school.
+412502;412005;SOC_STUD_IND_5_2;Ability to develop strategies of living in peace with others in school.
+412503;412005;SOC_STUD_IND_5_3;Ability to explain effects of the seven forms of child abuse in the community.
+412504;412005;SOC_STUD_IND_5_4;Ability to identify democratic processes in school.
+412505;412005;SOC_STUD_IND_5_5;Ability to describe the functions of the Children’s Government in school.
+412506;412005;SOC_STUD_IND_5_6;Ability to demonstrate qualities of good leadership in the community.
+412507;412005;SOC_STUD_IND_5_7;Ability to explain the roles of a member of county assembly.
+501101;501001;ENG_IND_1_1;Ability to listen actively to a variety of oral texts to gain information.
+501102;501001;ENG_IND_1_2;Ability to listen and participate actively in conversations in various settings for self-expression and effective communication.
+501103;501001;ENG_IND_1_3;Ability to speak accurately with expression and at the right speed, with minimum hesitation for fluency in communication.
+501201;501002;ENG_IND_2_1;Ability to read about 300 words fluently and accurately, at the right speed and with expression for effective communication.
+501202;501002;ENG_IND_2_2;Ability to read grade-appropriate visuals, print and digital texts for comprehension and information.
+501203;501002;ENG_IND_2_3;Ability to read a variety of grade-appropriate visual, digital and print texts for lifelong learning.
+501301;501003;ENG_IND_3_1;Ability to use grammatical forms to communicate ideas, opinions and emotions appropriately in different settings for effective communication.
+501401;501004;ENG_IND_4_1;Ability to use punctuation, paragraphing and spelling correctly for effective communication.
+501402;501004;ENG_IND_4_2;Ability to write a variety of writings using the correct formats for effective communication.
+501403;501004;ENG_IND_4_3;Ability to write creative works clearly and expressively for effective communication.
+502101;502001;KIS_KSL_IND_1_1;Kuweza kuwasiliana kwa matamshi bora (Matamshi ya sauti zinazokaribiana: p/b, t/d, k/g, ch/j)
+502102;502001;KIS_KSL_IND_1_2;Kuweza kuzungumza kwa ufasaha (Kwa kutumia maneno ya upole na mazungumzo ya kimikakati)
+502103;502001;KIS_KSL_IND_1_3;Kuweza kusikiliza na kujibu ipasavyo (Maamkizi na maagano, ushairi, masimulizi)
+502104;502001;KIS_KSL_IND_1_4;Kuweza kutumia lugha kiubunifu (Vitendawili, methali, nahau, visawe, tashbihi)
+502201;502002;KIS_KSL_IND_2_1;Kuweza kusoma kwa ufasaha (Ulumbi, umbo, wahusika, matumizi ya msamiati mwafaka, kutoa muhtasari)
+502202;502002;KIS_KSL_IND_2_2;Kuweza kusoma kwa kina. (Matumizi ya kamusi: mpangilio na maana za maneno)
+502203;502002;KIS_KSL_IND_2_3;Kuweza kusoma kwa ufasaha. (Matamshi bora, kiwango kifaaacho cha sauti, kasi ifaayo, ishara zifaazo)
+502204;502002;KIS_KSL_IND_2_4;Kuweza kusoma kwa mapana. (Kutambua na kuchagua matini ya kusoma, kutambua ujumbe na matumizi ya lugha)
+502205;502002;KIS_KSL_IND_2_5;Kuweza kusoma kidijitali. (Kufungua faili ya kidijitali, matumizi ya vifaa vya kidijitali, kukarakana kwenye tovuti, volumu, kuchagua na kusoma matini, kutambua ujumbe na matumizi ya lugha.)
+502301;502003;KIS_KSL_IND_3_1;Kuweza kuandika aina mbalimbali za insha (wasifu, masimulizi, maelezo na barua ya kirafiki) kwa kuzingatia vipengele vifuatavyo: muundo, ujumbe, mtindo na kanuni zifaazo za uandishi.
+502302;502003;KIS_KSL_IND_3_2;Kuweza kuandika kwa tarakilishi. (Sehemu za tarakilishi, kufungua na kufunga tarakilishi, kuhifadhi).
+502401;502004;KIS_KSL_IND_4_1;Kuweza kutambua na kutumia vinyume vya maneno na kuvitumia katika matini.
+502402;502004;KIS_KSL_IND_4_2;Kuweza kutambua na kutumia viambishi vya nyakati katika vitenzi. (Wakati uliopita, uliopo na ujao)
+502403;502004;KIS_KSL_IND_4_3;Kuweza kutambua maneno yaliyokanushwa, viambishi vya ukanushaji na kukanusha maneno ipasavyo. (Wakati uliopita, uliopo na ujao)
+502404;502004;KIS_KSL_IND_4_4;Kuweza kutambua na kutumia aina mbalimbali za maneno katika lugha ya Kiswahili. (Vitenzi, viwakilishi, vielezi, viunganishi, vihusishi na vihisishi)
+502405;502004;KIS_KSL_IND_4_5;Kuweza kutambua viambishi vya ngeli, nomino za ngeli na kutumia upatanisho wa kisarufi ipasavyo. (A-WA, U-I, KI-VI, LI-YA na LI-LI)
+502406;502004;KIS_KSL_IND_4_6;Kuweza kutambua na kutumia vitenzi katika kauli mbalimbali. (kauli ya kutenda, kutendea na kutendwa)
+504101;504001;AGRI_IND_1_1;Ability to explain conservation of resources of four resources in the environment (soil, water, fuel, wild animals).
+504102;504001;AGRI_IND_1_2;Ability to conserve four resources in the environment (soil, water, fuel, wild animals).
+504103;504001;AGRI_IND_1_3;Ability to show four aspects of responsibility in conservation of environmental resources (offers leadership, observes safety, shows initiative, shows dutifulness in tasks).
+504201;504002;AGRI_IND_2_1;Ability to describe food production processes at household level (direct sowing of seeds, growing of fruits, uses of domestic animals, balanced diet, boiling and shallow frying).
+504202;504002;AGRI_IND_2_2;Ability to carry out various food production processes at household level (direct sowing of seeds, growing of fruits, uses of domestic animals, balanced diet, boiling and shallow frying).
+504203;504002;AGRI_IND_2_3;Ability to exhibit integrity in carrying out food production processes (utilising resources prudently, is accountable, shows honesty, applies ethically acceptable procedures).
+504301;504003;AGRI_IND_3_1;Ability to describe practices that promote hygiene (personal hygiene, domestic hygiene and cleaning personal protective equipment).
+504302;504003;AGRI_IND_3_2;Ability to apply health practices to promote hygiene (personal hygiene, domestic hygiene and cleaning personal protective equipment).
+504303;504003;AGRI_IND_3_3;Ability to exhibit responsibility while undertaking health practices that promote hygiene (respects other learners’ property, offers leadership, accepts consequences, cares for property).
+504401;504004;AGRI_IND_4_1;Ability to use tacking stitches in making an item (makes appropriate choice of stitch, makes the stitch, ensures evenness of the stitch and firmness of stitch to the purpose).
+504402;504004;AGRI_IND_4_2;Ability to work in unity in making an item (sharing resources, working in teams, appreciating efforts of others, respects others’ opinions).
+505101;505001;SCI_TECH_IND_1_1;Ability to identify characteristics of plants and animals.
+505102;505001;SCI_TECH_IND_1_2;Ability to describe functions of external parts of a plant.
+505103;505001;SCI_TECH_IND_1_3;Ability to identify parts of the human digestive system.
+505104;505001;SCI_TECH_IND_1_4;Ability to develop a plan of maintaining a healthy human digestive system.
+505201;505002;SCI_TECH_IND_2_1;Ability to describe the properties of the three states of matter.
+505202;505002;SCI_TECH_IND_2_2;Ability to manage solid waste in the environment.
+505203;505002;SCI_TECH_IND_2_3;Ability to outline the importance of conserving water at home and school.
+505301;505003;SCI_TECH_IND_3_1;Ability to demonstrate the effects of force on objects in nature.
+505302;505003;SCI_TECH_IND_3_2;Ability to identify sources of light in nature.
+505303;505003;SCI_TECH_IND_3_3;Ability to explain the use of light in day-to-day life.
+505304;505003;SCI_TECH_IND_3_4;Ability to demonstrate uses of heat in day-to-day life.
+505305;505003;SCI_TECH_IND_3_5;Ability to describe safety measures when using heat.
+506101;506001;MATH_IND_1_1;Ability to use place value and total value of numbers up to tens of thousands.
+506102;506001;MATH_IND_1_2;Ability to read and write numbers in symbols and words.
+506103;506001;MATH_IND_1_3;Ability to order and round off numbers up to 1000.
+506104;506001;MATH_IND_1_4;Ability to identify factors and multiples of numbers up to 50.
+506105;506001;MATH_IND_1_5;Ability to make patterns involving even and odd numbers up to 100.
+506106;506001;MATH_IND_1_6;Ability to represent Hindu Arabic numerals using Roman numerals up to 'X'.
+506107;506001;MATH_IND_1_7;Ability to add up to two 4-digit numbers with single and double regrouping.
+506108;506001;MATH_IND_1_8;Ability to create patterns involving addition, subtraction and multiplication.
+506109;506001;MATH_IND_1_9;Ability to subtract up to two 4-digit numbers with single and double regrouping.
+506110;506001;MATH_IND_1_10;Ability to multiply up to a two-digit number by a two-digit number with and without regrouping.
+506111;506001;MATH_IND_1_11;Ability to divide up to a two-digit number by a one-digit number with and without remainder.
+506112;506001;MATH_IND_1_12;Ability to identify different types of fractions.
+506113;506001;MATH_IND_1_13;Ability to convert improper fractions to mixed fractions and mixed fractions to improper fractions.
+506114;506001;MATH_IND_1_14;Ability to identify a tenth or a hundredth in a decimal number.
+506201;506002;MATH_IND_2_1;Ability to estimate and measure length in centimetres.
+506202;506002;MATH_IND_2_2;Ability to establish the relationship between metres and centimetres.
+506203;506002;MATH_IND_2_3;Ability to convert centimetres to metres and metres to centimetres.
+506204;506002;MATH_IND_2_4;Ability to add, subtract, multiply and divide length in centimetres and metres.
+506205;506002;MATH_IND_2_5;Ability to calculate the area of squares and rectangles as a product of number of rows and columns.
+506206;506002;MATH_IND_2_6;Ability to work out the volume of cubes and cuboids by piling blocks.
+506207;506002;MATH_IND_2_7;Ability to measure, add and subtract capacity in litres.
+506208;506002;MATH_IND_2_8;Ability to measure, add and subtract mass of different objects in kilograms.
+506209;506002;MATH_IND_2_9;Ability to read, tell and estimate time in a.m. and p.m.
+506210;506002;MATH_IND_2_10;Ability to work out addition and subtraction involving units of time.
+506211;506002;MATH_IND_2_11;Ability to convert shillings to cents and cents to shillings.
+506212;506002;MATH_IND_2_12;Ability to work out the total cost of items in the shopping list of not more than ten thousand shillings.
+506301;506003;MATH_IND_3_1;Ability to demonstrate a clockwise and an anti-clockwise turn in the environment.
+506302;506003;MATH_IND_3_2;Ability to demonstrate a quarter turn, half turn and full turn in the environment.
+506303;506003;MATH_IND_3_3;Ability to identify angles from the objects in the environment.
+506304;506003;MATH_IND_3_4;Ability to draw the shapes of rectangles, squares, triangles, circles and ovals.
+506305;506003;MATH_IND_3_5;Ability to make patterns using squares, rectangles and triangles.
+506306;506003;MATH_IND_3_6;Ability to identify properties of triangles, squares and rectangles.
+506401;506004;MATH_IND_4_1;Ability to identify and collect data of at most 10 items.
+506402;506004;MATH_IND_4_2;Ability to record and interpret the raw data from the table.
+507101;507001;REL_CRE_IND_1_1;Ability to make right choices in day-to-day life
+507102;507001;REL_CRE_IND_1_2;Ability to list three attributes of God
+507201;507002;REL_CRE_IND_2_1;Ability to retell Bible stories
+507202;507002;REL_CRE_IND_2_2;Ability to list lessons learnt from the Bible stories
+507203;507002;REL_CRE_IND_2_3;Ability to apply lessons learnt from the Bible stories in daily life
+507301;507003;REL_CRE_IND_3_1;Ability to retell the annunciation of the birth of Jesus Christ
+507302;507003;REL_CRE_IND_3_2;Ability to retell the birth of John the Baptist
+507303;507003;REL_CRE_IND_3_3;Ability to retell three miracles performed by Jesus Christ
+507304;507003;REL_CRE_IND_3_4;Ability to list lessons learnt from the miracles of Jesus Christ
+507305;507003;REL_CRE_IND_3_5;Ability to apply lessons learnt from the teachings of Jesus Christ in daily life
+507401;507004;REL_CRE_IND_4_1;Ability to explain how Christian values enhance harmonious co-existence
+507402;507004;REL_CRE_IND_4_2;Ability to apply acquired Christian values in day-to-day life
+507501;507005;REL_CRE_IND_5_1;Ability to participate in church activities
+507502;507005;REL_CRE_IND_5_2;Ability to list the 12 disciples of Jesus Christ
+507503;507005;REL_CRE_IND_5_3;Ability to recite the Lord's Prayer and pray for others
+507504;507005;REL_CRE_IND_5_4;Ability to utilise the fruit of the Holy Spirit in making right decisions
+507601;507006;REL_CRE_IND_6_1;Ability to use social media responsibly
+508101;508001;REL_IRE_IND_1_1;Ability to read and recite seven selected surahs
+508102;508001;REL_IRE_IND_1_2;Ability to explain the basic meaning of the selected surahs
+508201;508002;REL_IRE_IND_2_1;Ability to read the selected hadith
+508202;508002;REL_IRE_IND_2_2;Ability to deduce the teachings from the selected hadith
+508301;508003;REL_IRE_IND_3_1;Ability to identify and use the attributes of Allah in supplication
+508302;508003;REL_IRE_IND_3_2;Ability to apply the virtues of the prophets in day-to-day life
+508401;508004;REL_IRE_IND_4_1;Ability to perform swalah while adhering to all its rules
+508501;508005;REL_IRE_IND_5_1;Ability to assess the significance of kindness to Allah's creatures and Islamic code of dressing and uphold positive use of media
+508502;508005;REL_IRE_IND_5_2;Ability to describe the evils of begging
+508601;508006;REL_IRE_IND_6_1;Ability to uphold obligations to family members
+508701;508007;REL_IRE_IND_7_1;Ability to describe the events of Prophet's mission in Makkah
+509101;509001;REL_HIN_IND_1_1;Ability to state water bodies that are considered sacred as mentioned in the Scriptures
+509102;509001;REL_HIN_IND_1_2;Ability to identify the role of water in our daily lives
+509103;509001;REL_HIN_IND_1_3;Ability to specify the names of plants that are considered sacred in each faith
+509201;509002;REL_HIN_IND_2_1;Ability to identify the contributions of Enlightened Beings
+509202;509002;REL_HIN_IND_2_2;Ability to implement teachings of Enlightened Beings
+509301;509003;REL_HIN_IND_3_1;Ability to explain the lessons learnt from the Scriptures
+509302;509003;REL_HIN_IND_3_2;Ability to apply the teachings of the Scriptures
+509401;509004;REL_HIN_IND_4_1;Ability to recite prayers
+509402;509004;REL_HIN_IND_4_2;Ability to identify prayers performed for different occasions
+509501;509005;REL_HIN_IND_5_1;Ability to state the importance of integrity in their daily lives
+509502;509005;REL_HIN_IND_5_2;Ability to identify elements of integrity among peers and in society
+509503;509005;REL_HIN_IND_5_3;Ability to state all ideal practices of a passenger during boarding and alighting for safety
+509601;509006;REL_HIN_IND_6_1;Ability to name the types of Pranayam
+509602;509006;REL_HIN_IND_6_2;Ability to display simple body postures
+509701;509007;REL_HIN_IND_7_1;Ability to identify Principles of Dharma according to Sanatan/Vedic
+509801;509008;REL_HIN_IND_8_1;Ability to identify the rites and rituals during the celebration of different festivals
+509802;509008;REL_HIN_IND_8_2;Ability to relate the days of the week with the corresponding planets
+510101;510001;CRE_ARTS_IND_1_1;Ability to create and/or execute various Creative Arts tasks such as rhythmic patterns, drawings, paintings, Netball skills, montages, clay modelling, and simple melodies.
+510201;510002;CRE_ARTS_IND_2_1;Ability to perform and/or display Creative Arts skills such as recorder melodies, photography techniques, athletic techniques, various songs, and aquatic or animal-based games.
+510301;510003;CRE_ARTS_IND_3_1;Ability to display, critique, participate in, or analyse various Creative Arts items such as drawings, paintings, photographs, Kenyan folk arts, sports activities, and cultural expressions.
+512101;512001;SOC_STUD_IND_1_1;Ability to use the four cardinal points to give direction of places.
+512102;512001;SOC_STUD_IND_1_2;Ability to identify the main physical features in the county.
+512103;512001;SOC_STUD_IND_1_3;Ability to explain how the four seasons influence human activities in the county.
+512104;512001;SOC_STUD_IND_1_4;Ability to explain the importance of the main historic built environments in the county.
+512201;512002;SOC_STUD_IND_2_1;Ability to explain the benefits of interdependence of people in the county.
+512202;512002;SOC_STUD_IND_2_2;Ability to describe patterns of population distribution in the county.
+512301;512003;SOC_STUD_IND_3_1;Ability to identify the six aspects of traditional culture in the county.
+512302;512003;SOC_STUD_IND_3_2;Ability to describe aspects of traditional culture in the county.
+512303;512003;SOC_STUD_IND_3_3;Ability to narrate the history of the school.
+512401;512004;SOC_STUD_IND_4_1;Ability to explain the importance of economic activities carried out in the county.
+512402;512004;SOC_STUD_IND_4_2;Ability to identify industries in the county.
+512403;512004;SOC_STUD_IND_4_3;Ability to identify the projects that can be initiated at school.
+512501;512005;SOC_STUD_IND_5_1;Ability to identify qualities of good citizenship in school.
+512502;512005;SOC_STUD_IND_5_2;Ability to develop strategies of living in peace with others in school.
+512503;512005;SOC_STUD_IND_5_3;Ability to explain effects of the seven forms of child abuse in the community.
+512504;512005;SOC_STUD_IND_5_4;Ability to identify democratic processes in school.
+512505;512005;SOC_STUD_IND_5_5;Ability to describe the functions of the Children’s Government in school.
+512506;512005;SOC_STUD_IND_5_6;Ability to demonstrate qualities of good leadership in the community.
+512507;512005;SOC_STUD_IND_5_7;Ability to explain the roles of a member of county assembly.
+601101;601001;ENG_IND_1_1;Ability to listen actively to a variety of oral texts to gain information.
+601102;601001;ENG_IND_1_2;Ability to listen and participate actively in conversations in various settings for self-expression and effective communication.
+601103;601001;ENG_IND_1_3;Ability to speak accurately with expression and at the right speed, with minimum hesitation for fluency in communication.
+601201;601002;ENG_IND_2_1;Ability to read about 300 words fluently and accurately, at the right speed and with expression for effective communication.
+601202;601002;ENG_IND_2_2;Ability to read grade-appropriate visuals, print and digital texts for comprehension and information.
+601203;601002;ENG_IND_2_3;Ability to read a variety of grade-appropriate visual, digital and print texts for lifelong learning.
+601301;601003;ENG_IND_3_1;Ability to use grammatical forms to communicate ideas, opinions and emotions appropriately in different settings for effective communication.
+601401;601004;ENG_IND_4_1;Ability to use punctuation, paragraphing and spelling correctly for effective communication.
+601402;601004;ENG_IND_4_2;Ability to write a variety of writings using the correct formats for effective communication.
+601403;601004;ENG_IND_4_3;Ability to write creative works clearly and expressively for effective communication.
+602101;602001;KIS_KSL_IND_1_1;Kuweza kuwasiliana kwa matamshi bora (Matamshi ya sauti zinazokaribiana: p/b, t/d, k/g, ch/j)
+602102;602001;KIS_KSL_IND_1_2;Kuweza kuzungumza kwa ufasaha (Kwa kutumia maneno ya upole na mazungumzo ya kimikakati)
+602103;602001;KIS_KSL_IND_1_3;Kuweza kusikiliza na kujibu ipasavyo (Maamkizi na maagano, ushairi, masimulizi)
+602104;602001;KIS_KSL_IND_1_4;Kuweza kutumia lugha kiubunifu (Vitendawili, methali, nahau, visawe, tashbihi)
+602201;602002;KIS_KSL_IND_2_1;Kuweza kusoma kwa ufasaha (Ulumbi, umbo, wahusika, matumizi ya msamiati mwafaka, kutoa muhtasari)
+602202;602002;KIS_KSL_IND_2_2;Kuweza kusoma kwa kina. (Matumizi ya kamusi: mpangilio na maana za maneno)
+602203;602002;KIS_KSL_IND_2_3;Kuweza kusoma kwa ufasaha. (Matamshi bora, kiwango kifaaacho cha sauti, kasi ifaayo, ishara zifaazo)
+602204;602002;KIS_KSL_IND_2_4;Kuweza kusoma kwa mapana. (Kutambua na kuchagua matini ya kusoma, kutambua ujumbe na matumizi ya lugha)
+602205;602002;KIS_KSL_IND_2_5;Kuweza kusoma kidijitali. (Kufungua faili ya kidijitali, matumizi ya vifaa vya kidijitali, kukarakana kwenye tovuti, volumu, kuchagua na kusoma matini, kutambua ujumbe na matumizi ya lugha.)
+602301;602003;KIS_KSL_IND_3_1;Kuweza kuandika aina mbalimbali za insha (wasifu, masimulizi, maelezo na barua ya kirafiki) kwa kuzingatia vipengele vifuatavyo: muundo, ujumbe, mtindo na kanuni zifaazo za uandishi.
+602302;602003;KIS_KSL_IND_3_2;Kuweza kuandika kwa tarakilishi. (Sehemu za tarakilishi, kufungua na kufunga tarakilishi, kuhifadhi).
+602401;602004;KIS_KSL_IND_4_1;Kuweza kutambua na kutumia vinyume vya maneno na kuvitumia katika matini.
+602402;602004;KIS_KSL_IND_4_2;Kuweza kutambua na kutumia viambishi vya nyakati katika vitenzi. (Wakati uliopita, uliopo na ujao)
+602403;602004;KIS_KSL_IND_4_3;Kuweza kutambua maneno yaliyokanushwa, viambishi vya ukanushaji na kukanusha maneno ipasavyo. (Wakati uliopita, uliopo na ujao)
+602404;602004;KIS_KSL_IND_4_4;Kuweza kutambua na kutumia aina mbalimbali za maneno katika lugha ya Kiswahili. (Vitenzi, viwakilishi, vielezi, viunganishi, vihusishi na vihisishi)
+602405;602004;KIS_KSL_IND_4_5;Kuweza kutambua viambishi vya ngeli, nomino za ngeli na kutumia upatanisho wa kisarufi ipasavyo. (A-WA, U-I, KI-VI, LI-YA na LI-LI)
+602406;602004;KIS_KSL_IND_4_6;Kuweza kutambua na kutumia vitenzi katika kauli mbalimbali. (kauli ya kutenda, kutendea na kutendwa)
+604101;604001;AGRI_IND_1_1;Ability to explain conservation of resources of four resources in the environment (soil, water, fuel, wild animals).
+604102;604001;AGRI_IND_1_2;Ability to conserve four resources in the environment (soil, water, fuel, wild animals).
+604103;604001;AGRI_IND_1_3;Ability to show four aspects of responsibility in conservation of environmental resources (offers leadership, observes safety, shows initiative, shows dutifulness in tasks).
+604201;604002;AGRI_IND_2_1;Ability to describe food production processes at household level (direct sowing of seeds, growing of fruits, uses of domestic animals, balanced diet, boiling and shallow frying).
+604202;604002;AGRI_IND_2_2;Ability to carry out various food production processes at household level (direct sowing of seeds, growing of fruits, uses of domestic animals, balanced diet, boiling and shallow frying).
+604203;604002;AGRI_IND_2_3;Ability to exhibit integrity in carrying out food production processes (utilising resources prudently, is accountable, shows honesty, applies ethically acceptable procedures).
+604301;604003;AGRI_IND_3_1;Ability to describe practices that promote hygiene (personal hygiene, domestic hygiene and cleaning personal protective equipment).
+604302;604003;AGRI_IND_3_2;Ability to apply health practices to promote hygiene (personal hygiene, domestic hygiene and cleaning personal protective equipment).
+604303;604003;AGRI_IND_3_3;Ability to exhibit responsibility while undertaking health practices that promote hygiene (respects other learners’ property, offers leadership, accepts consequences, cares for property).
+604401;604004;AGRI_IND_4_1;Ability to use tacking stitches in making an item (makes appropriate choice of stitch, makes the stitch, ensures evenness of the stitch and firmness of stitch to the purpose).
+604402;604004;AGRI_IND_4_2;Ability to work in unity in making an item (sharing resources, working in teams, appreciating efforts of others, respects others’ opinions).
+605101;605001;SCI_TECH_IND_1_1;Ability to identify characteristics of plants and animals.
+605102;605001;SCI_TECH_IND_1_2;Ability to describe functions of external parts of a plant.
+605103;605001;SCI_TECH_IND_1_3;Ability to identify parts of the human digestive system.
+605104;605001;SCI_TECH_IND_1_4;Ability to develop a plan of maintaining a healthy human digestive system.
+605201;605002;SCI_TECH_IND_2_1;Ability to describe the properties of the three states of matter.
+605202;605002;SCI_TECH_IND_2_2;Ability to manage solid waste in the environment.
+605203;605002;SCI_TECH_IND_2_3;Ability to outline the importance of conserving water at home and school.
+605301;605003;SCI_TECH_IND_3_1;Ability to demonstrate the effects of force on objects in nature.
+605302;605003;SCI_TECH_IND_3_2;Ability to identify sources of light in nature.
+605303;605003;SCI_TECH_IND_3_3;Ability to explain the use of light in day-to-day life.
+605304;605003;SCI_TECH_IND_3_4;Ability to demonstrate uses of heat in day-to-day life.
+605305;605003;SCI_TECH_IND_3_5;Ability to describe safety measures when using heat.
+606101;606001;MATH_IND_1_1;Ability to use place value and total value of numbers up to tens of thousands.
+606102;606001;MATH_IND_1_2;Ability to read and write numbers in symbols and words.
+606103;606001;MATH_IND_1_3;Ability to order and round off numbers up to 1000.
+606104;606001;MATH_IND_1_4;Ability to identify factors and multiples of numbers up to 50.
+606105;606001;MATH_IND_1_5;Ability to make patterns involving even and odd numbers up to 100.
+606106;606001;MATH_IND_1_6;Ability to represent Hindu Arabic numerals using Roman numerals up to 'X'.
+606107;606001;MATH_IND_1_7;Ability to add up to two 4-digit numbers with single and double regrouping.
+606108;606001;MATH_IND_1_8;Ability to create patterns involving addition, subtraction and multiplication.
+606109;606001;MATH_IND_1_9;Ability to subtract up to two 4-digit numbers with single and double regrouping.
+606110;606001;MATH_IND_1_10;Ability to multiply up to a two-digit number by a two-digit number with and without regrouping.
+606111;606001;MATH_IND_1_11;Ability to divide up to a two-digit number by a one-digit number with and without remainder.
+606112;606001;MATH_IND_1_12;Ability to identify different types of fractions.
+606113;606001;MATH_IND_1_13;Ability to convert improper fractions to mixed fractions and mixed fractions to improper fractions.
+606114;606001;MATH_IND_1_14;Ability to identify a tenth or a hundredth in a decimal number.
+606201;606002;MATH_IND_2_1;Ability to estimate and measure length in centimetres.
+606202;606002;MATH_IND_2_2;Ability to establish the relationship between metres and centimetres.
+606203;606002;MATH_IND_2_3;Ability to convert centimetres to metres and metres to centimetres.
+606204;606002;MATH_IND_2_4;Ability to add, subtract, multiply and divide length in centimetres and metres.
+606205;606002;MATH_IND_2_5;Ability to calculate the area of squares and rectangles as a product of number of rows and columns.
+606206;606002;MATH_IND_2_6;Ability to work out the volume of cubes and cuboids by piling blocks.
+606207;606002;MATH_IND_2_7;Ability to measure, add and subtract capacity in litres.
+606208;606002;MATH_IND_2_8;Ability to measure, add and subtract mass of different objects in kilograms.
+606209;606002;MATH_IND_2_9;Ability to read, tell and estimate time in a.m. and p.m.
+606210;606002;MATH_IND_2_10;Ability to work out addition and subtraction involving units of time.
+606211;606002;MATH_IND_2_11;Ability to convert shillings to cents and cents to shillings.
+606212;606002;MATH_IND_2_12;Ability to work out the total cost of items in the shopping list of not more than ten thousand shillings.
+606301;606003;MATH_IND_3_1;Ability to demonstrate a clockwise and an anti-clockwise turn in the environment.
+606302;606003;MATH_IND_3_2;Ability to demonstrate a quarter turn, half turn and full turn in the environment.
+606303;606003;MATH_IND_3_3;Ability to identify angles from the objects in the environment.
+606304;606003;MATH_IND_3_4;Ability to draw the shapes of rectangles, squares, triangles, circles and ovals.
+606305;606003;MATH_IND_3_5;Ability to make patterns using squares, rectangles and triangles.
+606306;606003;MATH_IND_3_6;Ability to identify properties of triangles, squares and rectangles.
+606401;606004;MATH_IND_4_1;Ability to identify and collect data of at most 10 items.
+606402;606004;MATH_IND_4_2;Ability to record and interpret the raw data from the table.
+607101;607001;REL_CRE_IND_1_1;Ability to make right choices in day-to-day life
+607102;607001;REL_CRE_IND_1_2;Ability to list three attributes of God
+607201;607002;REL_CRE_IND_2_1;Ability to retell Bible stories
+607202;607002;REL_CRE_IND_2_2;Ability to list lessons learnt from the Bible stories
+607203;607002;REL_CRE_IND_2_3;Ability to apply lessons learnt from the Bible stories in daily life
+607301;607003;REL_CRE_IND_3_1;Ability to retell the annunciation of the birth of Jesus Christ
+607302;607003;REL_CRE_IND_3_2;Ability to retell the birth of John the Baptist
+607303;607003;REL_CRE_IND_3_3;Ability to retell three miracles performed by Jesus Christ
+607304;607003;REL_CRE_IND_3_4;Ability to list lessons learnt from the miracles of Jesus Christ
+607305;607003;REL_CRE_IND_3_5;Ability to apply lessons learnt from the teachings of Jesus Christ in daily life
+607401;607004;REL_CRE_IND_4_1;Ability to explain how Christian values enhance harmonious co-existence
+607402;607004;REL_CRE_IND_4_2;Ability to apply acquired Christian values in day-to-day life
+607501;607005;REL_CRE_IND_5_1;Ability to participate in church activities
+607502;607005;REL_CRE_IND_5_2;Ability to list the 12 disciples of Jesus Christ
+607503;607005;REL_CRE_IND_5_3;Ability to recite the Lord's Prayer and pray for others
+607504;607005;REL_CRE_IND_5_4;Ability to utilise the fruit of the Holy Spirit in making right decisions
+607601;607006;REL_CRE_IND_6_1;Ability to use social media responsibly
+608101;608001;REL_IRE_IND_1_1;Ability to read and recite seven selected surahs
+608102;608001;REL_IRE_IND_1_2;Ability to explain the basic meaning of the selected surahs
+608201;608002;REL_IRE_IND_2_1;Ability to read the selected hadith
+608202;608002;REL_IRE_IND_2_2;Ability to deduce the teachings from the selected hadith
+608301;608003;REL_IRE_IND_3_1;Ability to identify and use the attributes of Allah in supplication
+608302;608003;REL_IRE_IND_3_2;Ability to apply the virtues of the prophets in day-to-day life
+608401;608004;REL_IRE_IND_4_1;Ability to perform swalah while adhering to all its rules
+608501;608005;REL_IRE_IND_5_1;Ability to assess the significance of kindness to Allah's creatures and Islamic code of dressing and uphold positive use of media
+608502;608005;REL_IRE_IND_5_2;Ability to describe the evils of begging
+608601;608006;REL_IRE_IND_6_1;Ability to uphold obligations to family members
+608701;608007;REL_IRE_IND_7_1;Ability to describe the events of Prophet's mission in Makkah
+609101;609001;REL_HIN_IND_1_1;Ability to state water bodies that are considered sacred as mentioned in the Scriptures
+609102;609001;REL_HIN_IND_1_2;Ability to identify the role of water in our daily lives
+609103;609001;REL_HIN_IND_1_3;Ability to specify the names of plants that are considered sacred in each faith
+609201;609002;REL_HIN_IND_2_1;Ability to identify the contributions of Enlightened Beings
+609202;609002;REL_HIN_IND_2_2;Ability to implement teachings of Enlightened Beings
+609301;609003;REL_HIN_IND_3_1;Ability to explain the lessons learnt from the Scriptures
+609302;609003;REL_HIN_IND_3_2;Ability to apply the teachings of the Scriptures
+609401;609004;REL_HIN_IND_4_1;Ability to recite prayers
+609402;609004;REL_HIN_IND_4_2;Ability to identify prayers performed for different occasions
+609501;609005;REL_HIN_IND_5_1;Ability to state the importance of integrity in their daily lives
+609502;609005;REL_HIN_IND_5_2;Ability to identify elements of integrity among peers and in society
+609503;609005;REL_HIN_IND_5_3;Ability to state all ideal practices of a passenger during boarding and alighting for safety
+609601;609006;REL_HIN_IND_6_1;Ability to name the types of Pranayam
+609602;609006;REL_HIN_IND_6_2;Ability to display simple body postures
+609701;609007;REL_HIN_IND_7_1;Ability to identify Principles of Dharma according to Sanatan/Vedic
+609801;609008;REL_HIN_IND_8_1;Ability to identify the rites and rituals during the celebration of different festivals
+609802;609008;REL_HIN_IND_8_2;Ability to relate the days of the week with the corresponding planets
+610101;610001;CRE_ARTS_IND_1_1;Ability to create and/or execute various Creative Arts tasks such as rhythmic patterns, drawings, paintings, Netball skills, montages, clay modelling, and simple melodies.
+610201;610002;CRE_ARTS_IND_2_1;Ability to perform and/or display Creative Arts skills such as recorder melodies, photography techniques, athletic techniques, various songs, and aquatic or animal-based games.
+610301;610003;CRE_ARTS_IND_3_1;Ability to display, critique, participate in, or analyse various Creative Arts items such as drawings, paintings, photographs, Kenyan folk arts, sports activities, and cultural expressions.
+612101;612001;SOC_STUD_IND_1_1;Ability to use the four cardinal points to give direction of places.
+612102;612001;SOC_STUD_IND_1_2;Ability to identify the main physical features in the county.
+612103;612001;SOC_STUD_IND_1_3;Ability to explain how the four seasons influence human activities in the county.
+612104;612001;SOC_STUD_IND_1_4;Ability to explain the importance of the main historic built environments in the county.
+612201;612002;SOC_STUD_IND_2_1;Ability to explain the benefits of interdependence of people in the county.
+612202;612002;SOC_STUD_IND_2_2;Ability to describe patterns of population distribution in the county.
+612301;612003;SOC_STUD_IND_3_1;Ability to identify the six aspects of traditional culture in the county.
+612302;612003;SOC_STUD_IND_3_2;Ability to describe aspects of traditional culture in the county.
+612303;612003;SOC_STUD_IND_3_3;Ability to narrate the history of the school.
+612401;612004;SOC_STUD_IND_4_1;Ability to explain the importance of economic activities carried out in the county.
+612402;612004;SOC_STUD_IND_4_2;Ability to identify industries in the county.
+612403;612004;SOC_STUD_IND_4_3;Ability to identify the projects that can be initiated at school.
+612501;612005;SOC_STUD_IND_5_1;Ability to identify qualities of good citizenship in school.
+612502;612005;SOC_STUD_IND_5_2;Ability to develop strategies of living in peace with others in school.
+612503;612005;SOC_STUD_IND_5_3;Ability to explain effects of the seven forms of child abuse in the community.
+612504;612005;SOC_STUD_IND_5_4;Ability to identify democratic processes in school.
+612505;612005;SOC_STUD_IND_5_5;Ability to describe the functions of the Children’s Government in school.
+612506;612005;SOC_STUD_IND_5_6;Ability to demonstrate qualities of good leadership in the community.
+612507;612005;SOC_STUD_IND_5_7;Ability to explain the roles of a member of county assembly.
+701101;701001;ENG_IND_1_1;Ability to listen actively to a variety of oral texts to gain information.
+701102;701001;ENG_IND_1_2;Ability to listen and participate actively in conversations in various settings for self-expression and effective communication.
+701103;701001;ENG_IND_1_3;Ability to speak accurately with expression and at the right speed, with minimum hesitation for fluency in communication.
+701201;701002;ENG_IND_2_1;Ability to read about 300 words fluently and accurately, at the right speed and with expression for effective communication.
+701202;701002;ENG_IND_2_2;Ability to read grade-appropriate visuals, print and digital texts for comprehension and information.
+701203;701002;ENG_IND_2_3;Ability to read a variety of grade-appropriate visual, digital and print texts for lifelong learning.
+701301;701003;ENG_IND_3_1;Ability to use grammatical forms to communicate ideas, opinions and emotions appropriately in different settings for effective communication.
+701401;701004;ENG_IND_4_1;Ability to use punctuation, paragraphing and spelling correctly for effective communication.
+701402;701004;ENG_IND_4_2;Ability to write a variety of writings using the correct formats for effective communication.
+701403;701004;ENG_IND_4_3;Ability to write creative works clearly and expressively for effective communication.
+702101;702001;KIS_KSL_IND_1_1;Kuweza kuwasiliana kwa matamshi bora (Matamshi ya sauti zinazokaribiana: p/b, t/d, k/g, ch/j)
+702102;702001;KIS_KSL_IND_1_2;Kuweza kuzungumza kwa ufasaha (Kwa kutumia maneno ya upole na mazungumzo ya kimikakati)
+702103;702001;KIS_KSL_IND_1_3;Kuweza kusikiliza na kujibu ipasavyo (Maamkizi na maagano, ushairi, masimulizi)
+702104;702001;KIS_KSL_IND_1_4;Kuweza kutumia lugha kiubunifu (Vitendawili, methali, nahau, visawe, tashbihi)
+702201;702002;KIS_KSL_IND_2_1;Kuweza kusoma kwa ufasaha (Ulumbi, umbo, wahusika, matumizi ya msamiati mwafaka, kutoa muhtasari)
+702202;702002;KIS_KSL_IND_2_2;Kuweza kusoma kwa kina. (Matumizi ya kamusi: mpangilio na maana za maneno)
+702203;702002;KIS_KSL_IND_2_3;Kuweza kusoma kwa ufasaha. (Matamshi bora, kiwango kifaaacho cha sauti, kasi ifaayo, ishara zifaazo)
+702204;702002;KIS_KSL_IND_2_4;Kuweza kusoma kwa mapana. (Kutambua na kuchagua matini ya kusoma, kutambua ujumbe na matumizi ya lugha)
+702205;702002;KIS_KSL_IND_2_5;Kuweza kusoma kidijitali. (Kufungua faili ya kidijitali, matumizi ya vifaa vya kidijitali, kukarakana kwenye tovuti, volumu, kuchagua na kusoma matini, kutambua ujumbe na matumizi ya lugha.)
+702301;702003;KIS_KSL_IND_3_1;Kuweza kuandika aina mbalimbali za insha (wasifu, masimulizi, maelezo na barua ya kirafiki) kwa kuzingatia vipengele vifuatavyo: muundo, ujumbe, mtindo na kanuni zifaazo za uandishi.
+702302;702003;KIS_KSL_IND_3_2;Kuweza kuandika kwa tarakilishi. (Sehemu za tarakilishi, kufungua na kufunga tarakilishi, kuhifadhi).
+702401;702004;KIS_KSL_IND_4_1;Kuweza kutambua na kutumia vinyume vya maneno na kuvitumia katika matini.
+702402;702004;KIS_KSL_IND_4_2;Kuweza kutambua na kutumia viambishi vya nyakati katika vitenzi. (Wakati uliopita, uliopo na ujao)
+702403;702004;KIS_KSL_IND_4_3;Kuweza kutambua maneno yaliyokanushwa, viambishi vya ukanushaji na kukanusha maneno ipasavyo. (Wakati uliopita, uliopo na ujao)
+702404;702004;KIS_KSL_IND_4_4;Kuweza kutambua na kutumia aina mbalimbali za maneno katika lugha ya Kiswahili. (Vitenzi, viwakilishi, vielezi, viunganishi, vihusishi na vihisishi)
+702405;702004;KIS_KSL_IND_4_5;Kuweza kutambua viambishi vya ngeli, nomino za ngeli na kutumia upatanisho wa kisarufi ipasavyo. (A-WA, U-I, KI-VI, LI-YA na LI-LI)
+702406;702004;KIS_KSL_IND_4_6;Kuweza kutambua na kutumia vitenzi katika kauli mbalimbali. (kauli ya kutenda, kutendea na kutendwa)
+704101;704001;AGRI_IND_1_1;Ability to explain conservation of resources of four resources in the environment (soil, water, fuel, wild animals).
+704102;704001;AGRI_IND_1_2;Ability to conserve four resources in the environment (soil, water, fuel, wild animals).
+704103;704001;AGRI_IND_1_3;Ability to show four aspects of responsibility in conservation of environmental resources (offers leadership, observes safety, shows initiative, shows dutifulness in tasks).
+704201;704002;AGRI_IND_2_1;Ability to describe food production processes at household level (direct sowing of seeds, growing of fruits, uses of domestic animals, balanced diet, boiling and shallow frying).
+704202;704002;AGRI_IND_2_2;Ability to carry out various food production processes at household level (direct sowing of seeds, growing of fruits, uses of domestic animals, balanced diet, boiling and shallow frying).
+704203;704002;AGRI_IND_2_3;Ability to exhibit integrity in carrying out food production processes (utilising resources prudently, is accountable, shows honesty, applies ethically acceptable procedures).
+704301;704003;AGRI_IND_3_1;Ability to describe practices that promote hygiene (personal hygiene, domestic hygiene and cleaning personal protective equipment).
+704302;704003;AGRI_IND_3_2;Ability to apply health practices to promote hygiene (personal hygiene, domestic hygiene and cleaning personal protective equipment).
+704303;704003;AGRI_IND_3_3;Ability to exhibit responsibility while undertaking health practices that promote hygiene (respects other learners’ property, offers leadership, accepts consequences, cares for property).
+704401;704004;AGRI_IND_4_1;Ability to use tacking stitches in making an item (makes appropriate choice of stitch, makes the stitch, ensures evenness of the stitch and firmness of stitch to the purpose).
+704402;704004;AGRI_IND_4_2;Ability to work in unity in making an item (sharing resources, working in teams, appreciating efforts of others, respects others’ opinions).
+705101;705001;SCI_TECH_IND_1_1;Ability to identify characteristics of plants and animals.
+705102;705001;SCI_TECH_IND_1_2;Ability to describe functions of external parts of a plant.
+705103;705001;SCI_TECH_IND_1_3;Ability to identify parts of the human digestive system.
+705104;705001;SCI_TECH_IND_1_4;Ability to develop a plan of maintaining a healthy human digestive system.
+705201;705002;SCI_TECH_IND_2_1;Ability to describe the properties of the three states of matter.
+705202;705002;SCI_TECH_IND_2_2;Ability to manage solid waste in the environment.
+705203;705002;SCI_TECH_IND_2_3;Ability to outline the importance of conserving water at home and school.
+705301;705003;SCI_TECH_IND_3_1;Ability to demonstrate the effects of force on objects in nature.
+705302;705003;SCI_TECH_IND_3_2;Ability to identify sources of light in nature.
+705303;705003;SCI_TECH_IND_3_3;Ability to explain the use of light in day-to-day life.
+705304;705003;SCI_TECH_IND_3_4;Ability to demonstrate uses of heat in day-to-day life.
+705305;705003;SCI_TECH_IND_3_5;Ability to describe safety measures when using heat.
+706101;706001;MATH_IND_1_1;Ability to use place value and total value of numbers up to tens of thousands.
+706102;706001;MATH_IND_1_2;Ability to read and write numbers in symbols and words.
+706103;706001;MATH_IND_1_3;Ability to order and round off numbers up to 1000.
+706104;706001;MATH_IND_1_4;Ability to identify factors and multiples of numbers up to 50.
+706105;706001;MATH_IND_1_5;Ability to make patterns involving even and odd numbers up to 100.
+706106;706001;MATH_IND_1_6;Ability to represent Hindu Arabic numerals using Roman numerals up to 'X'.
+706107;706001;MATH_IND_1_7;Ability to add up to two 4-digit numbers with single and double regrouping.
+706108;706001;MATH_IND_1_8;Ability to create patterns involving addition, subtraction and multiplication.
+706109;706001;MATH_IND_1_9;Ability to subtract up to two 4-digit numbers with single and double regrouping.
+706110;706001;MATH_IND_1_10;Ability to multiply up to a two-digit number by a two-digit number with and without regrouping.
+706111;706001;MATH_IND_1_11;Ability to divide up to a two-digit number by a one-digit number with and without remainder.
+706112;706001;MATH_IND_1_12;Ability to identify different types of fractions.
+706113;706001;MATH_IND_1_13;Ability to convert improper fractions to mixed fractions and mixed fractions to improper fractions.
+706114;706001;MATH_IND_1_14;Ability to identify a tenth or a hundredth in a decimal number.
+706201;706002;MATH_IND_2_1;Ability to estimate and measure length in centimetres.
+706202;706002;MATH_IND_2_2;Ability to establish the relationship between metres and centimetres.
+706203;706002;MATH_IND_2_3;Ability to convert centimetres to metres and metres to centimetres.
+706204;706002;MATH_IND_2_4;Ability to add, subtract, multiply and divide length in centimetres and metres.
+706205;706002;MATH_IND_2_5;Ability to calculate the area of squares and rectangles as a product of number of rows and columns.
+706206;706002;MATH_IND_2_6;Ability to work out the volume of cubes and cuboids by piling blocks.
+706207;706002;MATH_IND_2_7;Ability to measure, add and subtract capacity in litres.
+706208;706002;MATH_IND_2_8;Ability to measure, add and subtract mass of different objects in kilograms.
+706209;706002;MATH_IND_2_9;Ability to read, tell and estimate time in a.m. and p.m.
+706210;706002;MATH_IND_2_10;Ability to work out addition and subtraction involving units of time.
+706211;706002;MATH_IND_2_11;Ability to convert shillings to cents and cents to shillings.
+706212;706002;MATH_IND_2_12;Ability to work out the total cost of items in the shopping list of not more than ten thousand shillings.
+706301;706003;MATH_IND_3_1;Ability to demonstrate a clockwise and an anti-clockwise turn in the environment.
+706302;706003;MATH_IND_3_2;Ability to demonstrate a quarter turn, half turn and full turn in the environment.
+706303;706003;MATH_IND_3_3;Ability to identify angles from the objects in the environment.
+706304;706003;MATH_IND_3_4;Ability to draw the shapes of rectangles, squares, triangles, circles and ovals.
+706305;706003;MATH_IND_3_5;Ability to make patterns using squares, rectangles and triangles.
+706306;706003;MATH_IND_3_6;Ability to identify properties of triangles, squares and rectangles.
+706401;706004;MATH_IND_4_1;Ability to identify and collect data of at most 10 items.
+706402;706004;MATH_IND_4_2;Ability to record and interpret the raw data from the table.
+707101;707001;REL_CRE_IND_1_1;Ability to make right choices in day-to-day life
+707102;707001;REL_CRE_IND_1_2;Ability to list three attributes of God
+707201;707002;REL_CRE_IND_2_1;Ability to retell Bible stories
+707202;707002;REL_CRE_IND_2_2;Ability to list lessons learnt from the Bible stories
+707203;707002;REL_CRE_IND_2_3;Ability to apply lessons learnt from the Bible stories in daily life
+707301;707003;REL_CRE_IND_3_1;Ability to retell the annunciation of the birth of Jesus Christ
+707302;707003;REL_CRE_IND_3_2;Ability to retell the birth of John the Baptist
+707303;707003;REL_CRE_IND_3_3;Ability to retell three miracles performed by Jesus Christ
+707304;707003;REL_CRE_IND_3_4;Ability to list lessons learnt from the miracles of Jesus Christ
+707305;707003;REL_CRE_IND_3_5;Ability to apply lessons learnt from the teachings of Jesus Christ in daily life
+707401;707004;REL_CRE_IND_4_1;Ability to explain how Christian values enhance harmonious co-existence
+707402;707004;REL_CRE_IND_4_2;Ability to apply acquired Christian values in day-to-day life
+707501;707005;REL_CRE_IND_5_1;Ability to participate in church activities
+707502;707005;REL_CRE_IND_5_2;Ability to list the 12 disciples of Jesus Christ
+707503;707005;REL_CRE_IND_5_3;Ability to recite the Lord's Prayer and pray for others
+707504;707005;REL_CRE_IND_5_4;Ability to utilise the fruit of the Holy Spirit in making right decisions
+707601;707006;REL_CRE_IND_6_1;Ability to use social media responsibly
+708101;708001;REL_IRE_IND_1_1;Ability to read and recite seven selected surahs
+708102;708001;REL_IRE_IND_1_2;Ability to explain the basic meaning of the selected surahs
+708201;708002;REL_IRE_IND_2_1;Ability to read the selected hadith
+708202;708002;REL_IRE_IND_2_2;Ability to deduce the teachings from the selected hadith
+708301;708003;REL_IRE_IND_3_1;Ability to identify and use the attributes of Allah in supplication
+708302;708003;REL_IRE_IND_3_2;Ability to apply the virtues of the prophets in day-to-day life
+708401;708004;REL_IRE_IND_4_1;Ability to perform swalah while adhering to all its rules
+708501;708005;REL_IRE_IND_5_1;Ability to assess the significance of kindness to Allah's creatures and Islamic code of dressing and uphold positive use of media
+708502;708005;REL_IRE_IND_5_2;Ability to describe the evils of begging
+708601;708006;REL_IRE_IND_6_1;Ability to uphold obligations to family members
+708701;708007;REL_IRE_IND_7_1;Ability to describe the events of Prophet's mission in Makkah
+709101;709001;REL_HIN_IND_1_1;Ability to state water bodies that are considered sacred as mentioned in the Scriptures
+709102;709001;REL_HIN_IND_1_2;Ability to identify the role of water in our daily lives
+709103;709001;REL_HIN_IND_1_3;Ability to specify the names of plants that are considered sacred in each faith
+709201;709002;REL_HIN_IND_2_1;Ability to identify the contributions of Enlightened Beings
+709202;709002;REL_HIN_IND_2_2;Ability to implement teachings of Enlightened Beings
+709301;709003;REL_HIN_IND_3_1;Ability to explain the lessons learnt from the Scriptures
+709302;709003;REL_HIN_IND_3_2;Ability to apply the teachings of the Scriptures
+709401;709004;REL_HIN_IND_4_1;Ability to recite prayers
+709402;709004;REL_HIN_IND_4_2;Ability to identify prayers performed for different occasions
+709501;709005;REL_HIN_IND_5_1;Ability to state the importance of integrity in their daily lives
+709502;709005;REL_HIN_IND_5_2;Ability to identify elements of integrity among peers and in society
+709503;709005;REL_HIN_IND_5_3;Ability to state all ideal practices of a passenger during boarding and alighting for safety
+709601;709006;REL_HIN_IND_6_1;Ability to name the types of Pranayam
+709602;709006;REL_HIN_IND_6_2;Ability to display simple body postures
+709701;709007;REL_HIN_IND_7_1;Ability to identify Principles of Dharma according to Sanatan/Vedic
+709801;709008;REL_HIN_IND_8_1;Ability to identify the rites and rituals during the celebration of different festivals
+709802;709008;REL_HIN_IND_8_2;Ability to relate the days of the week with the corresponding planets
+710101;710001;CRE_ARTS_IND_1_1;Ability to create and/or execute various Creative Arts tasks such as rhythmic patterns, drawings, paintings, Netball skills, montages, clay modelling, and simple melodies.
+710201;710002;CRE_ARTS_IND_2_1;Ability to perform and/or display Creative Arts skills such as recorder melodies, photography techniques, athletic techniques, various songs, and aquatic or animal-based games.
+710301;710003;CRE_ARTS_IND_3_1;Ability to display, critique, participate in, or analyse various Creative Arts items such as drawings, paintings, photographs, Kenyan folk arts, sports activities, and cultural expressions.
+712101;712001;SOC_STUD_IND_1_1;Ability to use the four cardinal points to give direction of places.
+712102;712001;SOC_STUD_IND_1_2;Ability to identify the main physical features in the county.
+712103;712001;SOC_STUD_IND_1_3;Ability to explain how the four seasons influence human activities in the county.
+712104;712001;SOC_STUD_IND_1_4;Ability to explain the importance of the main historic built environments in the county.
+712201;712002;SOC_STUD_IND_2_1;Ability to explain the benefits of interdependence of people in the county.
+712202;712002;SOC_STUD_IND_2_2;Ability to describe patterns of population distribution in the county.
+712301;712003;SOC_STUD_IND_3_1;Ability to identify the six aspects of traditional culture in the county.
+712302;712003;SOC_STUD_IND_3_2;Ability to describe aspects of traditional culture in the county.
+712303;712003;SOC_STUD_IND_3_3;Ability to narrate the history of the school.
+712401;712004;SOC_STUD_IND_4_1;Ability to explain the importance of economic activities carried out in the county.
+712402;712004;SOC_STUD_IND_4_2;Ability to identify industries in the county.
+712403;712004;SOC_STUD_IND_4_3;Ability to identify the projects that can be initiated at school.
+712501;712005;SOC_STUD_IND_5_1;Ability to identify qualities of good citizenship in school.
+712502;712005;SOC_STUD_IND_5_2;Ability to develop strategies of living in peace with others in school.
+712503;712005;SOC_STUD_IND_5_3;Ability to explain effects of the seven forms of child abuse in the community.
+712504;712005;SOC_STUD_IND_5_4;Ability to identify democratic processes in school.
+712505;712005;SOC_STUD_IND_5_5;Ability to describe the functions of the Children’s Government in school.
+712506;712005;SOC_STUD_IND_5_6;Ability to demonstrate qualities of good leadership in the community.
+712507;712005;SOC_STUD_IND_5_7;Ability to explain the roles of a member of county assembly.
+801101;801001;ENG_IND_1_1;Ability to listen actively to a variety of oral texts to gain information.
+801102;801001;ENG_IND_1_2;Ability to listen and participate actively in conversations in various settings for self-expression and effective communication.
+801103;801001;ENG_IND_1_3;Ability to speak accurately with expression and at the right speed, with minimum hesitation for fluency in communication.
+801201;801002;ENG_IND_2_1;Ability to read about 300 words fluently and accurately, at the right speed and with expression for effective communication.
+801202;801002;ENG_IND_2_2;Ability to read grade-appropriate visuals, print and digital texts for comprehension and information.
+801203;801002;ENG_IND_2_3;Ability to read a variety of grade-appropriate visual, digital and print texts for lifelong learning.
+801301;801003;ENG_IND_3_1;Ability to use grammatical forms to communicate ideas, opinions and emotions appropriately in different settings for effective communication.
+801401;801004;ENG_IND_4_1;Ability to use punctuation, paragraphing and spelling correctly for effective communication.
+801402;801004;ENG_IND_4_2;Ability to write a variety of writings using the correct formats for effective communication.
+801403;801004;ENG_IND_4_3;Ability to write creative works clearly and expressively for effective communication.
+802101;802001;KIS_KSL_IND_1_1;Kuweza kuwasiliana kwa matamshi bora (Matamshi ya sauti zinazokaribiana: p/b, t/d, k/g, ch/j)
+802102;802001;KIS_KSL_IND_1_2;Kuweza kuzungumza kwa ufasaha (Kwa kutumia maneno ya upole na mazungumzo ya kimikakati)
+802103;802001;KIS_KSL_IND_1_3;Kuweza kusikiliza na kujibu ipasavyo (Maamkizi na maagano, ushairi, masimulizi)
+802104;802001;KIS_KSL_IND_1_4;Kuweza kutumia lugha kiubunifu (Vitendawili, methali, nahau, visawe, tashbihi)
+802201;802002;KIS_KSL_IND_2_1;Kuweza kusoma kwa ufasaha (Ulumbi, umbo, wahusika, matumizi ya msamiati mwafaka, kutoa muhtasari)
+802202;802002;KIS_KSL_IND_2_2;Kuweza kusoma kwa kina. (Matumizi ya kamusi: mpangilio na maana za maneno)
+802203;802002;KIS_KSL_IND_2_3;Kuweza kusoma kwa ufasaha. (Matamshi bora, kiwango kifaaacho cha sauti, kasi ifaayo, ishara zifaazo)
+802204;802002;KIS_KSL_IND_2_4;Kuweza kusoma kwa mapana. (Kutambua na kuchagua matini ya kusoma, kutambua ujumbe na matumizi ya lugha)
+802205;802002;KIS_KSL_IND_2_5;Kuweza kusoma kidijitali. (Kufungua faili ya kidijitali, matumizi ya vifaa vya kidijitali, kukarakana kwenye tovuti, volumu, kuchagua na kusoma matini, kutambua ujumbe na matumizi ya lugha.)
+802301;802003;KIS_KSL_IND_3_1;Kuweza kuandika aina mbalimbali za insha (wasifu, masimulizi, maelezo na barua ya kirafiki) kwa kuzingatia vipengele vifuatavyo: muundo, ujumbe, mtindo na kanuni zifaazo za uandishi.
+802302;802003;KIS_KSL_IND_3_2;Kuweza kuandika kwa tarakilishi. (Sehemu za tarakilishi, kufungua na kufunga tarakilishi, kuhifadhi).
+802401;802004;KIS_KSL_IND_4_1;Kuweza kutambua na kutumia vinyume vya maneno na kuvitumia katika matini.
+802402;802004;KIS_KSL_IND_4_2;Kuweza kutambua na kutumia viambishi vya nyakati katika vitenzi. (Wakati uliopita, uliopo na ujao)
+802403;802004;KIS_KSL_IND_4_3;Kuweza kutambua maneno yaliyokanushwa, viambishi vya ukanushaji na kukanusha maneno ipasavyo. (Wakati uliopita, uliopo na ujao)
+802404;802004;KIS_KSL_IND_4_4;Kuweza kutambua na kutumia aina mbalimbali za maneno katika lugha ya Kiswahili. (Vitenzi, viwakilishi, vielezi, viunganishi, vihusishi na vihisishi)
+802405;802004;KIS_KSL_IND_4_5;Kuweza kutambua viambishi vya ngeli, nomino za ngeli na kutumia upatanisho wa kisarufi ipasavyo. (A-WA, U-I, KI-VI, LI-YA na LI-LI)
+802406;802004;KIS_KSL_IND_4_6;Kuweza kutambua na kutumia vitenzi katika kauli mbalimbali. (kauli ya kutenda, kutendea na kutendwa)
+804101;804001;AGRI_IND_1_1;Ability to explain conservation of resources of four resources in the environment (soil, water, fuel, wild animals).
+804102;804001;AGRI_IND_1_2;Ability to conserve four resources in the environment (soil, water, fuel, wild animals).
+804103;804001;AGRI_IND_1_3;Ability to show four aspects of responsibility in conservation of environmental resources (offers leadership, observes safety, shows initiative, shows dutifulness in tasks).
+804201;804002;AGRI_IND_2_1;Ability to describe food production processes at household level (direct sowing of seeds, growing of fruits, uses of domestic animals, balanced diet, boiling and shallow frying).
+804202;804002;AGRI_IND_2_2;Ability to carry out various food production processes at household level (direct sowing of seeds, growing of fruits, uses of domestic animals, balanced diet, boiling and shallow frying).
+804203;804002;AGRI_IND_2_3;Ability to exhibit integrity in carrying out food production processes (utilising resources prudently, is accountable, shows honesty, applies ethically acceptable procedures).
+804301;804003;AGRI_IND_3_1;Ability to describe practices that promote hygiene (personal hygiene, domestic hygiene and cleaning personal protective equipment).
+804302;804003;AGRI_IND_3_2;Ability to apply health practices to promote hygiene (personal hygiene, domestic hygiene and cleaning personal protective equipment).
+804303;804003;AGRI_IND_3_3;Ability to exhibit responsibility while undertaking health practices that promote hygiene (respects other learners’ property, offers leadership, accepts consequences, cares for property).
+804401;804004;AGRI_IND_4_1;Ability to use tacking stitches in making an item (makes appropriate choice of stitch, makes the stitch, ensures evenness of the stitch and firmness of stitch to the purpose).
+804402;804004;AGRI_IND_4_2;Ability to work in unity in making an item (sharing resources, working in teams, appreciating efforts of others, respects others’ opinions).
+805101;805001;SCI_TECH_IND_1_1;Ability to identify characteristics of plants and animals.
+805102;805001;SCI_TECH_IND_1_2;Ability to describe functions of external parts of a plant.
+805103;805001;SCI_TECH_IND_1_3;Ability to identify parts of the human digestive system.
+805104;805001;SCI_TECH_IND_1_4;Ability to develop a plan of maintaining a healthy human digestive system.
+805201;805002;SCI_TECH_IND_2_1;Ability to describe the properties of the three states of matter.
+805202;805002;SCI_TECH_IND_2_2;Ability to manage solid waste in the environment.
+805203;805002;SCI_TECH_IND_2_3;Ability to outline the importance of conserving water at home and school.
+805301;805003;SCI_TECH_IND_3_1;Ability to demonstrate the effects of force on objects in nature.
+805302;805003;SCI_TECH_IND_3_2;Ability to identify sources of light in nature.
+805303;805003;SCI_TECH_IND_3_3;Ability to explain the use of light in day-to-day life.
+805304;805003;SCI_TECH_IND_3_4;Ability to demonstrate uses of heat in day-to-day life.
+805305;805003;SCI_TECH_IND_3_5;Ability to describe safety measures when using heat.
+806101;806001;MATH_IND_1_1;Ability to use place value and total value of numbers up to tens of thousands.
+806102;806001;MATH_IND_1_2;Ability to read and write numbers in symbols and words.
+806103;806001;MATH_IND_1_3;Ability to order and round off numbers up to 1000.
+806104;806001;MATH_IND_1_4;Ability to identify factors and multiples of numbers up to 50.
+806105;806001;MATH_IND_1_5;Ability to make patterns involving even and odd numbers up to 100.
+806106;806001;MATH_IND_1_6;Ability to represent Hindu Arabic numerals using Roman numerals up to 'X'.
+806107;806001;MATH_IND_1_7;Ability to add up to two 4-digit numbers with single and double regrouping.
+806108;806001;MATH_IND_1_8;Ability to create patterns involving addition, subtraction and multiplication.
+806109;806001;MATH_IND_1_9;Ability to subtract up to two 4-digit numbers with single and double regrouping.
+806110;806001;MATH_IND_1_10;Ability to multiply up to a two-digit number by a two-digit number with and without regrouping.
+806111;806001;MATH_IND_1_11;Ability to divide up to a two-digit number by a one-digit number with and without remainder.
+806112;806001;MATH_IND_1_12;Ability to identify different types of fractions.
+806113;806001;MATH_IND_1_13;Ability to convert improper fractions to mixed fractions and mixed fractions to improper fractions.
+806114;806001;MATH_IND_1_14;Ability to identify a tenth or a hundredth in a decimal number.
+806201;806002;MATH_IND_2_1;Ability to estimate and measure length in centimetres.
+806202;806002;MATH_IND_2_2;Ability to establish the relationship between metres and centimetres.
+806203;806002;MATH_IND_2_3;Ability to convert centimetres to metres and metres to centimetres.
+806204;806002;MATH_IND_2_4;Ability to add, subtract, multiply and divide length in centimetres and metres.
+806205;806002;MATH_IND_2_5;Ability to calculate the area of squares and rectangles as a product of number of rows and columns.
+806206;806002;MATH_IND_2_6;Ability to work out the volume of cubes and cuboids by piling blocks.
+806207;806002;MATH_IND_2_7;Ability to measure, add and subtract capacity in litres.
+806208;806002;MATH_IND_2_8;Ability to measure, add and subtract mass of different objects in kilograms.
+806209;806002;MATH_IND_2_9;Ability to read, tell and estimate time in a.m. and p.m.
+806210;806002;MATH_IND_2_10;Ability to work out addition and subtraction involving units of time.
+806211;806002;MATH_IND_2_11;Ability to convert shillings to cents and cents to shillings.
+806212;806002;MATH_IND_2_12;Ability to work out the total cost of items in the shopping list of not more than ten thousand shillings.
+806301;806003;MATH_IND_3_1;Ability to demonstrate a clockwise and an anti-clockwise turn in the environment.
+806302;806003;MATH_IND_3_2;Ability to demonstrate a quarter turn, half turn and full turn in the environment.
+806303;806003;MATH_IND_3_3;Ability to identify angles from the objects in the environment.
+806304;806003;MATH_IND_3_4;Ability to draw the shapes of rectangles, squares, triangles, circles and ovals.
+806305;806003;MATH_IND_3_5;Ability to make patterns using squares, rectangles and triangles.
+806306;806003;MATH_IND_3_6;Ability to identify properties of triangles, squares and rectangles.
+806401;806004;MATH_IND_4_1;Ability to identify and collect data of at most 10 items.
+806402;806004;MATH_IND_4_2;Ability to record and interpret the raw data from the table.
+807101;807001;REL_CRE_IND_1_1;Ability to make right choices in day-to-day life
+807102;807001;REL_CRE_IND_1_2;Ability to list three attributes of God
+807201;807002;REL_CRE_IND_2_1;Ability to retell Bible stories
+807202;807002;REL_CRE_IND_2_2;Ability to list lessons learnt from the Bible stories
+807203;807002;REL_CRE_IND_2_3;Ability to apply lessons learnt from the Bible stories in daily life
+807301;807003;REL_CRE_IND_3_1;Ability to retell the annunciation of the birth of Jesus Christ
+807302;807003;REL_CRE_IND_3_2;Ability to retell the birth of John the Baptist
+807303;807003;REL_CRE_IND_3_3;Ability to retell three miracles performed by Jesus Christ
+807304;807003;REL_CRE_IND_3_4;Ability to list lessons learnt from the miracles of Jesus Christ
+807305;807003;REL_CRE_IND_3_5;Ability to apply lessons learnt from the teachings of Jesus Christ in daily life
+807401;807004;REL_CRE_IND_4_1;Ability to explain how Christian values enhance harmonious co-existence
+807402;807004;REL_CRE_IND_4_2;Ability to apply acquired Christian values in day-to-day life
+807501;807005;REL_CRE_IND_5_1;Ability to participate in church activities
+807502;807005;REL_CRE_IND_5_2;Ability to list the 12 disciples of Jesus Christ
+807503;807005;REL_CRE_IND_5_3;Ability to recite the Lord's Prayer and pray for others
+807504;807005;REL_CRE_IND_5_4;Ability to utilise the fruit of the Holy Spirit in making right decisions
+807601;807006;REL_CRE_IND_6_1;Ability to use social media responsibly
+808101;808001;REL_IRE_IND_1_1;Ability to read and recite seven selected surahs
+808102;808001;REL_IRE_IND_1_2;Ability to explain the basic meaning of the selected surahs
+808201;808002;REL_IRE_IND_2_1;Ability to read the selected hadith
+808202;808002;REL_IRE_IND_2_2;Ability to deduce the teachings from the selected hadith
+808301;808003;REL_IRE_IND_3_1;Ability to identify and use the attributes of Allah in supplication
+808302;808003;REL_IRE_IND_3_2;Ability to apply the virtues of the prophets in day-to-day life
+808401;808004;REL_IRE_IND_4_1;Ability to perform swalah while adhering to all its rules
+808501;808005;REL_IRE_IND_5_1;Ability to assess the significance of kindness to Allah's creatures and Islamic code of dressing and uphold positive use of media
+808502;808005;REL_IRE_IND_5_2;Ability to describe the evils of begging
+808601;808006;REL_IRE_IND_6_1;Ability to uphold obligations to family members
+808701;808007;REL_IRE_IND_7_1;Ability to describe the events of Prophet's mission in Makkah
+809101;809001;REL_HIN_IND_1_1;Ability to state water bodies that are considered sacred as mentioned in the Scriptures
+809102;809001;REL_HIN_IND_1_2;Ability to identify the role of water in our daily lives
+809103;809001;REL_HIN_IND_1_3;Ability to specify the names of plants that are considered sacred in each faith
+809201;809002;REL_HIN_IND_2_1;Ability to identify the contributions of Enlightened Beings
+809202;809002;REL_HIN_IND_2_2;Ability to implement teachings of Enlightened Beings
+809301;809003;REL_HIN_IND_3_1;Ability to explain the lessons learnt from the Scriptures
+809302;809003;REL_HIN_IND_3_2;Ability to apply the teachings of the Scriptures
+809401;809004;REL_HIN_IND_4_1;Ability to recite prayers
+809402;809004;REL_HIN_IND_4_2;Ability to identify prayers performed for different occasions
+809501;809005;REL_HIN_IND_5_1;Ability to state the importance of integrity in their daily lives
+809502;809005;REL_HIN_IND_5_2;Ability to identify elements of integrity among peers and in society
+809503;809005;REL_HIN_IND_5_3;Ability to state all ideal practices of a passenger during boarding and alighting for safety
+809601;809006;REL_HIN_IND_6_1;Ability to name the types of Pranayam
+809602;809006;REL_HIN_IND_6_2;Ability to display simple body postures
+809701;809007;REL_HIN_IND_7_1;Ability to identify Principles of Dharma according to Sanatan/Vedic
+809801;809008;REL_HIN_IND_8_1;Ability to identify the rites and rituals during the celebration of different festivals
+809802;809008;REL_HIN_IND_8_2;Ability to relate the days of the week with the corresponding planets
+810101;810001;CRE_ARTS_IND_1_1;Ability to create and/or execute various Creative Arts tasks such as rhythmic patterns, drawings, paintings, Netball skills, montages, clay modelling, and simple melodies.
+810201;810002;CRE_ARTS_IND_2_1;Ability to perform and/or display Creative Arts skills such as recorder melodies, photography techniques, athletic techniques, various songs, and aquatic or animal-based games.
+810301;810003;CRE_ARTS_IND_3_1;Ability to display, critique, participate in, or analyse various Creative Arts items such as drawings, paintings, photographs, Kenyan folk arts, sports activities, and cultural expressions.
+812101;812001;SOC_STUD_IND_1_1;Ability to use the four cardinal points to give direction of places.
+812102;812001;SOC_STUD_IND_1_2;Ability to identify the main physical features in the county.
+812103;812001;SOC_STUD_IND_1_3;Ability to explain how the four seasons influence human activities in the county.
+812104;812001;SOC_STUD_IND_1_4;Ability to explain the importance of the main historic built environments in the county.
+812201;812002;SOC_STUD_IND_2_1;Ability to explain the benefits of interdependence of people in the county.
+812202;812002;SOC_STUD_IND_2_2;Ability to describe patterns of population distribution in the county.
+812301;812003;SOC_STUD_IND_3_1;Ability to identify the six aspects of traditional culture in the county.
+812302;812003;SOC_STUD_IND_3_2;Ability to describe aspects of traditional culture in the county.
+812303;812003;SOC_STUD_IND_3_3;Ability to narrate the history of the school.
+812401;812004;SOC_STUD_IND_4_1;Ability to explain the importance of economic activities carried out in the county.
+812402;812004;SOC_STUD_IND_4_2;Ability to identify industries in the county.
+812403;812004;SOC_STUD_IND_4_3;Ability to identify the projects that can be initiated at school.
+812501;812005;SOC_STUD_IND_5_1;Ability to identify qualities of good citizenship in school.
+812502;812005;SOC_STUD_IND_5_2;Ability to develop strategies of living in peace with others in school.
+812503;812005;SOC_STUD_IND_5_3;Ability to explain effects of the seven forms of child abuse in the community.
+812504;812005;SOC_STUD_IND_5_4;Ability to identify democratic processes in school.
+812505;812005;SOC_STUD_IND_5_5;Ability to describe the functions of the Children’s Government in school.
+812506;812005;SOC_STUD_IND_5_6;Ability to demonstrate qualities of good leadership in the community.
+812507;812005;SOC_STUD_IND_5_7;Ability to explain the roles of a member of county assembly.
+901101;901001;ENG_IND_1_1;Ability to listen actively to a variety of oral texts to gain information.
+901102;901001;ENG_IND_1_2;Ability to listen and participate actively in conversations in various settings for self-expression and effective communication.
+901103;901001;ENG_IND_1_3;Ability to speak accurately with expression and at the right speed, with minimum hesitation for fluency in communication.
+901201;901002;ENG_IND_2_1;Ability to read about 300 words fluently and accurately, at the right speed and with expression for effective communication.
+901202;901002;ENG_IND_2_2;Ability to read grade-appropriate visuals, print and digital texts for comprehension and information.
+901203;901002;ENG_IND_2_3;Ability to read a variety of grade-appropriate visual, digital and print texts for lifelong learning.
+901301;901003;ENG_IND_3_1;Ability to use grammatical forms to communicate ideas, opinions and emotions appropriately in different settings for effective communication.
+901401;901004;ENG_IND_4_1;Ability to use punctuation, paragraphing and spelling correctly for effective communication.
+901402;901004;ENG_IND_4_2;Ability to write a variety of writings using the correct formats for effective communication.
+901403;901004;ENG_IND_4_3;Ability to write creative works clearly and expressively for effective communication.
+902101;902001;KIS_KSL_IND_1_1;Kuweza kuwasiliana kwa matamshi bora (Matamshi ya sauti zinazokaribiana: p/b, t/d, k/g, ch/j)
+902102;902001;KIS_KSL_IND_1_2;Kuweza kuzungumza kwa ufasaha (Kwa kutumia maneno ya upole na mazungumzo ya kimikakati)
+902103;902001;KIS_KSL_IND_1_3;Kuweza kusikiliza na kujibu ipasavyo (Maamkizi na maagano, ushairi, masimulizi)
+902104;902001;KIS_KSL_IND_1_4;Kuweza kutumia lugha kiubunifu (Vitendawili, methali, nahau, visawe, tashbihi)
+902201;902002;KIS_KSL_IND_2_1;Kuweza kusoma kwa ufasaha (Ulumbi, umbo, wahusika, matumizi ya msamiati mwafaka, kutoa muhtasari)
+902202;902002;KIS_KSL_IND_2_2;Kuweza kusoma kwa kina. (Matumizi ya kamusi: mpangilio na maana za maneno)
+902203;902002;KIS_KSL_IND_2_3;Kuweza kusoma kwa ufasaha. (Matamshi bora, kiwango kifaaacho cha sauti, kasi ifaayo, ishara zifaazo)
+902204;902002;KIS_KSL_IND_2_4;Kuweza kusoma kwa mapana. (Kutambua na kuchagua matini ya kusoma, kutambua ujumbe na matumizi ya lugha)
+902205;902002;KIS_KSL_IND_2_5;Kuweza kusoma kidijitali. (Kufungua faili ya kidijitali, matumizi ya vifaa vya kidijitali, kukarakana kwenye tovuti, volumu, kuchagua na kusoma matini, kutambua ujumbe na matumizi ya lugha.)
+902301;902003;KIS_KSL_IND_3_1;Kuweza kuandika aina mbalimbali za insha (wasifu, masimulizi, maelezo na barua ya kirafiki) kwa kuzingatia vipengele vifuatavyo: muundo, ujumbe, mtindo na kanuni zifaazo za uandishi.
+902302;902003;KIS_KSL_IND_3_2;Kuweza kuandika kwa tarakilishi. (Sehemu za tarakilishi, kufungua na kufunga tarakilishi, kuhifadhi).
+902401;902004;KIS_KSL_IND_4_1;Kuweza kutambua na kutumia vinyume vya maneno na kuvitumia katika matini.
+902402;902004;KIS_KSL_IND_4_2;Kuweza kutambua na kutumia viambishi vya nyakati katika vitenzi. (Wakati uliopita, uliopo na ujao)
+902403;902004;KIS_KSL_IND_4_3;Kuweza kutambua maneno yaliyokanushwa, viambishi vya ukanushaji na kukanusha maneno ipasavyo. (Wakati uliopita, uliopo na ujao)
+902404;902004;KIS_KSL_IND_4_4;Kuweza kutambua na kutumia aina mbalimbali za maneno katika lugha ya Kiswahili. (Vitenzi, viwakilishi, vielezi, viunganishi, vihusishi na vihisishi)
+902405;902004;KIS_KSL_IND_4_5;Kuweza kutambua viambishi vya ngeli, nomino za ngeli na kutumia upatanisho wa kisarufi ipasavyo. (A-WA, U-I, KI-VI, LI-YA na LI-LI)
+902406;902004;KIS_KSL_IND_4_6;Kuweza kutambua na kutumia vitenzi katika kauli mbalimbali. (kauli ya kutenda, kutendea na kutendwa)
+904101;904001;AGRI_IND_1_1;Ability to explain conservation of resources of four resources in the environment (soil, water, fuel, wild animals).
+904102;904001;AGRI_IND_1_2;Ability to conserve four resources in the environment (soil, water, fuel, wild animals).
+904103;904001;AGRI_IND_1_3;Ability to show four aspects of responsibility in conservation of environmental resources (offers leadership, observes safety, shows initiative, shows dutifulness in tasks).
+904201;904002;AGRI_IND_2_1;Ability to describe food production processes at household level (direct sowing of seeds, growing of fruits, uses of domestic animals, balanced diet, boiling and shallow frying).
+904202;904002;AGRI_IND_2_2;Ability to carry out various food production processes at household level (direct sowing of seeds, growing of fruits, uses of domestic animals, balanced diet, boiling and shallow frying).
+904203;904002;AGRI_IND_2_3;Ability to exhibit integrity in carrying out food production processes (utilising resources prudently, is accountable, shows honesty, applies ethically acceptable procedures).
+904301;904003;AGRI_IND_3_1;Ability to describe practices that promote hygiene (personal hygiene, domestic hygiene and cleaning personal protective equipment).
+904302;904003;AGRI_IND_3_2;Ability to apply health practices to promote hygiene (personal hygiene, domestic hygiene and cleaning personal protective equipment).
+904303;904003;AGRI_IND_3_3;Ability to exhibit responsibility while undertaking health practices that promote hygiene (respects other learners’ property, offers leadership, accepts consequences, cares for property).
+904401;904004;AGRI_IND_4_1;Ability to use tacking stitches in making an item (makes appropriate choice of stitch, makes the stitch, ensures evenness of the stitch and firmness of stitch to the purpose).
+904402;904004;AGRI_IND_4_2;Ability to work in unity in making an item (sharing resources, working in teams, appreciating efforts of others, respects others’ opinions).
+905101;905001;SCI_TECH_IND_1_1;Ability to identify characteristics of plants and animals.
+905102;905001;SCI_TECH_IND_1_2;Ability to describe functions of external parts of a plant.
+905103;905001;SCI_TECH_IND_1_3;Ability to identify parts of the human digestive system.
+905104;905001;SCI_TECH_IND_1_4;Ability to develop a plan of maintaining a healthy human digestive system.
+905201;905002;SCI_TECH_IND_2_1;Ability to describe the properties of the three states of matter.
+905202;905002;SCI_TECH_IND_2_2;Ability to manage solid waste in the environment.
+905203;905002;SCI_TECH_IND_2_3;Ability to outline the importance of conserving water at home and school.
+905301;905003;SCI_TECH_IND_3_1;Ability to demonstrate the effects of force on objects in nature.
+905302;905003;SCI_TECH_IND_3_2;Ability to identify sources of light in nature.
+905303;905003;SCI_TECH_IND_3_3;Ability to explain the use of light in day-to-day life.
+905304;905003;SCI_TECH_IND_3_4;Ability to demonstrate uses of heat in day-to-day life.
+905305;905003;SCI_TECH_IND_3_5;Ability to describe safety measures when using heat.
+906101;906001;MATH_IND_1_1;Ability to use place value and total value of numbers up to tens of thousands.
+906102;906001;MATH_IND_1_2;Ability to read and write numbers in symbols and words.
+906103;906001;MATH_IND_1_3;Ability to order and round off numbers up to 1000.
+906104;906001;MATH_IND_1_4;Ability to identify factors and multiples of numbers up to 50.
+906105;906001;MATH_IND_1_5;Ability to make patterns involving even and odd numbers up to 100.
+906106;906001;MATH_IND_1_6;Ability to represent Hindu Arabic numerals using Roman numerals up to 'X'.
+906107;906001;MATH_IND_1_7;Ability to add up to two 4-digit numbers with single and double regrouping.
+906108;906001;MATH_IND_1_8;Ability to create patterns involving addition, subtraction and multiplication.
+906109;906001;MATH_IND_1_9;Ability to subtract up to two 4-digit numbers with single and double regrouping.
+906110;906001;MATH_IND_1_10;Ability to multiply up to a two-digit number by a two-digit number with and without regrouping.
+906111;906001;MATH_IND_1_11;Ability to divide up to a two-digit number by a one-digit number with and without remainder.
+906112;906001;MATH_IND_1_12;Ability to identify different types of fractions.
+906113;906001;MATH_IND_1_13;Ability to convert improper fractions to mixed fractions and mixed fractions to improper fractions.
+906114;906001;MATH_IND_1_14;Ability to identify a tenth or a hundredth in a decimal number.
+906201;906002;MATH_IND_2_1;Ability to estimate and measure length in centimetres.
+906202;906002;MATH_IND_2_2;Ability to establish the relationship between metres and centimetres.
+906203;906002;MATH_IND_2_3;Ability to convert centimetres to metres and metres to centimetres.
+906204;906002;MATH_IND_2_4;Ability to add, subtract, multiply and divide length in centimetres and metres.
+906205;906002;MATH_IND_2_5;Ability to calculate the area of squares and rectangles as a product of number of rows and columns.
+906206;906002;MATH_IND_2_6;Ability to work out the volume of cubes and cuboids by piling blocks.
+906207;906002;MATH_IND_2_7;Ability to measure, add and subtract capacity in litres.
+906208;906002;MATH_IND_2_8;Ability to measure, add and subtract mass of different objects in kilograms.
+906209;906002;MATH_IND_2_9;Ability to read, tell and estimate time in a.m. and p.m.
+906210;906002;MATH_IND_2_10;Ability to work out addition and subtraction involving units of time.
+906211;906002;MATH_IND_2_11;Ability to convert shillings to cents and cents to shillings.
+906212;906002;MATH_IND_2_12;Ability to work out the total cost of items in the shopping list of not more than ten thousand shillings.
+906301;906003;MATH_IND_3_1;Ability to demonstrate a clockwise and an anti-clockwise turn in the environment.
+906302;906003;MATH_IND_3_2;Ability to demonstrate a quarter turn, half turn and full turn in the environment.
+906303;906003;MATH_IND_3_3;Ability to identify angles from the objects in the environment.
+906304;906003;MATH_IND_3_4;Ability to draw the shapes of rectangles, squares, triangles, circles and ovals.
+906305;906003;MATH_IND_3_5;Ability to make patterns using squares, rectangles and triangles.
+906306;906003;MATH_IND_3_6;Ability to identify properties of triangles, squares and rectangles.
+906401;906004;MATH_IND_4_1;Ability to identify and collect data of at most 10 items.
+906402;906004;MATH_IND_4_2;Ability to record and interpret the raw data from the table.
+907101;907001;REL_CRE_IND_1_1;Ability to make right choices in day-to-day life
+907102;907001;REL_CRE_IND_1_2;Ability to list three attributes of God
+907201;907002;REL_CRE_IND_2_1;Ability to retell Bible stories
+907202;907002;REL_CRE_IND_2_2;Ability to list lessons learnt from the Bible stories
+907203;907002;REL_CRE_IND_2_3;Ability to apply lessons learnt from the Bible stories in daily life
+907301;907003;REL_CRE_IND_3_1;Ability to retell the annunciation of the birth of Jesus Christ
+907302;907003;REL_CRE_IND_3_2;Ability to retell the birth of John the Baptist
+907303;907003;REL_CRE_IND_3_3;Ability to retell three miracles performed by Jesus Christ
+907304;907003;REL_CRE_IND_3_4;Ability to list lessons learnt from the miracles of Jesus Christ
+907305;907003;REL_CRE_IND_3_5;Ability to apply lessons learnt from the teachings of Jesus Christ in daily life
+907401;907004;REL_CRE_IND_4_1;Ability to explain how Christian values enhance harmonious co-existence
+907402;907004;REL_CRE_IND_4_2;Ability to apply acquired Christian values in day-to-day life
+907501;907005;REL_CRE_IND_5_1;Ability to participate in church activities
+907502;907005;REL_CRE_IND_5_2;Ability to list the 12 disciples of Jesus Christ
+907503;907005;REL_CRE_IND_5_3;Ability to recite the Lord's Prayer and pray for others
+907504;907005;REL_CRE_IND_5_4;Ability to utilise the fruit of the Holy Spirit in making right decisions
+907601;907006;REL_CRE_IND_6_1;Ability to use social media responsibly
+908101;908001;REL_IRE_IND_1_1;Ability to read and recite seven selected surahs
+908102;908001;REL_IRE_IND_1_2;Ability to explain the basic meaning of the selected surahs
+908201;908002;REL_IRE_IND_2_1;Ability to read the selected hadith
+908202;908002;REL_IRE_IND_2_2;Ability to deduce the teachings from the selected hadith
+908301;908003;REL_IRE_IND_3_1;Ability to identify and use the attributes of Allah in supplication
+908302;908003;REL_IRE_IND_3_2;Ability to apply the virtues of the prophets in day-to-day life
+908401;908004;REL_IRE_IND_4_1;Ability to perform swalah while adhering to all its rules
+908501;908005;REL_IRE_IND_5_1;Ability to assess the significance of kindness to Allah's creatures and Islamic code of dressing and uphold positive use of media
+908502;908005;REL_IRE_IND_5_2;Ability to describe the evils of begging
+908601;908006;REL_IRE_IND_6_1;Ability to uphold obligations to family members
+908701;908007;REL_IRE_IND_7_1;Ability to describe the events of Prophet's mission in Makkah
+909101;909001;REL_HIN_IND_1_1;Ability to state water bodies that are considered sacred as mentioned in the Scriptures
+909102;909001;REL_HIN_IND_1_2;Ability to identify the role of water in our daily lives
+909103;909001;REL_HIN_IND_1_3;Ability to specify the names of plants that are considered sacred in each faith
+909201;909002;REL_HIN_IND_2_1;Ability to identify the contributions of Enlightened Beings
+909202;909002;REL_HIN_IND_2_2;Ability to implement teachings of Enlightened Beings
+909301;909003;REL_HIN_IND_3_1;Ability to explain the lessons learnt from the Scriptures
+909302;909003;REL_HIN_IND_3_2;Ability to apply the teachings of the Scriptures
+909401;909004;REL_HIN_IND_4_1;Ability to recite prayers
+909402;909004;REL_HIN_IND_4_2;Ability to identify prayers performed for different occasions
+909501;909005;REL_HIN_IND_5_1;Ability to state the importance of integrity in their daily lives
+909502;909005;REL_HIN_IND_5_2;Ability to identify elements of integrity among peers and in society
+909503;909005;REL_HIN_IND_5_3;Ability to state all ideal practices of a passenger during boarding and alighting for safety
+909601;909006;REL_HIN_IND_6_1;Ability to name the types of Pranayam
+909602;909006;REL_HIN_IND_6_2;Ability to display simple body postures
+909701;909007;REL_HIN_IND_7_1;Ability to identify Principles of Dharma according to Sanatan/Vedic
+909801;909008;REL_HIN_IND_8_1;Ability to identify the rites and rituals during the celebration of different festivals
+909802;909008;REL_HIN_IND_8_2;Ability to relate the days of the week with the corresponding planets
+910101;910001;CRE_ARTS_IND_1_1;Ability to create and/or execute various Creative Arts tasks such as rhythmic patterns, drawings, paintings, Netball skills, montages, clay modelling, and simple melodies.
+910201;910002;CRE_ARTS_IND_2_1;Ability to perform and/or display Creative Arts skills such as recorder melodies, photography techniques, athletic techniques, various songs, and aquatic or animal-based games.
+910301;910003;CRE_ARTS_IND_3_1;Ability to display, critique, participate in, or analyse various Creative Arts items such as drawings, paintings, photographs, Kenyan folk arts, sports activities, and cultural expressions.
+912101;912001;SOC_STUD_IND_1_1;Ability to use the four cardinal points to give direction of places.
+912102;912001;SOC_STUD_IND_1_2;Ability to identify the main physical features in the county.
+912103;912001;SOC_STUD_IND_1_3;Ability to explain how the four seasons influence human activities in the county.
+912104;912001;SOC_STUD_IND_1_4;Ability to explain the importance of the main historic built environments in the county.
+912201;912002;SOC_STUD_IND_2_1;Ability to explain the benefits of interdependence of people in the county.
+912202;912002;SOC_STUD_IND_2_2;Ability to describe patterns of population distribution in the county.
+912301;912003;SOC_STUD_IND_3_1;Ability to identify the six aspects of traditional culture in the county.
+912302;912003;SOC_STUD_IND_3_2;Ability to describe aspects of traditional culture in the county.
+912303;912003;SOC_STUD_IND_3_3;Ability to narrate the history of the school.
+912401;912004;SOC_STUD_IND_4_1;Ability to explain the importance of economic activities carried out in the county.
+912402;912004;SOC_STUD_IND_4_2;Ability to identify industries in the county.
+912403;912004;SOC_STUD_IND_4_3;Ability to identify the projects that can be initiated at school.
+912501;912005;SOC_STUD_IND_5_1;Ability to identify qualities of good citizenship in school.
+912502;912005;SOC_STUD_IND_5_2;Ability to develop strategies of living in peace with others in school.
+912503;912005;SOC_STUD_IND_5_3;Ability to explain effects of the seven forms of child abuse in the community.
+912504;912005;SOC_STUD_IND_5_4;Ability to identify democratic processes in school.
+912505;912005;SOC_STUD_IND_5_5;Ability to describe the functions of the Children’s Government in school.
+912506;912005;SOC_STUD_IND_5_6;Ability to demonstrate qualities of good leadership in the community.
+912507;912005;SOC_STUD_IND_5_7;Ability to explain the roles of a member of county assembly.
+912508;912060;HOME_SCI_4_I111;Ability to demonstrate food preparation skills (1)
+912509;912060;HOME_SCI_4_I112;Ability to demonstrate food preparation skills (2)
+912510;912060;HOME_SCI_4_I121;Ability to demonstrate healthy eating skills (1)
+912511;912060;HOME_SCI_4_I122;Ability to demonstrate healthy eating skills (2)
+912512;912061;HOME_SCI_4_I211;Ability to demonstrate basic sewing skills (1)
+912513;912061;HOME_SCI_4_I212;Ability to demonstrate basic sewing skills (2)
+912514;912061;HOME_SCI_4_I221;Ability to demonstrate fabric care skills (1)
+912515;912061;HOME_SCI_4_I222;Ability to demonstrate fabric care skills (2)
+912516;912062;PHE_4_I111;Ability to demonstrate ball games skills (1)
+912517;912062;PHE_4_I112;Ability to demonstrate ball games skills (2)
+912518;912062;PHE_4_I121;Ability to demonstrate athletics skills (1)
+912519;912062;PHE_4_I122;Ability to demonstrate athletics skills (2)
+912520;912063;PHE_4_I211;Ability to demonstrate personal hygiene skills (1)
+912521;912063;PHE_4_I212;Ability to demonstrate personal hygiene skills (2)
+912522;912063;PHE_4_I221;Ability to demonstrate safety skills (1)
+912523;912063;PHE_4_I222;Ability to demonstrate safety skills (2)
+912524;912064;HOME_SCI_5_I111;Ability to demonstrate food preparation skills (1)
+912525;912064;HOME_SCI_5_I112;Ability to demonstrate food preparation skills (2)
+912526;912064;HOME_SCI_5_I121;Ability to demonstrate healthy eating skills (1)
+912527;912064;HOME_SCI_5_I122;Ability to demonstrate healthy eating skills (2)
+912528;912065;HOME_SCI_5_I211;Ability to demonstrate basic sewing skills (1)
+912529;912065;HOME_SCI_5_I212;Ability to demonstrate basic sewing skills (2)
+912530;912065;HOME_SCI_5_I221;Ability to demonstrate fabric care skills (1)
+912531;912065;HOME_SCI_5_I222;Ability to demonstrate fabric care skills (2)
+912532;912066;PHE_5_I111;Ability to demonstrate ball games skills (1)
+912533;912066;PHE_5_I112;Ability to demonstrate ball games skills (2)
+912534;912066;PHE_5_I121;Ability to demonstrate athletics skills (1)
+912535;912066;PHE_5_I122;Ability to demonstrate athletics skills (2)
+912536;912067;PHE_5_I211;Ability to demonstrate personal hygiene skills (1)
+912537;912067;PHE_5_I212;Ability to demonstrate personal hygiene skills (2)
+912538;912067;PHE_5_I221;Ability to demonstrate safety skills (1)
+912539;912067;PHE_5_I222;Ability to demonstrate safety skills (2)
+912540;912068;HOME_SCI_6_I111;Ability to demonstrate food preparation skills (1)
+912541;912068;HOME_SCI_6_I112;Ability to demonstrate food preparation skills (2)
+912542;912068;HOME_SCI_6_I121;Ability to demonstrate healthy eating skills (1)
+912543;912068;HOME_SCI_6_I122;Ability to demonstrate healthy eating skills (2)
+912544;912069;HOME_SCI_6_I211;Ability to demonstrate basic sewing skills (1)
+912545;912069;HOME_SCI_6_I212;Ability to demonstrate basic sewing skills (2)
+912546;912069;HOME_SCI_6_I221;Ability to demonstrate fabric care skills (1)
+912547;912069;HOME_SCI_6_I222;Ability to demonstrate fabric care skills (2)
+912548;912070;PHE_6_I111;Ability to demonstrate ball games skills (1)
+912549;912070;PHE_6_I112;Ability to demonstrate ball games skills (2)
+912550;912070;PHE_6_I121;Ability to demonstrate athletics skills (1)
+912551;912070;PHE_6_I122;Ability to demonstrate athletics skills (2)
+912552;912071;PHE_6_I211;Ability to demonstrate personal hygiene skills (1)
+912553;912071;PHE_6_I212;Ability to demonstrate personal hygiene skills (2)
+912554;912071;PHE_6_I221;Ability to demonstrate safety skills (1)
+912555;912071;PHE_6_I222;Ability to demonstrate safety skills (2)
+912556;912072;INT_SCI_7_I111;Ability to demonstrate experimental methods skills (1)
+912557;912072;INT_SCI_7_I112;Ability to demonstrate experimental methods skills (2)
+912558;912072;INT_SCI_7_I121;Ability to demonstrate data analysis skills (1)
+912559;912072;INT_SCI_7_I122;Ability to demonstrate data analysis skills (2)
+912560;912073;INT_SCI_7_I211;Ability to demonstrate properties of matter skills (1)
+912561;912073;INT_SCI_7_I212;Ability to demonstrate properties of matter skills (2)
+912562;912073;INT_SCI_7_I221;Ability to demonstrate energy transfer skills (1)
+912563;912073;INT_SCI_7_I222;Ability to demonstrate energy transfer skills (2)
+912564;912074;INT_SCI_7_I311;Ability to demonstrate living organisms skills (1)
+912565;912074;INT_SCI_7_I312;Ability to demonstrate living organisms skills (2)
+912566;912074;INT_SCI_7_I321;Ability to demonstrate ecosystems skills (1)
+912567;912074;INT_SCI_7_I322;Ability to demonstrate ecosystems skills (2)
+912568;912075;HEALTH_ED_7_I111;Ability to demonstrate hygiene and sanitation skills (1)
+912569;912075;HEALTH_ED_7_I112;Ability to demonstrate hygiene and sanitation skills (2)
+912570;912075;HEALTH_ED_7_I121;Ability to demonstrate nutrition skills (1)
+912571;912075;HEALTH_ED_7_I122;Ability to demonstrate nutrition skills (2)
+912572;912076;HEALTH_ED_7_I211;Ability to demonstrate disease prevention skills (1)
+912573;912076;HEALTH_ED_7_I212;Ability to demonstrate disease prevention skills (2)
+912574;912076;HEALTH_ED_7_I221;Ability to demonstrate first aid skills (1)
+912575;912076;HEALTH_ED_7_I222;Ability to demonstrate first aid skills (2)
+912576;912077;PRE_TECH_7_I111;Ability to demonstrate basic drawing skills (1)
+912577;912077;PRE_TECH_7_I112;Ability to demonstrate basic drawing skills (2)
+912578;912077;PRE_TECH_7_I121;Ability to demonstrate design concepts skills (1)
+912579;912077;PRE_TECH_7_I122;Ability to demonstrate design concepts skills (2)
+912580;912078;PRE_TECH_7_I211;Ability to demonstrate tools and materials skills (1)
+912581;912078;PRE_TECH_7_I212;Ability to demonstrate tools and materials skills (2)
+912582;912078;PRE_TECH_7_I221;Ability to demonstrate safety procedures skills (1)
+912583;912078;PRE_TECH_7_I222;Ability to demonstrate safety procedures skills (2)
+912584;912079;PRE_TECH_7_I311;Ability to demonstrate career awareness skills (1)
+912585;912079;PRE_TECH_7_I312;Ability to demonstrate career awareness skills (2)
+912586;912079;PRE_TECH_7_I321;Ability to demonstrate entrepreneurship skills (1)
+912587;912079;PRE_TECH_7_I322;Ability to demonstrate entrepreneurship skills (2)
+912588;912080;BUS_STUD_7_I111;Ability to demonstrate entrepreneurship skills (1)
+912589;912080;BUS_STUD_7_I112;Ability to demonstrate entrepreneurship skills (2)
+912590;912080;BUS_STUD_7_I121;Ability to demonstrate trade and commerce skills (1)
+912591;912080;BUS_STUD_7_I122;Ability to demonstrate trade and commerce skills (2)
+912592;912081;BUS_STUD_7_I211;Ability to demonstrate saving and investing skills (1)
+912593;912081;BUS_STUD_7_I212;Ability to demonstrate saving and investing skills (2)
+912594;912081;BUS_STUD_7_I221;Ability to demonstrate budgeting skills (1)
+912595;912081;BUS_STUD_7_I222;Ability to demonstrate budgeting skills (2)
+912596;912082;LIFE_SKILLS_7_I111;Ability to demonstrate personal identity skills (1)
+912597;912082;LIFE_SKILLS_7_I112;Ability to demonstrate personal identity skills (2)
+912598;912082;LIFE_SKILLS_7_I121;Ability to demonstrate goal setting skills (1)
+912599;912082;LIFE_SKILLS_7_I122;Ability to demonstrate goal setting skills (2)
+912600;912083;LIFE_SKILLS_7_I211;Ability to demonstrate communication skills (1)
+912601;912083;LIFE_SKILLS_7_I212;Ability to demonstrate communication skills (2)
+912602;912083;LIFE_SKILLS_7_I221;Ability to demonstrate conflict resolution skills (1)
+912603;912083;LIFE_SKILLS_7_I222;Ability to demonstrate conflict resolution skills (2)
+912604;912084;SPORTS_PE_7_I111;Ability to demonstrate ball games skills (1)
+912605;912084;SPORTS_PE_7_I112;Ability to demonstrate ball games skills (2)
+912606;912084;SPORTS_PE_7_I121;Ability to demonstrate athletics skills (1)
+912607;912084;SPORTS_PE_7_I122;Ability to demonstrate athletics skills (2)
+912608;912085;SPORTS_PE_7_I211;Ability to demonstrate gymnastics skills (1)
+912609;912085;SPORTS_PE_7_I212;Ability to demonstrate gymnastics skills (2)
+912610;912085;SPORTS_PE_7_I221;Ability to demonstrate swimming skills (1)
+912611;912085;SPORTS_PE_7_I222;Ability to demonstrate swimming skills (2)
+912612;912086;INT_SCI_8_I111;Ability to demonstrate experimental methods skills (1)
+912613;912086;INT_SCI_8_I112;Ability to demonstrate experimental methods skills (2)
+912614;912086;INT_SCI_8_I121;Ability to demonstrate data analysis skills (1)
+912615;912086;INT_SCI_8_I122;Ability to demonstrate data analysis skills (2)
+912616;912087;INT_SCI_8_I211;Ability to demonstrate properties of matter skills (1)
+912617;912087;INT_SCI_8_I212;Ability to demonstrate properties of matter skills (2)
+912618;912087;INT_SCI_8_I221;Ability to demonstrate energy transfer skills (1)
+912619;912087;INT_SCI_8_I222;Ability to demonstrate energy transfer skills (2)
+912620;912088;INT_SCI_8_I311;Ability to demonstrate living organisms skills (1)
+912621;912088;INT_SCI_8_I312;Ability to demonstrate living organisms skills (2)
+912622;912088;INT_SCI_8_I321;Ability to demonstrate ecosystems skills (1)
+912623;912088;INT_SCI_8_I322;Ability to demonstrate ecosystems skills (2)
+912624;912089;HEALTH_ED_8_I111;Ability to demonstrate hygiene and sanitation skills (1)
+912625;912089;HEALTH_ED_8_I112;Ability to demonstrate hygiene and sanitation skills (2)
+912626;912089;HEALTH_ED_8_I121;Ability to demonstrate nutrition skills (1)
+912627;912089;HEALTH_ED_8_I122;Ability to demonstrate nutrition skills (2)
+912628;912090;HEALTH_ED_8_I211;Ability to demonstrate disease prevention skills (1)
+912629;912090;HEALTH_ED_8_I212;Ability to demonstrate disease prevention skills (2)
+912630;912090;HEALTH_ED_8_I221;Ability to demonstrate first aid skills (1)
+912631;912090;HEALTH_ED_8_I222;Ability to demonstrate first aid skills (2)
+912632;912091;PRE_TECH_8_I111;Ability to demonstrate basic drawing skills (1)
+912633;912091;PRE_TECH_8_I112;Ability to demonstrate basic drawing skills (2)
+912634;912091;PRE_TECH_8_I121;Ability to demonstrate design concepts skills (1)
+912635;912091;PRE_TECH_8_I122;Ability to demonstrate design concepts skills (2)
+912636;912092;PRE_TECH_8_I211;Ability to demonstrate tools and materials skills (1)
+912637;912092;PRE_TECH_8_I212;Ability to demonstrate tools and materials skills (2)
+912638;912092;PRE_TECH_8_I221;Ability to demonstrate safety procedures skills (1)
+912639;912092;PRE_TECH_8_I222;Ability to demonstrate safety procedures skills (2)
+912640;912093;PRE_TECH_8_I311;Ability to demonstrate career awareness skills (1)
+912641;912093;PRE_TECH_8_I312;Ability to demonstrate career awareness skills (2)
+912642;912093;PRE_TECH_8_I321;Ability to demonstrate entrepreneurship skills (1)
+912643;912093;PRE_TECH_8_I322;Ability to demonstrate entrepreneurship skills (2)
+912644;912094;BUS_STUD_8_I111;Ability to demonstrate entrepreneurship skills (1)
+912645;912094;BUS_STUD_8_I112;Ability to demonstrate entrepreneurship skills (2)
+912646;912094;BUS_STUD_8_I121;Ability to demonstrate trade and commerce skills (1)
+912647;912094;BUS_STUD_8_I122;Ability to demonstrate trade and commerce skills (2)
+912648;912095;BUS_STUD_8_I211;Ability to demonstrate saving and investing skills (1)
+912649;912095;BUS_STUD_8_I212;Ability to demonstrate saving and investing skills (2)
+912650;912095;BUS_STUD_8_I221;Ability to demonstrate budgeting skills (1)
+912651;912095;BUS_STUD_8_I222;Ability to demonstrate budgeting skills (2)
+912652;912096;LIFE_SKILLS_8_I111;Ability to demonstrate personal identity skills (1)
+912653;912096;LIFE_SKILLS_8_I112;Ability to demonstrate personal identity skills (2)
+912654;912096;LIFE_SKILLS_8_I121;Ability to demonstrate goal setting skills (1)
+912655;912096;LIFE_SKILLS_8_I122;Ability to demonstrate goal setting skills (2)
+912656;912097;LIFE_SKILLS_8_I211;Ability to demonstrate communication skills (1)
+912657;912097;LIFE_SKILLS_8_I212;Ability to demonstrate communication skills (2)
+912658;912097;LIFE_SKILLS_8_I221;Ability to demonstrate conflict resolution skills (1)
+912659;912097;LIFE_SKILLS_8_I222;Ability to demonstrate conflict resolution skills (2)
+912660;912098;SPORTS_PE_8_I111;Ability to demonstrate ball games skills (1)
+912661;912098;SPORTS_PE_8_I112;Ability to demonstrate ball games skills (2)
+912662;912098;SPORTS_PE_8_I121;Ability to demonstrate athletics skills (1)
+912663;912098;SPORTS_PE_8_I122;Ability to demonstrate athletics skills (2)
+912664;912099;SPORTS_PE_8_I211;Ability to demonstrate gymnastics skills (1)
+912665;912099;SPORTS_PE_8_I212;Ability to demonstrate gymnastics skills (2)
+912666;912099;SPORTS_PE_8_I221;Ability to demonstrate swimming skills (1)
+912667;912099;SPORTS_PE_8_I222;Ability to demonstrate swimming skills (2)
+912668;912100;INT_SCI_9_I111;Ability to demonstrate experimental methods skills (1)
+912669;912100;INT_SCI_9_I112;Ability to demonstrate experimental methods skills (2)
+912670;912100;INT_SCI_9_I121;Ability to demonstrate data analysis skills (1)
+912671;912100;INT_SCI_9_I122;Ability to demonstrate data analysis skills (2)
+912672;912101;INT_SCI_9_I211;Ability to demonstrate properties of matter skills (1)
+912673;912101;INT_SCI_9_I212;Ability to demonstrate properties of matter skills (2)
+912674;912101;INT_SCI_9_I221;Ability to demonstrate energy transfer skills (1)
+912675;912101;INT_SCI_9_I222;Ability to demonstrate energy transfer skills (2)
+912676;912102;INT_SCI_9_I311;Ability to demonstrate living organisms skills (1)
+912677;912102;INT_SCI_9_I312;Ability to demonstrate living organisms skills (2)
+912678;912102;INT_SCI_9_I321;Ability to demonstrate ecosystems skills (1)
+912679;912102;INT_SCI_9_I322;Ability to demonstrate ecosystems skills (2)
+912680;912103;HEALTH_ED_9_I111;Ability to demonstrate hygiene and sanitation skills (1)
+912681;912103;HEALTH_ED_9_I112;Ability to demonstrate hygiene and sanitation skills (2)
+912682;912103;HEALTH_ED_9_I121;Ability to demonstrate nutrition skills (1)
+912683;912103;HEALTH_ED_9_I122;Ability to demonstrate nutrition skills (2)
+912684;912104;HEALTH_ED_9_I211;Ability to demonstrate disease prevention skills (1)
+912685;912104;HEALTH_ED_9_I212;Ability to demonstrate disease prevention skills (2)
+912686;912104;HEALTH_ED_9_I221;Ability to demonstrate first aid skills (1)
+912687;912104;HEALTH_ED_9_I222;Ability to demonstrate first aid skills (2)
+912688;912105;PRE_TECH_9_I111;Ability to demonstrate basic drawing skills (1)
+912689;912105;PRE_TECH_9_I112;Ability to demonstrate basic drawing skills (2)
+912690;912105;PRE_TECH_9_I121;Ability to demonstrate design concepts skills (1)
+912691;912105;PRE_TECH_9_I122;Ability to demonstrate design concepts skills (2)
+912692;912106;PRE_TECH_9_I211;Ability to demonstrate tools and materials skills (1)
+912693;912106;PRE_TECH_9_I212;Ability to demonstrate tools and materials skills (2)
+912694;912106;PRE_TECH_9_I221;Ability to demonstrate safety procedures skills (1)
+912695;912106;PRE_TECH_9_I222;Ability to demonstrate safety procedures skills (2)
+912696;912107;PRE_TECH_9_I311;Ability to demonstrate career awareness skills (1)
+912697;912107;PRE_TECH_9_I312;Ability to demonstrate career awareness skills (2)
+912698;912107;PRE_TECH_9_I321;Ability to demonstrate entrepreneurship skills (1)
+912699;912107;PRE_TECH_9_I322;Ability to demonstrate entrepreneurship skills (2)
+912700;912108;BUS_STUD_9_I111;Ability to demonstrate entrepreneurship skills (1)
+912701;912108;BUS_STUD_9_I112;Ability to demonstrate entrepreneurship skills (2)
+912702;912108;BUS_STUD_9_I121;Ability to demonstrate trade and commerce skills (1)
+912703;912108;BUS_STUD_9_I122;Ability to demonstrate trade and commerce skills (2)
+912704;912109;BUS_STUD_9_I211;Ability to demonstrate saving and investing skills (1)
+912705;912109;BUS_STUD_9_I212;Ability to demonstrate saving and investing skills (2)
+912706;912109;BUS_STUD_9_I221;Ability to demonstrate budgeting skills (1)
+912707;912109;BUS_STUD_9_I222;Ability to demonstrate budgeting skills (2)
+912708;912110;LIFE_SKILLS_9_I111;Ability to demonstrate personal identity skills (1)
+912709;912110;LIFE_SKILLS_9_I112;Ability to demonstrate personal identity skills (2)
+912710;912110;LIFE_SKILLS_9_I121;Ability to demonstrate goal setting skills (1)
+912711;912110;LIFE_SKILLS_9_I122;Ability to demonstrate goal setting skills (2)
+912712;912111;LIFE_SKILLS_9_I211;Ability to demonstrate communication skills (1)
+912713;912111;LIFE_SKILLS_9_I212;Ability to demonstrate communication skills (2)
+912714;912111;LIFE_SKILLS_9_I221;Ability to demonstrate conflict resolution skills (1)
+912715;912111;LIFE_SKILLS_9_I222;Ability to demonstrate conflict resolution skills (2)
+912716;912112;SPORTS_PE_9_I111;Ability to demonstrate ball games skills (1)
+912717;912112;SPORTS_PE_9_I112;Ability to demonstrate ball games skills (2)
+912718;912112;SPORTS_PE_9_I121;Ability to demonstrate athletics skills (1)
+912719;912112;SPORTS_PE_9_I122;Ability to demonstrate athletics skills (2)
+912720;912113;SPORTS_PE_9_I211;Ability to demonstrate gymnastics skills (1)
+912721;912113;SPORTS_PE_9_I212;Ability to demonstrate gymnastics skills (2)
+912722;912113;SPORTS_PE_9_I221;Ability to demonstrate swimming skills (1)
+912723;912113;SPORTS_PE_9_I222;Ability to demonstrate swimming skills (2)

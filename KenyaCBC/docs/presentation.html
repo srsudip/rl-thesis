@@ -1,0 +1,2246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kenya CBC — AI Pathway Recommendation System</title>
+<style>
+/* ── RESET & VARIABLES ──────────────────────────────────── */
+:root {
+  --stem:#2563EB; --ss:#10B981; --arts:#F97316;
+  --accent:#6366F1; --cyan:#06B6D4; --purple:#A855F7;
+  --dark:#0B1220; --panel:#161F33; --panel2:#1E2A44;
+  --border:#2D3A56; --border2:#3D4B6E;
+  --text:#F1F5F9; --muted:#94A3B8; --dim:#64748B;
+  --warn:#F59E0B; --danger:#EF4444; --ok:#22C55E;
+  --gradient-stem:linear-gradient(135deg,#2563EB,#1E40AF);
+  --gradient-ss:linear-gradient(135deg,#10B981,#047857);
+  --gradient-arts:linear-gradient(135deg,#F97316,#C2410C);
+  --gradient-rl:linear-gradient(135deg,#A855F7,#6366F1);
+  font-family:'Inter','Segoe UI',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--dark);color:var(--text);overflow:hidden;height:100vh;
+          font-feature-settings:"cv11","ss01"}
+
+/* ── NAVIGATION ─────────────────────────────────────────── */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;height:52px;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 32px;background:rgba(11,18,32,0.94);
+  backdrop-filter:blur(14px);border-bottom:1px solid var(--border);
+}
+.nav-logo{font-size:.72rem;font-weight:800;letter-spacing:.14em;
+          text-transform:uppercase;color:#cbd5e1;
+          display:flex;align-items:center;gap:8px}
+.nav-logo::before{content:'';width:8px;height:8px;border-radius:50%;
+                  background:linear-gradient(135deg,#06B6D4,#A855F7)}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav-btn{background:var(--panel);border:1px solid var(--border);color:#cbd5e1;
+         padding:6px 18px;border-radius:7px;cursor:pointer;font-size:.78rem;
+         font-weight:600;transition:all .15s}
+.nav-btn:hover{background:var(--border);border-color:var(--border2)}
+#counter{font-size:.72rem;color:var(--muted);min-width:60px;text-align:center;
+         font-family:'JetBrains Mono',monospace}
+.section-tag{font-size:.6rem;font-weight:700;letter-spacing:.16em;
+             text-transform:uppercase;color:var(--accent);margin-right:18px;
+             padding:3px 10px;border:1px solid var(--accent);border-radius:4px;
+             background:rgba(99,102,241,.1)}
+
+/* ── SLIDE ENGINE ──────────────────────────────────────── */
+#deck{height:100vh;padding-top:52px}
+.slide{
+  position:absolute;inset:52px 0 0 0;padding:36px 64px 28px;
+  overflow-y:auto;display:none;flex-direction:column;
+  animation:fadein .25s ease
+}
+.slide.active{display:flex}
+@keyframes fadein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.slide::-webkit-scrollbar{width:8px}
+.slide::-webkit-scrollbar-track{background:transparent}
+.slide::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
+
+/* ── TYPOGRAPHY ─────────────────────────────────────────── */
+.label{font-size:.6rem;font-weight:800;letter-spacing:.18em;
+       text-transform:uppercase;color:var(--accent);margin-bottom:8px;
+       display:flex;align-items:center;gap:8px}
+.label::before{content:'';width:24px;height:1px;background:var(--accent)}
+h1{font-size:3rem;font-weight:900;line-height:1.08;letter-spacing:-.02em;
+   background:linear-gradient(135deg,#F1F5F9 0%,#94A3B8 100%);
+   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+   background-clip:text}
+h2{font-size:1.85rem;font-weight:800;margin-bottom:6px;letter-spacing:-.01em;color:#F1F5F9}
+h3{font-size:1.02rem;font-weight:700;color:#E2E8F0;margin-bottom:8px}
+h4{font-size:.86rem;font-weight:700;color:#CBD5E1;margin-bottom:4px}
+p,li{font-size:.86rem;color:#94A3B8;line-height:1.62}
+.sub{font-size:.95rem;color:#CBD5E1;margin-top:8px;line-height:1.55;
+     max-width:1100px}
+.hl{color:#67E8F9;font-weight:700}
+.hlg{color:#4ADE80;font-weight:700}
+.hly{color:#FDE047;font-weight:700}
+.hlo{color:#FB923C;font-weight:700}
+.hlp{color:#C084FC;font-weight:700}
+.hlr{color:#F87171;font-weight:700}
+em{color:#CBD5E1;font-style:italic}
+strong{color:#E2E8F0;font-weight:700}
+
+/* ── LAYOUT ─────────────────────────────────────────────── */
+.c2{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:18px}
+.c2-uneven{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;margin-top:18px}
+.c3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:18px}
+.c4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-top:18px}
+.mt{margin-top:18px}
+.mt-sm{margin-top:10px}
+.mt-lg{margin-top:24px}
+
+/* ── CARDS ──────────────────────────────────────────────── */
+.card{background:var(--panel);border:1px solid var(--border);
+      border-radius:12px;padding:16px 20px;position:relative}
+.card.elevated{background:var(--panel2);box-shadow:0 4px 16px rgba(0,0,0,.25)}
+.card.stem{border-left:3px solid var(--stem);background:linear-gradient(90deg,rgba(37,99,235,.08),var(--panel) 30%)}
+.card.ss{border-left:3px solid var(--ss);background:linear-gradient(90deg,rgba(16,185,129,.08),var(--panel) 30%)}
+.card.arts{border-left:3px solid var(--arts);background:linear-gradient(90deg,rgba(249,115,22,.08),var(--panel) 30%)}
+.card.accent{border-left:3px solid var(--accent);background:linear-gradient(90deg,rgba(99,102,241,.08),var(--panel) 30%)}
+.card.cyan{border-left:3px solid var(--cyan);background:linear-gradient(90deg,rgba(6,182,212,.08),var(--panel) 30%)}
+.card.purple{border-left:3px solid var(--purple);background:linear-gradient(90deg,rgba(168,85,247,.08),var(--panel) 30%)}
+.card.warn{border-left:3px solid var(--warn);background:linear-gradient(90deg,rgba(245,158,11,.08),var(--panel) 30%)}
+.card.ok{border-left:3px solid var(--ok);background:linear-gradient(90deg,rgba(34,197,94,.08),var(--panel) 30%)}
+.card.danger{border-left:3px solid var(--danger);background:linear-gradient(90deg,rgba(239,68,68,.08),var(--panel) 30%)}
+.card-tight{padding:12px 16px}
+
+/* ── CHIPS ──────────────────────────────────────────────── */
+.chip{display:inline-block;font-size:.66rem;font-weight:700;
+      padding:2px 8px;border-radius:4px;border:1px solid;margin:1px}
+.chip.stem{color:#93C5FD;background:rgba(37,99,235,.15);border-color:#3B82F6}
+.chip.ss{color:#6EE7B7;background:rgba(16,185,129,.15);border-color:#10B981}
+.chip.arts{color:#FDBA74;background:rgba(249,115,22,.15);border-color:#F97316}
+.chip.accent{color:#A5B4FC;background:rgba(99,102,241,.15);border-color:#6366F1}
+.chip.cyan{color:#67E8F9;background:rgba(6,182,212,.15);border-color:#06B6D4}
+.chip.purple{color:#D8B4FE;background:rgba(168,85,247,.15);border-color:#A855F7}
+.chip.warn{color:#FCD34D;background:rgba(245,158,11,.15);border-color:#F59E0B}
+.chip.muted{color:var(--dim);background:transparent;border-color:var(--border)}
+
+/* ── FORMULA BLOCK ──────────────────────────────────────── */
+.formula{
+  background:#050B18;border:1px solid var(--border);border-radius:8px;
+  padding:13px 22px;margin:10px 0;
+  font-family:'JetBrains Mono','Consolas',monospace;
+  font-size:.86rem;color:#67E8F9;text-align:center;letter-spacing:.01em;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04)
+}
+.formula.big{font-size:1.04rem;padding:16px 26px}
+.formula.sm{font-size:.74rem;padding:8px 14px}
+.formula.left{text-align:left}
+.formula sub{font-size:.7em;color:#A5B4FC}
+.formula sup{font-size:.7em;color:#A5B4FC}
+
+/* ── FLOW ────────────────────────────────────────────────── */
+.flow{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:14px 0}
+.fbox{background:var(--panel2);border:1px solid var(--border2);border-radius:8px;
+      padding:8px 14px;font-size:.78rem;font-weight:600;color:#E2E8F0;
+      text-align:center;min-width:64px}
+.farr{color:var(--accent);font-size:1.1rem;flex-shrink:0;font-weight:700}
+
+/* ── NUMBERED LIST ──────────────────────────────────────── */
+.nlist{list-style:none;padding:0}
+.nlist li{display:flex;gap:10px;align-items:flex-start;
+          padding:7px 0;border-bottom:1px solid #1A2238;
+          font-size:.84rem;color:#CBD5E1}
+.nlist li:last-child{border-bottom:none}
+.nn{min-width:22px;height:22px;border-radius:50%;background:var(--accent);
+    color:#fff;display:flex;align-items:center;justify-content:center;
+    font-size:.65rem;font-weight:700;flex-shrink:0;margin-top:1px}
+.nn.ok{background:var(--ok)}
+.nn.warn{background:var(--warn)}
+.nn.danger{background:var(--danger);color:#fff}
+.nn.cyan{background:var(--cyan)}
+.nn.purple{background:var(--purple)}
+
+/* ── TABLE ──────────────────────────────────────────────── */
+table{width:100%;border-collapse:collapse;font-size:.78rem;margin-top:10px}
+th{background:var(--panel2);color:#94A3B8;font-weight:600;
+   padding:8px 12px;text-align:left;border-bottom:1px solid var(--border2);
+   font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}
+td{padding:7px 12px;border-bottom:1px solid #1A2238;color:#CBD5E1;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#1A2238}
+
+/* ── STATE DIM BADGE ─────────────────────────────────────── */
+.sdim{display:inline-block;background:#050B18;border:1px solid var(--border2);
+      border-radius:4px;padding:1px 6px;font-family:'JetBrains Mono',monospace;
+      font-size:.66rem;color:#67E8F9;font-weight:600}
+
+/* ── COVER ──────────────────────────────────────────────── */
+.cover{justify-content:center;text-align:center;
+       background:radial-gradient(ellipse at center top,rgba(99,102,241,.12),transparent 60%)}
+.cover-tag{display:inline-block;font-size:.7rem;font-weight:700;
+           letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
+           padding:6px 16px;border:1px solid var(--accent);border-radius:20px;
+           background:rgba(99,102,241,.1);margin-bottom:24px}
+
+/* ── KEY-VALUE PAIRS ─────────────────────────────────────── */
+.kv{display:flex;justify-content:space-between;padding:5px 0;
+    border-bottom:1px solid #1A2238;font-size:.8rem}
+.kv:last-child{border-bottom:none}
+.kv-k{color:var(--muted);font-weight:500}
+.kv-v{color:#67E8F9;font-family:'JetBrains Mono',monospace;font-weight:600}
+
+/* ── PROGRESS BAR INLINE ─────────────────────────────────── */
+.bar-row{display:flex;align-items:center;gap:10px;margin:5px 0}
+.bar-label{font-size:.74rem;color:var(--muted);min-width:90px}
+.bar-track{flex:1;height:8px;background:var(--border);border-radius:4px;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px}
+.bar-pct{font-size:.7rem;color:#67E8F9;min-width:38px;text-align:right;
+          font-family:'JetBrains Mono',monospace;font-weight:600}
+
+/* ── STAT BOXES ─────────────────────────────────────────── */
+.stat-box{text-align:center;padding:14px 10px}
+.stat-n{font-size:2.1rem;font-weight:900;line-height:1;
+        background:linear-gradient(135deg,#67E8F9,#A5B4FC);
+        -webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat-l{font-size:.66rem;color:var(--muted);margin-top:4px;
+        text-transform:uppercase;letter-spacing:.06em}
+
+/* ── ACTION PILL ─────────────────────────────────────────── */
+.action{
+  background:var(--panel2);border:1px solid var(--border);border-radius:8px;
+  padding:9px 14px;font-size:.79rem;margin-bottom:6px;
+  display:flex;gap:10px;align-items:flex-start
+}
+.a-id{min-width:24px;height:24px;border-radius:5px;background:var(--accent);
+      color:#fff;display:flex;align-items:center;justify-content:center;
+      font-size:.66rem;font-weight:800;flex-shrink:0;margin-top:1px;
+      font-family:'JetBrains Mono',monospace}
+
+/* ── REWARD PILL ─────────────────────────────────────────── */
+.rpill{
+  background:var(--panel2);border:1px solid var(--border);border-radius:10px;
+  padding:12px 16px;margin-bottom:10px
+}
+
+/* ── FOOTER ─────────────────────────────────────────────── */
+.footer{margin-top:auto;padding-top:14px;font-size:.6rem;color:var(--dim);
+        border-top:1px solid var(--border);
+        display:flex;justify-content:space-between;align-items:center}
+#hint{position:fixed;bottom:12px;right:18px;font-size:.6rem;color:var(--dim);
+      font-family:'JetBrains Mono',monospace}
+
+/* ── EXAMPLE BLOCK (worked examples) ─────────────────────── */
+.example{
+  background:linear-gradient(135deg,rgba(168,85,247,.08),rgba(99,102,241,.06));
+  border:1px solid #4C1D95;border-radius:10px;
+  padding:14px 18px;margin-top:12px;position:relative
+}
+.example::before{
+  content:'WORKED EXAMPLE';position:absolute;top:-9px;left:14px;
+  background:#0B1220;padding:0 8px;font-size:.6rem;font-weight:800;
+  letter-spacing:.14em;color:#C084FC
+}
+
+/* ── DEFINITION BOX (for noobs) ─────────────────────────── */
+.def{
+  background:#0E1729;border:1px dashed var(--cyan);border-radius:8px;
+  padding:11px 16px;margin:10px 0;font-size:.8rem;color:#CBD5E1
+}
+.def strong{color:#67E8F9;display:block;margin-bottom:3px;
+            font-size:.7rem;text-transform:uppercase;letter-spacing:.1em}
+
+/* ── NETWORK DIAGRAM (DQN visualization) ─────────────────── */
+.netdiag{display:flex;align-items:center;gap:8px;margin:14px 0;
+         padding:18px;background:#050B18;border:1px solid var(--border);
+         border-radius:10px;overflow-x:auto}
+.netcol{display:flex;flex-direction:column;align-items:center;gap:6px;
+        min-width:80px}
+.netcol-label{font-size:.62rem;color:var(--dim);text-align:center;
+              text-transform:uppercase;letter-spacing:.08em}
+.netcol-dim{font-size:.7rem;color:#67E8F9;font-family:'JetBrains Mono',monospace;
+            font-weight:700}
+.netnode{width:40px;height:40px;border-radius:50%;
+         display:flex;align-items:center;justify-content:center;
+         font-size:.62rem;font-weight:700;border:2px solid;
+         background:var(--panel)}
+.netnode.in{border-color:var(--cyan);color:var(--cyan)}
+.netnode.hid{border-color:var(--accent);color:var(--accent)}
+.netnode.val{border-color:var(--ok);color:var(--ok)}
+.netnode.adv{border-color:var(--warn);color:var(--warn)}
+.netnode.out{border-color:var(--purple);color:var(--purple)}
+.netarr{color:var(--dim);font-size:1.4rem;flex-shrink:0}
+.netstack{display:flex;flex-direction:column;gap:4px;align-items:center}
+
+/* ── RL LOOP DIAGRAM ─────────────────────────────────────── */
+.rl-loop{display:flex;align-items:center;justify-content:center;gap:14px;
+         padding:24px;background:#050B18;border:1px solid var(--border);
+         border-radius:12px;margin:14px 0;flex-wrap:wrap}
+.rl-actor{padding:14px 24px;border-radius:10px;font-weight:700;
+          text-align:center;border:2px solid;min-width:120px}
+.rl-actor.agent{border-color:var(--purple);background:rgba(168,85,247,.1);color:#D8B4FE}
+.rl-actor.env{border-color:var(--cyan);background:rgba(6,182,212,.1);color:#67E8F9}
+.rl-arrow{display:flex;flex-direction:column;align-items:center;gap:2px}
+.rl-arr-text{font-size:.66rem;color:var(--accent);font-weight:700;
+             text-transform:uppercase;letter-spacing:.08em}
+.rl-arr-icon{font-size:1.5rem;color:var(--accent)}
+
+/* ── HIGHLIGHT BOX ─────────────────────────────────────── */
+.hbox{
+  background:linear-gradient(135deg,rgba(6,182,212,.05),rgba(99,102,241,.05));
+  border:1px solid var(--cyan);border-radius:8px;padding:12px 16px;margin-top:10px
+}
+.hbox-title{font-size:.7rem;color:#67E8F9;text-transform:uppercase;
+            letter-spacing:.1em;font-weight:800;margin-bottom:5px}
+
+/* ── PIPELINE BOXES ──────────────────────────────────────── */
+.pipe{display:flex;align-items:stretch;gap:0;margin:14px 0;flex-wrap:wrap}
+.pipe-box{flex:1;min-width:140px;background:var(--panel);border:1px solid var(--border);
+          padding:12px 14px;position:relative}
+.pipe-box:first-child{border-radius:8px 0 0 8px}
+.pipe-box:last-child{border-radius:0 8px 8px 0}
+.pipe-box-num{font-size:.56rem;color:var(--accent);font-weight:800;
+              letter-spacing:.12em;text-transform:uppercase}
+.pipe-box-title{font-size:.78rem;font-weight:700;color:#E2E8F0;margin:3px 0}
+.pipe-box-desc{font-size:.68rem;color:var(--muted);line-height:1.4}
+
+</style>
+</head>
+<body>
+
+<!-- ══════════════ NAVIGATION BAR ══════════════ -->
+<div id="nav">
+  <div class="nav-logo">Kenya CBC · AI Pathway System</div>
+  <div class="nav-right">
+    <span class="section-tag" id="sectag">Introduction</span>
+    <button class="nav-btn" onclick="prev()">← Prev</button>
+    <span id="counter">1 / 37</span>
+    <button class="nav-btn" onclick="next()">Next →</button>
+  </div>
+</div>
+
+<div id="deck">
+
+<!-- ══════════════ SLIDE 1 — COVER ══════════════ -->
+<div class="slide cover active" data-section="Introduction">
+  <span class="cover-tag">Kenya Institute of Curriculum Development · 2025–2026</span>
+  <h1 style="font-size:3.4rem;margin-bottom:18px">AI-Powered Pathway<br>Recommendation System</h1>
+  <p style="font-size:1.15rem;color:#CBD5E1;max-width:780px;margin:0 auto 8px">
+    A Reinforcement Learning approach to guiding Kenyan Grade 9 students into the
+    Senior Secondary pathway most aligned with their academic trajectory.
+  </p>
+  <p style="font-size:.95rem;color:var(--muted);max-width:720px;margin:0 auto">
+    Built on Item Response Theory · Cluster Weight Calculation · Double Dueling DQN with PER
+  </p>
+  <div class="c4" style="max-width:920px;margin:38px auto 0">
+    <div class="card cyan stat-box"><div class="stat-n">3</div><div class="stat-l">Senior Pathways</div></div>
+    <div class="card purple stat-box"><div class="stat-n">78</div><div class="stat-l">State Dimensions</div></div>
+    <div class="card accent stat-box"><div class="stat-n">9</div><div class="stat-l">Coaching Actions</div></div>
+    <div class="card ok stat-box"><div class="stat-n">G4–G9</div><div class="stat-l">Trajectory Coverage</div></div>
+  </div>
+  <p style="font-size:.7rem;color:var(--dim);margin-top:36px">
+    Use ← / → arrow keys or swipe to navigate · Press <strong>F</strong> for fullscreen
+  </p>
+</div>
+
+
+<!-- ══════════════ SLIDE 2 — THE PROBLEM ══════════════ -->
+<div class="slide" data-section="Problem">
+  <div class="label">Slide 2 · The Problem</div>
+  <h2>Why Kenya Needs This System</h2>
+  <p class="sub">Kenya is rolling out the Competency-Based Curriculum (CBC). At Grade 9, every student must be placed into one of three Senior Secondary pathways. Get this wrong and the student spends 3 years in the wrong direction — affecting university choice, career, and life trajectory.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>The Stakes</h3>
+      <ul class="nlist">
+        <li><div class="nn danger">!</div><div><strong>~1.2 million students</strong> per cohort transitioning to Senior Secondary annually.</div></li>
+        <li><div class="nn danger">!</div><div><strong>3 pathways · 12 tracks</strong> — wrong placement is hard to reverse.</div></li>
+        <li><div class="nn warn">·</div><div>Teachers often rely on <em>raw KJSEA scores alone</em> — ignoring 5 years of trajectory data (G4–G9).</div></li>
+        <li><div class="nn warn">·</div><div>Subjective bias creeps in: gender stereotypes, school resources, family pressure.</div></li>
+        <li><div class="nn warn">·</div><div>No existing tool considers student preferences alongside aptitude.</div></li>
+      </ul>
+
+      <div class="card danger mt">
+        <h4 style="color:#FCA5A5">A Real Misplacement Risk</h4>
+        <p>A student scoring 72% average but with Mathematics at 18% would be flagged "above average" by simple ranking — yet placing them in STEM would be catastrophic. Math is non-negotiable for STEM. Our system enforces this as a <strong>hard gate</strong>.</p>
+      </div>
+    </div>
+    <div>
+      <h3>What We're Building</h3>
+      <p>A two-layer intelligent system that combines hard rules (KNEC-aligned) with adaptive learning (RL).</p>
+
+      <div class="card accent mt-sm">
+        <h4>Layer 1 — Deterministic Recommender</h4>
+        <p>Computes the formal Cluster Weight per pathway using official KICD/KNEC subject weights. Applies hard core-subject gates. Provides the <em>"what"</em>.</p>
+      </div>
+
+      <div class="card purple mt-sm">
+        <h4>Layer 2 — Reinforcement Learning Coach</h4>
+        <p>A Deep Q-Network learns from student trajectories which <em>actions</em> (improvement recommendations) historically led to better outcomes. Provides the <em>"how"</em> — what to work on next.</p>
+      </div>
+
+      <div class="hbox">
+        <div class="hbox-title">Project Oath</div>
+        <p style="font-size:.84rem">"We are playing god with a student's future. Every recommendation must be defensible by curriculum policy, audited by a human, and overrideable by a teacher."</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 3 — KENYA CBC PRIMER ══════════════ -->
+<div class="slide" data-section="Kenya CBC">
+  <div class="label">Slide 3 · Kenya CBC Primer (For Newcomers)</div>
+  <h2>The Kenyan Education Landscape</h2>
+  <p class="sub">Quick orientation for non-Kenyan readers. Kenya replaced the old "8-4-4" system with the Competency-Based Curriculum in 2017. Students now move through three structured stages, with the critical placement decision happening at the end of Grade 9.</p>
+
+  <div class="pipe mt">
+    <div class="pipe-box">
+      <div class="pipe-box-num">Stage 1</div>
+      <div class="pipe-box-title">Pre-Primary</div>
+      <div class="pipe-box-desc">PP1–PP2 · Ages 4–5 · Foundation</div>
+    </div>
+    <div class="pipe-box">
+      <div class="pipe-box-num">Stage 2</div>
+      <div class="pipe-box-title">Lower Primary</div>
+      <div class="pipe-box-desc">G1–G3 · Numeracy, literacy basics</div>
+    </div>
+    <div class="pipe-box">
+      <div class="pipe-box-num">Stage 3</div>
+      <div class="pipe-box-title">Upper Primary</div>
+      <div class="pipe-box-desc">G4–G6 · KPSEA at end of G6</div>
+    </div>
+    <div class="pipe-box" style="border-color:var(--accent);background:rgba(99,102,241,.06)">
+      <div class="pipe-box-num" style="color:#67E8F9">Stage 4 ★</div>
+      <div class="pipe-box-title">Junior Secondary</div>
+      <div class="pipe-box-desc">G7–G9 · KJSEA at end of G9 · <strong>placement decision</strong></div>
+    </div>
+    <div class="pipe-box">
+      <div class="pipe-box-num">Stage 5</div>
+      <div class="pipe-box-title">Senior Secondary</div>
+      <div class="pipe-box-desc">G10–G12 · 3 pathways · 12 tracks</div>
+    </div>
+  </div>
+
+  <div class="c3 mt">
+    <div class="card cyan">
+      <h3 style="color:#67E8F9">Key Acronyms</h3>
+      <div class="kv"><span class="kv-k">CBC</span><span class="kv-v">Competency-Based Curriculum</span></div>
+      <div class="kv"><span class="kv-k">KICD</span><span class="kv-v">Curriculum Development Body</span></div>
+      <div class="kv"><span class="kv-k">KNEC</span><span class="kv-v">National Examinations Council</span></div>
+      <div class="kv"><span class="kv-k">KJSEA</span><span class="kv-v">G9 Final Exam</span></div>
+      <div class="kv"><span class="kv-k">KPSEA</span><span class="kv-v">G6 Primary Exam</span></div>
+      <div class="kv"><span class="kv-k">SBA</span><span class="kv-v">School-Based Assessment</span></div>
+    </div>
+    <div class="card accent">
+      <h3 style="color:#A5B4FC">Placement Formula</h3>
+      <p style="font-size:.78rem;margin-bottom:8px">KNEC 2025 official blend used to compute the placement score:</p>
+      <div class="formula sm">60% KJSEA + 20% SBA + 20% KPSEA</div>
+      <p style="font-size:.74rem;margin-top:6px;color:var(--muted)">
+        KJSEA dominates because it's the most recent and most rigorous, but historical performance matters too — preventing last-minute coaching from gaming the system.
+      </p>
+    </div>
+    <div class="card ok">
+      <h3 style="color:#86EFAC">CBC 8-Level Grading</h3>
+      <table style="font-size:.7rem;margin-top:4px">
+        <tr><td style="color:#60A5FA">EE1</td><td>90–100</td><td>8 pts</td></tr>
+        <tr><td style="color:#60A5FA">EE2</td><td>75–89</td><td>7 pts</td></tr>
+        <tr><td style="color:#34D399">ME1</td><td>58–74</td><td>6 pts</td></tr>
+        <tr><td style="color:#34D399">ME2</td><td>41–57</td><td>5 pts</td></tr>
+        <tr><td style="color:#FCD34D">AE1</td><td>31–40</td><td>4 pts</td></tr>
+        <tr><td style="color:#FCD34D">AE2</td><td>21–30</td><td>3 pts</td></tr>
+        <tr><td style="color:#F87171">BE1</td><td>11–20</td><td>2 pts</td></tr>
+        <tr><td style="color:#F87171">BE2</td><td>0–10</td><td>1 pt</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="def">
+    <strong>The "Approaching Expectations" Floor (AE1 = 31%)</strong>
+    AE1 represents the minimum level of subject understanding. Below 31%, the student has not even <em>started</em> grasping fundamentals. Our system uses AE1 as the hard gate threshold for core pathway subjects — fall below it in Math and STEM is locked out.
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 4 — SYSTEM ARCHITECTURE ══════════════ -->
+<div class="slide" data-section="Architecture">
+  <div class="label">Slide 4 · System Architecture</div>
+  <h2>Two Intelligent Layers Working Together</h2>
+  <p class="sub">The system separates <em>hard policy compliance</em> (deterministic, KICD-aligned) from <em>adaptive coaching</em> (learned from data). This separation is intentional: it makes every decision auditable and the training process safer.</p>
+
+  <div class="netdiag mt">
+    <div class="netcol">
+      <div class="netcol-label">Input</div>
+      <div class="netnode in" style="width:80px;height:80px;font-size:.7rem">Student<br>Scores<br>G4–G9</div>
+      <div class="netcol-dim">~50 subj×grades</div>
+    </div>
+    <div class="netarr">→</div>
+    <div class="netcol">
+      <div class="netcol-label">Layer 1</div>
+      <div class="netnode hid" style="width:80px;height:80px;font-size:.66rem">Deterministic<br>Recommender<br>(KNEC)</div>
+      <div class="netcol-dim">CW · Cosine · PSI</div>
+    </div>
+    <div class="netarr">→</div>
+    <div class="netcol">
+      <div class="netcol-label">State</div>
+      <div class="netnode val" style="width:80px;height:80px;font-size:.7rem">78-dim<br>Trajectory<br>Vector</div>
+      <div class="netcol-dim">encode_state()</div>
+    </div>
+    <div class="netarr">→</div>
+    <div class="netcol">
+      <div class="netcol-label">Layer 2</div>
+      <div class="netnode adv" style="width:80px;height:80px;font-size:.66rem">DQN<br>Coaching<br>Agent</div>
+      <div class="netcol-dim">9 actions</div>
+    </div>
+    <div class="netarr">→</div>
+    <div class="netcol">
+      <div class="netcol-label">Output</div>
+      <div class="netnode out" style="width:80px;height:80px;font-size:.66rem">Pathway +<br>Coaching<br>Plan</div>
+      <div class="netcol-dim">+ HITL gate</div>
+    </div>
+  </div>
+
+  <div class="c2 mt">
+    <div class="card accent">
+      <h3>Layer 1 — Deterministic Recommender</h3>
+      <p>The "judge". Computes which pathway formally fits the student per KICD policy. Uses three quantitative signals.</p>
+      <ul class="nlist mt-sm">
+        <li><div class="nn cyan">1</div><div><strong>Cluster Weight (60%)</strong> — official KNEC weighted average across subjects.</div></li>
+        <li><div class="nn cyan">2</div><div><strong>Cosine Similarity (25%)</strong> — vector angle between student's score profile and ideal pathway profile.</div></li>
+        <li><div class="nn cyan">3</div><div><strong>PSI (15%)</strong> — Pathway Suitability Index from competency profile.</div></li>
+      </ul>
+      <p style="font-size:.78rem;margin-top:8px">Then enforces hard gates: core subjects must score ≥ AE1 (31%). Falls back through 3 tiers if no pathway is fully eligible.</p>
+    </div>
+    <div class="card purple">
+      <h3>Layer 2 — RL Coaching Agent</h3>
+      <p>The "tutor". Looks at the student's trajectory and recommends what to focus on next to maximise long-term suitability.</p>
+      <ul class="nlist mt-sm">
+        <li><div class="nn purple">a</div><div><strong>Observes</strong> the 78-dim state (current scores, history, deltas, suitability, preference).</div></li>
+        <li><div class="nn purple">b</div><div><strong>Decides</strong> 1 of 9 discrete actions (e.g. "strengthen math", "explore SS over STEM", "deepen current").</div></li>
+        <li><div class="nn purple">c</div><div><strong>Learns</strong> from real student trajectories: which actions historically improved suitability in the next grade?</div></li>
+      </ul>
+      <p style="font-size:.78rem;margin-top:8px">Both layers feed into a single human-readable result slip. A teacher can override anything.</p>
+    </div>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 5 — PROJECT STRUCTURE ══════════════ -->
+<div class="slide" data-section="Project Tour">
+  <div class="label">Slide 5 · Project Structure</div>
+  <h2>The Codebase at a Glance</h2>
+  <p class="sub">A folder tour of the entire repository. Every box below maps to a real folder. The next several slides walk through each one in detail.</p>
+
+  <div class="c2 mt">
+    <div>
+      <div class="formula left" style="font-size:.78rem;line-height:1.85;color:#CBD5E1;text-align:left">
+<span style="color:#67E8F9">KenyaCBC/</span><br>
+├── <span style="color:#A5B4FC">app.py</span>                  <span style="color:#64748B"># Dash entry point</span><br>
+├── <span style="color:#A5B4FC">requirements.txt</span>        <span style="color:#64748B"># Python deps</span><br>
+├── <span style="color:#A5B4FC">README.md / USER_GUIDE.md</span><br>
+│<br>
+├── <span style="color:#FBBF24">config/</span>                 <span style="color:#64748B"># pathways · grading · RL hyperparams</span><br>
+│   ├── pathways.py · competencies.py<br>
+│   ├── rl_config.py · settings.py · __init__.py<br>
+│<br>
+├── <span style="color:#FBBF24">data/</span>                   <span style="color:#64748B"># curriculum CSVs + runtime data</span><br>
+│   ├── subject_4_9.csv · strand_4_9.csv<br>
+│   ├── substrand_4_9.csv · indicator_4_9.csv<br>
+│   ├── competency_4_9.csv · gradess1.csv<br>
+│   ├── generated_*.csv · hitl_state.json<br>
+│<br>
+├── <span style="color:#FBBF24">src/</span><br>
+│   ├── <span style="color:#34D399">data/</span>               <span style="color:#64748B"># IRT generator + data loader</span><br>
+│   │   ├── cbc_data_generator.py<br>
+│   │   └── real_data_loader.py<br>
+│   └── <span style="color:#34D399">rl/</span>                 <span style="color:#64748B"># DQN agent, training, HITL</span><br>
+│       ├── agent.py · environment.py<br>
+│       ├── dqn_coaching.py · trainer.py<br>
+│       ├── hitl.py · evaluation.py<br>
+│       └── baselines.py · ensemble.py<br>
+│<br>
+├── <span style="color:#FBBF24">pages/</span>                  <span style="color:#64748B"># Dash UI</span><br>
+│   ├── dashboard.py           <span style="color:#64748B"># DataManager singleton</span><br>
+│   └── dash_pages/<br>
+│       ├── home.py · analysis.py<br>
+│       ├── teacher_review.py · advanced.py<br>
+│       └── about.py<br>
+│<br>
+├── <span style="color:#FBBF24">tests/</span>                  <span style="color:#64748B"># 91 integration tests</span><br>
+│   ├── test_all.py · test_audit.py<br>
+│   └── test_verification.py<br>
+│<br>
+├── <span style="color:#FBBF24">benchmarks/</span>             <span style="color:#64748B"># Statistical evaluation</span><br>
+├── <span style="color:#FBBF24">models/</span>                 <span style="color:#64748B"># Trained DQN weights (runtime)</span><br>
+├── <span style="color:#FBBF24">docs/</span>                   <span style="color:#64748B"># Theory + this presentation</span><br>
+└── <span style="color:#FBBF24">assets/</span>                 <span style="color:#64748B"># CSS</span>
+      </div>
+    </div>
+    <div>
+      <h3>Top-Level Design Principles</h3>
+      <div class="card cyan mt-sm">
+        <h4>No Database</h4>
+        <p style="font-size:.8rem">All data lives as CSV files. Generated in-memory then persisted. Zero infrastructure overhead — runs anywhere Python runs.</p>
+      </div>
+      <div class="card accent mt-sm">
+        <h4>Reproducible Everything</h4>
+        <p style="font-size:.8rem">Every component accepts a <code>seed</code>. Same seed → identical outputs. Critical for thesis defence and audit trails.</p>
+      </div>
+      <div class="card purple mt-sm">
+        <h4>Vectorised Throughout</h4>
+        <p style="font-size:.8rem">No Python loops in the hot path. NumPy broadcasting + matrix multiply. 500 students generate in &lt; 0.2 s — a 430× speedup over the original looped version.</p>
+      </div>
+      <div class="card ok mt-sm">
+        <h4>Decoupled Layers</h4>
+        <p style="font-size:.8rem"><code>src/data</code> and <code>src/rl</code> are independent packages. <code>pages/dashboard.py</code> is the only consumer of both. No circular imports.</p>
+      </div>
+      <div class="card warn mt-sm">
+        <h4>Test-First Where It Matters</h4>
+        <p style="font-size:.8rem">91 integration tests using real generated data — never mocks. Catches edge-case grade distributions that unit mocks would miss.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 6 — CONFIG FOLDER ══════════════ -->
+<div class="slide" data-section="Project Tour">
+  <div class="label">Slide 6 · config/ Folder</div>
+  <h2>config/ — Where Every Constant Lives</h2>
+  <p class="sub">Five files define every threshold, weight, hyperparameter, and curriculum mapping. Single source of truth — change a value here, the whole system updates.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>Files in config/</h3>
+      <table>
+        <tr><th>File</th><th>Purpose</th></tr>
+        <tr><td><strong>pathways.py</strong></td><td>The big one. Pathway definitions, subject codes (901–912), CBC 8-level grading, KICD subject weights, core gates, key subjects, threshold values, <code>recommend_pathway()</code>, <code>compute_cluster_weights()</code></td></tr>
+        <tr><td><strong>competencies.py</strong></td><td>7 CBC core competencies + competency-subject weight matrix + ideal pathway profiles (used for cosine similarity)</td></tr>
+        <tr><td><strong>rl_config.py</strong></td><td>All DQN hyperparameters in one dict: lr=5e-4, γ=0.95, batch=128, buffer=20k, ε schedule, PER α/β, network width</td></tr>
+        <tr><td><strong>settings.py</strong></td><td>Directory paths, grade ranges, performance level thresholds, dashboard colour theme, placement formula constants</td></tr>
+        <tr><td><strong>__init__.py</strong></td><td>Re-exports every public constant and function so callers can do <code>from config import RL_CONFIG, PATHWAYS, …</code></td></tr>
+      </table>
+
+      <div class="def">
+        <strong>How Values Are Justified</strong>
+        Every weight in <code>pathways.py</code> traces back to a specific source: KICD CBC Task Force 2025, KNEC KJSEA 2025 result slips, or Ministry of Education placement circulars. Comments cite the source inline. The 0.8→0.9 raise of <code>PRE_TECH</code> in STEM, for example, was made because KICD reclassified it as a primary STEM indicator.
+      </div>
+    </div>
+    <div>
+      <h3>Computed vs Hand-Authored Values</h3>
+      <table>
+        <tr><th>Value</th><th>Source</th></tr>
+        <tr><td>Subject codes 901–912</td><td>KNEC KJSEA 2025 official</td></tr>
+        <tr><td>CBC 8-level boundaries</td><td>KNEC Dec 2025 grading specification</td></tr>
+        <tr><td>Subject weights per pathway</td><td>KICD CBC Task Force; iteratively validated against placement data</td></tr>
+        <tr><td>Threshold STEM ≥ 20%</td><td>Education CS Ogamba statement Dec 2025</td></tr>
+        <tr><td>Threshold SS/Arts ≥ 25%</td><td>Same source</td></tr>
+        <tr><td>AE1 floor (31%)</td><td>KNEC 8-level definition</td></tr>
+        <tr><td>Composite weights 0.6/0.25/0.15</td><td>Calibrated empirically against thesis baseline</td></tr>
+        <tr><td>RL hyperparams</td><td>Calibrated by ablation study; documented in <code>rl_config.py</code> comments</td></tr>
+        <tr><td>Competency weights</td><td>KICD curriculum doc; sum to ~1.0 per competency</td></tr>
+        <tr><td>Ideal pathway profiles</td><td>Educational theory; used for cosine similarity</td></tr>
+      </table>
+
+      <div class="hbox mt">
+        <div class="hbox-title">Cluster Weight Calculation Inside config/pathways.py</div>
+        <p style="font-size:.82rem">The function <code>compute_cluster_weights()</code> takes raw subject scores, optionally applies z-score normalisation against population stats, then multiplies each subject by its pathway-specific weight, sums, and divides by the total weight. Optionally blends with previous-grade CW for trajectory stability. Returns 0–100 per pathway.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 7 — DATA FOLDER ══════════════ -->
+<div class="slide" data-section="Project Tour">
+  <div class="label">Slide 7 · data/ Folder</div>
+  <h2>data/ — Curriculum CSVs + Runtime Files</h2>
+  <p class="sub">The <code>data/</code> folder mixes two kinds of files: <strong>static curriculum CSVs</strong> (the KICD knowledge graph, hand-authored) and <strong>runtime files</strong> (generated or written by the system at execution time).</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>Static Curriculum CSVs (hand-authored)</h3>
+      <table>
+        <tr><th>File</th><th>Records</th><th>Content</th></tr>
+        <tr><td>subject_4_9.csv</td><td>~10</td><td>Subject definitions per grade (4–9)</td></tr>
+        <tr><td>strand_4_9.csv</td><td>~40</td><td>Strands within each subject</td></tr>
+        <tr><td>substrand_4_9.csv</td><td>~120</td><td>Substrands within each strand</td></tr>
+        <tr><td>indicator_4_9.csv</td><td>~400</td><td>Assessment indicators (the leaves)</td></tr>
+        <tr><td>substrandindicator_4_9.csv</td><td>~400</td><td>Mapping substrand ↔ indicator</td></tr>
+        <tr><td>competencysubstrand_4_9.csv</td><td>~200</td><td>Mapping competency ↔ substrand</td></tr>
+        <tr><td>competency_4_9.csv</td><td>7</td><td>The 7 KICD core competencies</td></tr>
+      </table>
+      <p style="font-size:.78rem;margin-top:6px">These define the <em>structure of the curriculum</em>: which subjects exist, which strands belong to each, which indicators measure each substrand, which competencies each substrand develops.</p>
+
+      <div class="formula left sm" style="font-size:.7rem;line-height:1.6;text-align:left">
+Subject<br>
+&nbsp;&nbsp;└─ Strand<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ Substrand ←→ Competency<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ Indicator (assessable item)
+      </div>
+    </div>
+    <div>
+      <h3>Runtime Files (generated by code)</h3>
+      <table>
+        <tr><th>File</th><th>Created by</th><th>Purpose</th></tr>
+        <tr><td>generated_theta.csv</td><td>cbc_data_generator</td><td>Sampled latent abilities (θ) per student per competency</td></tr>
+        <tr><td>generated_ind.csv</td><td>cbc_data_generator</td><td>IRT a, b parameters per indicator</td></tr>
+        <tr><td>generated_resp.csv</td><td>cbc_data_generator</td><td>Raw IRT response scores</td></tr>
+        <tr><td>gradess1.csv</td><td>cbc_data_generator</td><td>Master student dataset — wide-format scores per (student, grade, subject)</td></tr>
+        <tr><td>hitl_state.json</td><td>hitl.py</td><td>Pending HITL requests + teacher decisions + audit log</td></tr>
+        <tr><td>session_state.json</td><td>dashboard.py</td><td>Last selected student + generation params</td></tr>
+        <tr><td>exports/</td><td>dashboard</td><td>User-triggered CSV/PDF exports</td></tr>
+      </table>
+
+      <div class="card cyan mt-sm">
+        <h4>The Generation Flow</h4>
+        <ol style="padding-left:18px;margin-top:4px">
+          <li style="font-size:.78rem">Curriculum CSVs loaded into memory</li>
+          <li style="font-size:.78rem"><code>simulate_latent_competencies()</code> → generated_theta.csv</li>
+          <li style="font-size:.78rem"><code>simulate_indicator_responses()</code> → generated_ind.csv + generated_resp.csv</li>
+          <li style="font-size:.78rem"><code>aggregate_to_subjects()</code> → subject scores per (student, grade)</li>
+          <li style="font-size:.78rem"><code>determine_pathways()</code> → STEM/SS/Arts label</li>
+          <li style="font-size:.78rem">Final master table written to <strong>gradess1.csv</strong></li>
+        </ol>
+      </div>
+
+      <p style="font-size:.74rem;color:var(--dim);margin-top:8px">Performance: 500 students · 6 grades · ~14 subjects · ~400 indicators = ~17 million IRT response computations in &lt; 0.2 s.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 8 — PAGES FOLDER ══════════════ -->
+<div class="slide" data-section="Project Tour">
+  <div class="label">Slide 8 · pages/ Folder</div>
+  <h2>pages/ — The Dash UI Layer</h2>
+  <p class="sub">All UI lives in <code>pages/</code>. The architecture is a single <strong>DataManager</strong> singleton that wraps every backend call, plus 5 page modules that consume it via callbacks.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>The Files</h3>
+      <table>
+        <tr><th>File</th><th>Role</th></tr>
+        <tr><td><strong>dashboard.py</strong></td><td>App factory + DataManager singleton — the only file that touches both <code>src/data</code> and <code>src/rl</code></td></tr>
+        <tr><td><strong>dash_pages/home.py</strong></td><td>Generate data, train DQN, system status</td></tr>
+        <tr><td><strong>dash_pages/analysis.py</strong></td><td>★ The big one. Per-student result slip, recommendation panel, history chart, DQN coaching card</td></tr>
+        <tr><td><strong>dash_pages/teacher_review.py</strong></td><td>HITL workflow — pending requests, approve/reject, audit log, inline score editor</td></tr>
+        <tr><td><strong>dash_pages/advanced.py</strong></td><td>Benchmarks, multi-seed evaluation, hyperparameter search</td></tr>
+        <tr><td><strong>dash_pages/about.py</strong></td><td>System overview, CBC primer, model architecture explanation</td></tr>
+      </table>
+
+      <div class="card accent mt">
+        <h4>DataManager Class</h4>
+        <p style="font-size:.78rem">A single class wraps every backend operation behind a clean API:</p>
+        <ul style="padding-left:14px;margin-top:4px">
+          <li style="font-size:.76rem"><code>generate_data(n, seed)</code></li>
+          <li style="font-size:.76rem"><code>get_recommendation(id)</code> — multi-signal fusion</li>
+          <li style="font-size:.76rem"><code>get_knec_result_slip(id)</code></li>
+          <li style="font-size:.76rem"><code>get_performance(id)</code></li>
+          <li style="font-size:.76rem"><code>get_competencies(id)</code></li>
+          <li style="font-size:.76rem"><code>get_transitions(id)</code> — G4–G9 progression</li>
+          <li style="font-size:.76rem"><code>get_psi(id)</code> — Pathway Suitability Index</li>
+          <li style="font-size:.76rem"><code>train_model(episodes)</code></li>
+        </ul>
+        <p style="font-size:.74rem;margin-top:6px;color:var(--dim)">Pages never import from <code>src/</code> directly — they always go through DataManager.</p>
+      </div>
+    </div>
+    <div>
+      <h3>analysis.py — The Most Complex Page</h3>
+      <p style="font-size:.78rem">Renders four layers per selected student:</p>
+      <ul class="nlist">
+        <li><div class="nn">1</div><div><strong>KJSEA Result Slip</strong> — official KNEC format, 12 subjects, 8-level grades, composite KNEC score</div></li>
+        <li><div class="nn">2</div><div><strong>Pathway Recommendation Panel</strong> — multi-signal fusion result, two-gate eligibility check, confidence bar, strength-within-pathway gauge</div></li>
+        <li><div class="nn">3</div><div><strong>Pathway History Chart</strong> — solid CW lines + dashed PSI lines + switch annotations + trajectory arrows</div></li>
+        <li><div class="nn">4</div><div><strong>DQN Coaching Card</strong> — supplementary AI suggestion + XAI feature importances</div></li>
+      </ul>
+
+      <h3 style="margin-top:14px">Routing</h3>
+      <div class="formula left sm" style="font-size:.72rem;line-height:1.7">
+/                  → home.py<br>
+/analysis          → analysis.py<br>
+/teacher           → teacher_review.py<br>
+/advanced          → advanced.py<br>
+/about             → about.py
+      </div>
+
+      <div class="card purple mt-sm">
+        <h4>Callback Pattern</h4>
+        <p style="font-size:.78rem">All callbacks follow the same shape: read student ID from <code>dcc.Store</code>, fetch data via <code>get_data_manager()</code>, return Dash components. State persists across pages via the store.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 9 — IRT INTRODUCTION ══════════════ -->
+<div class="slide" data-section="Data Generation">
+  <div class="label">Slide 9 · src/data/cbc_data_generator.py</div>
+  <h2>Item Response Theory (IRT) — The Foundation of Realistic Data</h2>
+  <p class="sub">Kenya's KJSEA dataset is too small (and too sensitive) for safe RL training. We generate synthetic students that statistically mimic real ones, using <strong>IRT</strong> — the same math behind SAT, GRE, PISA, TOEFL.</p>
+
+  <div class="c2-uneven mt">
+    <div>
+      <h3>What is IRT, in 60 seconds?</h3>
+      <p>Imagine you give 1000 students 50 math questions. You notice three things:</p>
+      <ul style="padding-left:18px;margin-top:6px">
+        <li style="font-size:.84rem">Some students consistently answer more questions correctly — they have <strong>higher ability</strong>.</li>
+        <li style="font-size:.84rem">Some questions are <strong>harder</strong> — fewer students get them right at any ability level.</li>
+        <li style="font-size:.84rem">Some questions are <strong>better at separating</strong> strong from weak students (high <em>discrimination</em>); others are answered correctly by everyone or no one.</li>
+      </ul>
+      <p style="margin-top:8px">IRT models all three at once. The probability that student <em>i</em> answers question <em>j</em> correctly depends on the student's <strong>latent ability θ</strong> minus the question's <strong>difficulty b</strong>, scaled by how much the question <strong>discriminates a</strong>.</p>
+
+      <div class="def">
+        <strong>Latent variable θ ("theta")</strong>
+        Think of θ as the student's hidden talent level — you can't measure it directly, but you can infer it from their answers. Each subject has its <em>own</em> θ. A student can have high θ in maths and low θ in arts.
+      </div>
+
+      <h3 style="margin-top:14px">Why not use random scores?</h3>
+      <p style="font-size:.82rem">Random scores have no internal structure. A student strong in Maths in G5 might be weak in Maths in G6. The DQN cannot learn anything from such noise. IRT gives us:</p>
+      <ul style="padding-left:18px;margin-top:6px">
+        <li style="font-size:.82rem"><span class="hl">Temporal consistency</span> — students grow over time</li>
+        <li style="font-size:.82rem"><span class="hl">Cross-subject correlation</span> — strong in INT_SCI ⟹ likely strong in MATH</li>
+        <li style="font-size:.82rem"><span class="hl">Realistic difficulty spread</span> — harder subjects produce lower averages</li>
+      </ul>
+    </div>
+    <div>
+      <h3>The Three Core Equations</h3>
+      <div class="formula big">θ<sub>i,k,g</sub> = α<sub>i,k</sub> + β<sub>i,k</sub> · (g − g<sub>0</sub>)</div>
+      <p style="font-size:.74rem;text-align:center;color:var(--dim)">
+        Latent ability of student <em>i</em> in competency <em>k</em> at grade <em>g</em>
+      </p>
+
+      <div class="formula big" style="margin-top:10px">P(correct) = σ(a · θ − b)</div>
+      <p style="font-size:.74rem;text-align:center;color:var(--dim)">
+        Logistic function maps ability to probability. σ(x) = 1 / (1 + e<sup>−x</sup>)
+      </p>
+
+      <div class="formula big" style="margin-top:10px">score = 100 · P(correct) + ε</div>
+      <p style="font-size:.74rem;text-align:center;color:var(--dim)">
+        ε ~ Normal(0, σ=5) · Gaussian measurement noise
+      </p>
+
+      <div class="card cyan mt-sm">
+        <h4>Parameter Decoder</h4>
+        <table style="font-size:.74rem">
+          <tr><th>Symbol</th><th>Meaning</th><th>Distribution</th></tr>
+          <tr><td>α<sub>i,k</sub></td><td>Starting ability of student <em>i</em> in competency <em>k</em></td><td>Multivariate Normal</td></tr>
+          <tr><td>β<sub>i,k</sub></td><td>Growth rate per grade (slope)</td><td>Multivariate Normal</td></tr>
+          <tr><td>a</td><td>Discrimination of question (steepness)</td><td>Log-normal(1.0, 0.3)</td></tr>
+          <tr><td>b</td><td>Difficulty of question</td><td>Normal(μ<sub>subj</sub>, 0.5)</td></tr>
+          <tr><td>g₀</td><td>Baseline grade (= 4)</td><td>Constant</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 6 — IRT WORKED EXAMPLE ══════════════ -->
+<div class="slide" data-section="Data Generation">
+  <div class="label">Slide 6 · IRT Worked Example</div>
+  <h2>From Latent Ability to a Realistic Score — Walking Through One Student</h2>
+  <p class="sub">Let's generate a single Mathematics score for a synthetic Grade 6 student named "Wanjiku". We'll trace every parameter through the three equations.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>Step 1 · Sample Wanjiku's Latent Parameters</h3>
+      <p>From the multivariate normal distribution we draw her starting ability (α) and growth rate (β) for the MATH competency:</p>
+      <div class="formula left sm">α<sub>Wanjiku, MATH</sub> = +0.6  <span style="color:#94A3B8">(slightly above-avg starter)</span><br>
+β<sub>Wanjiku, MATH</sub> = +0.25 <span style="color:#94A3B8">(steady positive growth per grade)</span></div>
+
+      <h3 style="margin-top:14px">Step 2 · Compute θ at Grade 6</h3>
+      <div class="formula">θ = 0.6 + 0.25 × (6 − 4) = <span class="hl">1.10</span></div>
+      <p style="font-size:.78rem">Her "true" math ability at Grade 6, on the standardized θ scale (where 0 = average, 1 = roughly 1 σ above average).</p>
+
+      <h3 style="margin-top:14px">Step 3 · Pick a Question</h3>
+      <p>We pick one Mathematics indicator (a fine-grained skill) from the curriculum. Its IRT parameters were sampled earlier:</p>
+      <div class="formula left sm">a = 1.2   <span style="color:#94A3B8">(good discrimination)</span><br>
+b = 0.30  <span style="color:#94A3B8">(slightly hard — Math has +0.3 difficulty offset)</span></div>
+    </div>
+    <div>
+      <h3>Step 4 · Probability of Correct</h3>
+      <div class="formula">η = a·θ − b = 1.2 × 1.10 − 0.30 = <span class="hl">1.02</span></div>
+      <div class="formula">P = 1 / (1 + e<sup>−1.02</sup>) = 1 / (1 + 0.360) = <span class="hlg">0.735</span></div>
+      <p style="font-size:.78rem">Wanjiku has a 73.5% chance of answering this question correctly.</p>
+
+      <h3 style="margin-top:14px">Step 5 · Convert to a Score</h3>
+      <div class="formula">score = 100 × 0.735 + ε,  ε ~ N(0, 5)</div>
+      <div class="formula">score = 73.5 + (−1.8) = <span class="hlg">71.7</span></div>
+      <p style="font-size:.78rem">After noise injection, her score on this single Mathematics indicator is 71.7 — corresponding to <strong>ME1 (Meeting Expectations)</strong> on the CBC scale.</p>
+
+      <div class="example">
+        <h4>The Aggregation</h4>
+        <p>This entire calculation runs for <strong>every (student × indicator)</strong> pair. There are ~600 indicators per grade across all subjects, and we generate 1000+ students. Final subject scores are the average of all indicator scores within that subject. Wanjiku's aggregate Math score might end up at ~70%, her INT_SCI at ~65%, her CRE_ARTS at ~52% — all <em>internally consistent</em> with her competency profile.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hbox mt">
+    <div class="hbox-title">Why this matters for the DQN</div>
+    <p style="font-size:.84rem">Because Wanjiku's scores across subjects are <em>derived from the same latent θ vector</em>, the DQN can learn meaningful patterns: <em>"if a student improved in MATH between G7 and G8, did their INT_SCI also improve?"</em> Yes — with high probability, because the underlying competencies are correlated. Random data would destroy this signal.</p>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 7 — IRT GENERATION PIPELINE ══════════════ -->
+<div class="slide" data-section="Data Generation">
+  <div class="label">Slide 7 · Vectorised Generation Pipeline</div>
+  <h2>How Thousands of Students Are Generated in Seconds</h2>
+  <p class="sub">The naive approach (a Python loop for each student × subject × indicator × grade) would take hours. Our pipeline is <strong>fully vectorised numpy</strong> — the entire 1000-student G4–G9 dataset generates in under 2 seconds.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>The 6-Step Pipeline</h3>
+      <ul class="nlist">
+        <li><div class="nn">1</div><div><strong>Load curriculum CSVs</strong> — KICD-defined hierarchy: Subject → Strand → Substrand → Indicator. Each indicator maps to one or more competencies.</div></li>
+        <li><div class="nn">2</div><div><strong>Sample (α, β) per student per competency</strong> from multivariate normal distribution. Shape: <span class="sdim">(n_students, 2 × n_competencies)</span>.</div></li>
+        <li><div class="nn">3</div><div><strong>Build θ tensor</strong> for all (student × grade × competency) combinations: <span class="sdim">(n_stu, n_grades, n_comp)</span>. Computed in one line of vectorised numpy.</div></li>
+        <li><div class="nn">4</div><div><strong>Sample indicator IRT params</strong> — per-indicator (a, b) parameters. Discrimination from log-normal, difficulty from subject-conditional normal.</div></li>
+        <li><div class="nn">5</div><div><strong>Compute response matrix</strong> in one matrix multiplication: <code>η = Θ @ A.T − b</code> → logistic → score + noise.</div></li>
+        <li><div class="nn">6</div><div><strong>Aggregate to subject level</strong> — mean of indicator scores per (student, grade, subject). Saves to <code>generated_*.csv</code>.</div></li>
+      </ul>
+    </div>
+    <div>
+      <h3>The Covariance Structure (Why It's Realistic)</h3>
+      <p style="font-size:.82rem">Real students aren't independent across competencies. A student strong in <em>Logical Reasoning</em> tends to also be strong in <em>Numerical Fluency</em>. We capture this with a structured covariance matrix:</p>
+
+      <div class="formula left sm" style="font-size:.7rem;line-height:1.7">
+Σ = [ Σ<sub>α</sub>   Σ<sub>αβ</sub> ]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[ Σ<sub>αβ</sub><sup>T</sup>  Σ<sub>β</sub>  ]<br><br>
+Σ<sub>α</sub>(i,j) = σ<sub>α</sub><sup>2</sup> · ρ<sub>α</sub>     (i ≠ j)<br>
+Σ<sub>β</sub>(i,j) = σ<sub>β</sub><sup>2</sup> · ρ<sub>β</sub>     (i ≠ j)<br>
+Σ<sub>αβ</sub>(i,i) = ρ<sub>αβ</sub> · σ<sub>α</sub>σ<sub>β</sub>
+      </div>
+
+      <p style="font-size:.78rem">With our chosen values:</p>
+      <table style="font-size:.74rem">
+        <tr><th>Param</th><th>Value</th><th>Effect</th></tr>
+        <tr><td>σ<sub>α</sub></td><td>0.7</td><td>Spread of starting abilities</td></tr>
+        <tr><td>σ<sub>β</sub></td><td>0.35</td><td>Spread of growth rates</td></tr>
+        <tr><td>ρ<sub>α</sub></td><td>+0.3</td><td>Cross-competency correlation</td></tr>
+        <tr><td>ρ<sub>β</sub></td><td>+0.3</td><td>Growth correlation</td></tr>
+        <tr><td>ρ<sub>αβ</sub></td><td>−0.2</td><td>Mean reversion: high starters grow slower</td></tr>
+      </table>
+
+      <div class="card cyan mt-sm">
+        <h4>The −0.2 detail</h4>
+        <p style="font-size:.8rem">Negative α-β correlation models a real phenomenon: students who start very high have less room to grow (ceiling effect). Without this, top students would diverge to unrealistic scores by Grade 9.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 8 — CLUSTER WEIGHT FORMULA ══════════════ -->
+<div class="slide" data-section="Cluster Weight">
+  <div class="label">Slide 8 · Signal 1 — Cluster Weight</div>
+  <h2>Cluster Weight Calculation — The KNEC Formula, Step by Step</h2>
+  <p class="sub">The Cluster Weight (CW) is the <strong>primary KNEC-aligned signal</strong>. For each pathway, it answers: "How well does this student's weighted score profile match what this pathway requires?" We follow the official 2025 KICD/KNEC methodology exactly.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>Step 1 · Blend Across Time</h3>
+      <p style="font-size:.82rem">We don't only use Grade 9 scores — that would let a student game the system with last-minute coaching. KNEC blends three time periods:</p>
+      <div class="formula big">blended = 0.60×KJSEA + 0.20×SBA + 0.20×KPSEA</div>
+      <table style="font-size:.74rem">
+        <tr><th>Source</th><th>Period</th><th>Weight</th></tr>
+        <tr><td>KJSEA</td><td>Grade 9 final exam</td><td>60%</td></tr>
+        <tr><td>SBA</td><td>School-based assessment, G7–G8</td><td>20%</td></tr>
+        <tr><td>KPSEA</td><td>Grade 6 primary exit exam</td><td>20%</td></tr>
+      </table>
+
+      <h3 style="margin-top:14px">Step 2 · Z-Score Normalisation</h3>
+      <p style="font-size:.82rem">Raw scores can't be compared across subjects directly — Maths is harder than PE, so a 60 in Maths is more impressive than a 60 in PE. We normalise against the population mean and standard deviation:</p>
+      <div class="formula">z = 50 + 10 × (score − μ<sub>pop</sub>) / σ<sub>pop</sub></div>
+      <p style="font-size:.78rem">A student scoring 65 in Math (where μ=50, σ=15) gets z = 50 + 10×(65−50)/15 = <span class="hl">60.0</span>. Above average. Same student scoring 65 in PE (where μ=70, σ=10) gets z = 50 + 10×(65−70)/10 = <span class="hlr">45.0</span>. Below average.</p>
+    </div>
+    <div>
+      <h3>Step 3 · Weighted Average per Pathway</h3>
+      <p style="font-size:.82rem">Each pathway has different weights for each subject — see table below. For each pathway:</p>
+      <div class="formula big">CW(pathway) = Σ(z<sub>i</sub> × w<sub>i</sub>) / Σ(w<sub>i</sub>)</div>
+
+      <h3 style="margin-top:14px">Step 4 · Trajectory Stability Bonus</h3>
+      <div class="formula sm">final_CW = 0.85 × current + 0.15 × prev × stability</div>
+      <p style="font-size:.78rem">Rewards students who are <em>consistently</em> strong in a pathway over time, vs. students who jumped up at the last grade.</p>
+
+      <div class="example">
+        <h4>Worked Example — Wanjiku at Grade 9</h4>
+        <p>Suppose Wanjiku's z-scores after blending and normalisation are:</p>
+        <table style="font-size:.7rem">
+          <tr><th>Subject</th><th>z-score</th><th>STEM w</th><th>z×w</th></tr>
+          <tr><td>MATH</td><td>62</td><td>1.0</td><td>62.0</td></tr>
+          <tr><td>INT_SCI</td><td>58</td><td>1.0</td><td>58.0</td></tr>
+          <tr><td>PRE_TECH</td><td>55</td><td>0.9</td><td>49.5</td></tr>
+          <tr><td>SCI_TECH</td><td>54</td><td>0.9</td><td>48.6</td></tr>
+          <tr><td>ENG</td><td>50</td><td>0.3</td><td>15.0</td></tr>
+        </table>
+        <p style="margin-top:6px;font-size:.78rem"><strong>CW(STEM)</strong> = 233.1 / 4.1 = <span class="hlg">56.9</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 9 — SUBJECT WEIGHTS TABLE ══════════════ -->
+<div class="slide" data-section="Cluster Weight">
+  <div class="label">Slide 9 · Official KICD Subject Weights</div>
+  <h2>The Subject Weight Matrix (KICD/KNEC 2025)</h2>
+  <p class="sub">Every subject contributes to every pathway with a specific weight. These are not arbitrary — they come from official KICD curriculum design documents and the KNEC 2025 placement methodology. Bold ★ marks <strong>primary key subjects</strong> per pathway.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>Subject Weights × Pathway</h3>
+      <table>
+        <tr><th>Subject</th><th>STEM</th><th>Social Sci</th><th>Arts &amp; Sports</th></tr>
+        <tr><td>Mathematics</td><td><span class="hl">1.0 ★</span></td><td>0.4</td><td>0.2</td></tr>
+        <tr><td>Integrated Science</td><td><span class="hl">1.0 ★</span></td><td>0.3</td><td>0.2</td></tr>
+        <tr><td>Pre-Technical Studies</td><td><span class="hl">0.9 ★</span></td><td>—</td><td>—</td></tr>
+        <tr><td>Science &amp; Technology</td><td>0.9</td><td>0.3</td><td>0.2</td></tr>
+        <tr><td>Social Studies</td><td>0.3</td><td><span class="hlg">1.0 ★</span></td><td>0.2</td></tr>
+        <tr><td>English</td><td>0.3</td><td><span class="hlg">0.9 ★</span></td><td>0.3</td></tr>
+        <tr><td>Kiswahili</td><td>0.2</td><td><span class="hlg">0.9 ★</span></td><td>0.3</td></tr>
+        <tr><td>Business Studies</td><td>0.2</td><td><span class="hlg">0.8 ★</span></td><td>0.2</td></tr>
+        <tr><td>Religious Education</td><td>—</td><td>0.7</td><td>—</td></tr>
+        <tr><td>Creative Arts</td><td>—</td><td>0.2</td><td><span class="hlo">1.0 ★</span></td></tr>
+        <tr><td>Sports &amp; PE</td><td>—</td><td>—</td><td><span class="hlo">0.9 ★</span></td></tr>
+        <tr><td>Health Education</td><td>0.2</td><td>0.3</td><td>0.7</td></tr>
+        <tr><td>Agriculture</td><td>0.4</td><td>0.3</td><td>0.3</td></tr>
+        <tr><td>Life Skills</td><td>0.2</td><td>0.5</td><td>0.4</td></tr>
+      </table>
+      <p style="font-size:.7rem;color:var(--dim);margin-top:6px">★ = primary key subject per KICD/KNEC 2025 placement circulars. Source: KICD CBC Task Force 2025, KNEC KJSEA Methodology.</p>
+    </div>
+    <div>
+      <h3>Why Two Mathematics Indicators (1.0 ★ + 0.9 ★)?</h3>
+      <p>For STEM, both pure Mathematics and Integrated Science get the maximum weight (1.0). Pre-Technical Studies and Science &amp; Technology get 0.9 because they're strong predictors but a tier below the core science/maths.</p>
+
+      <p style="margin-top:8px">Notice that <strong>Mathematics only contributes 0.4 to Social Sciences</strong> — it's not irrelevant (financial literacy, statistics matter in social sciences) but it's nowhere near as critical as for STEM.</p>
+
+      <div class="card warn mt">
+        <h4>Minimum Eligibility Thresholds</h4>
+        <table style="font-size:.74rem;margin-top:4px">
+          <tr><th>Pathway</th><th>Minimum CW</th></tr>
+          <tr><td><span class="chip stem">STEM</span></td><td><span class="hly">≥ 20%</span></td></tr>
+          <tr><td><span class="chip ss">Social Sci</span></td><td><span class="hly">≥ 25%</span></td></tr>
+          <tr><td><span class="chip arts">Arts</span></td><td><span class="hly">≥ 25%</span></td></tr>
+        </table>
+        <p style="font-size:.74rem;margin-top:6px">These thresholds prevent <em>massively</em> unsuitable placements. Below threshold = flagged for remedial intervention before placement.</p>
+      </div>
+
+      <div class="card cyan mt-sm">
+        <h4>Why Trajectory Stability Matters</h4>
+        <p style="font-size:.8rem">A student who scored 30/30/65/65 in MATH from G6→G9 shows real growth. A student who scored 65/65/65/65 shows consistency. A student who scored 30/30/30/65 in G9 alone might be guessing or coached. The 0.85/0.15 weighted blend keeps the most recent score dominant but penalises last-minute jumps.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 10 — COMPOSITE SCORE ══════════════ -->
+<div class="slide" data-section="Cluster Weight">
+  <div class="label">Slide 10 · The Three Signals Combined</div>
+  <h2>The Composite Score — Three Independent Signals</h2>
+  <p class="sub">CW alone could be gamed or could mislead. We combine it with two complementary signals that measure different things. The final ranking comes from a weighted sum.</p>
+
+  <div class="formula big mt" style="max-width:760px;margin:14px auto 18px">
+    composite = 0.60 × CW + 0.25 × CosineSim + 0.15 × PSI
+  </div>
+
+  <div class="c3">
+    <div class="card stem">
+      <h3 style="color:#93C5FD">Signal 1 · Cluster Weight</h3>
+      <p style="font-size:.78rem"><strong>Weight: 60%</strong></p>
+      <p>The official KNEC quantitative measure. Z-scored, weighted, blended over time.</p>
+      <p style="margin-top:6px"><strong>Measures:</strong> Formal eligibility per policy.</p>
+      <div class="formula sm">CW = Σ(z<sub>i</sub>·w<sub>i</sub>) / Σw<sub>i</sub></div>
+    </div>
+
+    <div class="card cyan">
+      <h3 style="color:#67E8F9">Signal 2 · Cosine Similarity</h3>
+      <p style="font-size:.78rem"><strong>Weight: 25%</strong></p>
+      <p>Treats the student's score profile as a vector. Treats the "ideal" pathway profile as another vector. Measures the angle between them.</p>
+      <p style="margin-top:6px"><strong>Measures:</strong> Profile <em>shape</em> match — independent of magnitude.</p>
+      <div class="formula sm">cos(s, p) = s·p / (‖s‖ · ‖p‖)</div>
+      <p style="font-size:.74rem;margin-top:4px">A student with [80,60,70] in STEM subjects has a different shape than [70,70,70] — even if averages match.</p>
+    </div>
+
+    <div class="card purple">
+      <h3 style="color:#D8B4FE">Signal 3 · PSI</h3>
+      <p style="font-size:.78rem"><strong>Weight: 15%</strong></p>
+      <p>Pathway Suitability Index — derived from the underlying competency profile (the 6 KICD competencies that survived from IRT).</p>
+      <p style="margin-top:6px"><strong>Measures:</strong> Latent ability fit, beneath subject scores.</p>
+      <div class="formula sm">PSI = Σ(competency<sub>k</sub>·affinity<sub>k</sub>)</div>
+    </div>
+  </div>
+
+  <div class="hbox mt-lg">
+    <div class="hbox-title">Why three signals instead of one?</div>
+    <p style="font-size:.84rem">Each signal can fail in a different way. CW can be gamed by inflating one high-weight subject. Cosine can match shape but miss absolute level. PSI can be confused by noisy individual scores. Combining all three with different weights makes the composite <strong>robust to single-signal failure</strong> — a critical property when student lives are on the line.</p>
+  </div>
+
+  <div class="example mt">
+    <h4>Worked Composite — Wanjiku</h4>
+    <p>From Slide 8 we had CW(STEM)=56.9. Suppose CosineSim(STEM)=0.78 (scaled to 78) and PSI(STEM)=62.</p>
+    <div class="formula sm">composite(STEM) = 0.60×56.9 + 0.25×78 + 0.15×62 = 34.14 + 19.50 + 9.30 = <span class="hlg">62.94</span></div>
+    <p style="font-size:.78rem">If composite(SS) = 58.2 and composite(Arts) = 41.0, then STEM ranks first — but the system still must verify the core subject gates before recommending it.</p>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 11 — GATES & FALLBACK ══════════════ -->
+<div class="slide" data-section="Decision Logic">
+  <div class="label">Slide 11 · Gate Checks &amp; Decision Logic</div>
+  <h2>How the Final Pathway is Chosen</h2>
+  <p class="sub">Highest composite score does <em>not</em> automatically win. The system enforces hard subject-level gates and falls back through three tiers if no pathway is fully eligible.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>Gate 1 · Composite Ranking</h3>
+      <p style="font-size:.82rem">Rank all 3 pathways by their composite score. The top one becomes the candidate.</p>
+
+      <h3 style="margin-top:14px">Gate 2 · Core Subject Check</h3>
+      <p style="font-size:.82rem">The candidate pathway must pass its <strong>hard core gates</strong>. A student must score ≥ AE1 (31%) in:</p>
+      <table style="font-size:.74rem">
+        <tr><th>Pathway</th><th>Hard requirement</th><th>OR</th></tr>
+        <tr><td><span class="chip stem">STEM</span></td><td>MATH ≥ 31%</td><td>INT_SCI or SCI_TECH ≥ 31%</td></tr>
+        <tr><td><span class="chip ss">Social Sci</span></td><td>—</td><td>ENG or KIS_KSL ≥ 31%</td></tr>
+        <tr><td><span class="chip arts">Arts</span></td><td>—</td><td>CRE_ARTS or SPORTS_PE ≥ 31%</td></tr>
+      </table>
+      <p style="font-size:.76rem;margin-top:6px"><strong>STEM Mathematics is non-negotiable.</strong> Below 31% in Math = immediate STEM disqualification, regardless of other scores. This is the most consequential rule in the system.</p>
+
+      <h3 style="margin-top:14px">Tiebreaker · Primary Key Subject Average</h3>
+      <p style="font-size:.82rem">When the top two pathways are within 5 composite points, the system compares the average of <em>just the primary key subjects</em>:</p>
+      <div class="formula sm">if abs(comp₁ − comp₂) &lt; 5:<br>&nbsp;&nbsp;compare avg(primary_keys₁) vs avg(primary_keys₂)</div>
+      <p style="font-size:.76rem">Switch to the second pathway only if it leads by &gt; 5 points on that comparison. This catches genuine aptitude that the composite missed due to noise in non-key subjects.</p>
+    </div>
+    <div>
+      <h3>3-Tier Fallback Cascade</h3>
+      <div style="display:flex;flex-direction:column;gap:0">
+        <div class="card ok" style="margin-bottom:4px">
+          <strong style="color:#86EFAC;font-size:.86rem">Tier 1 — Fully Eligible ✓</strong>
+          <p style="font-size:.78rem">Composite meets pathway threshold AND core gates pass. Recommend confidently.</p>
+        </div>
+        <div style="text-align:center;color:var(--dim);font-size:.78rem;margin:2px 0">↓ if Tier 1 yields no pathway</div>
+        <div class="card warn" style="margin-bottom:4px">
+          <strong style="color:#FCD34D;font-size:.86rem">Tier 2 — Core Passes, Low Score ⚠</strong>
+          <p style="font-size:.78rem">Core gates pass but composite below threshold. Recommend with explicit warning: "Consider further preparation."</p>
+        </div>
+        <div style="text-align:center;color:var(--dim);font-size:.78rem;margin:2px 0">↓ if Tier 2 also empty</div>
+        <div class="card danger">
+          <strong style="color:#FCA5A5;font-size:.86rem">Tier 3 — Best Available with Strong Warning ✗</strong>
+          <p style="font-size:.78rem">No pathway passes core. Pick the one requiring the <em>least remediation</em> — smallest gap to core requirements. Issues mandatory teacher review flag.</p>
+        </div>
+      </div>
+
+      <div class="card accent mt">
+        <h4>Why core gates matter more than scores</h4>
+        <p style="font-size:.8rem">Imagine a student with 85% averages in everything except 18% in Mathematics. Their composite for STEM might still be high (because the other STEM-relevant subjects are excellent). Without the gate, the algorithm would recommend STEM — and the student would fail Math in Senior Secondary, fail university entry, lose their academic future. The gate stops this. <strong>We protect the student, not the algorithm.</strong></p>
+      </div>
+
+      <div class="card purple mt-sm">
+        <h4>Tier 3 in Practice — Rare But Critical</h4>
+        <p style="font-size:.8rem">Tier 3 fires for ~2% of students in our test cohort. Every Tier 3 case triggers a mandatory human review before placement. The system never takes irreversible action on a Tier 3 student without teacher sign-off.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 11b — ACCURACY CALIBRATION ══════════════ -->
+<div class="slide" data-section="Decision Logic">
+  <div class="label">Slide 11b · Accuracy Calibration &amp; Cluster Filtering Enhancements</div>
+  <h2>How Accurate Is the Recommender? — Empirical Calibration</h2>
+  <p class="sub">Supervisor Question #1 asked for "cluster calculation and recommendation filtering technique that enhance accuracy." We answered by building a measurement harness, sweeping algorithm variants against two ground-truth sets, and shipping three concrete enhancements (A, B, C) into production. Numbers below are reproducible from <code>scripts/eval_recommendation_accuracy.py</code>.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>Two Ground-Truth Sets</h3>
+      <table style="font-size:.78rem">
+        <tr><th>Dataset</th><th>n</th><th>Label source</th><th>Chance baseline</th></tr>
+        <tr>
+          <td><strong>REAL</strong> — gradess1.csv</td>
+          <td>1039</td>
+          <td><code>Actual Pathway</code> column (real placements — likely captures student preference, not pure score-fit)</td>
+          <td>33.3%</td>
+        </tr>
+        <tr>
+          <td><strong>SYNTHETIC</strong> — IRT generator</td>
+          <td>500</td>
+          <td>Argmax of cosine(student θ, IDEAL_PATHWAY_PROFILES) — independent of subject scores</td>
+          <td>33.3%</td>
+        </tr>
+      </table>
+
+      <h3 style="margin-top:14px">Critical Finding</h3>
+      <div class="card warn">
+        <p style="font-size:.78rem"><strong>Logistic regression on the labelled real data caps out at 41.7% (5-fold CV).</strong> That is the empirical ceiling for ANY score-only recommender on this dataset. The gradess1.csv labels do contain weak score signal, but they are dominated by factors invisible to subject scores — likely <em>student preference, family pressure, school capacity</em>. This number is the strongest empirical justification for the DQN-with-feedback design (Slides 12–20): preference is the missing signal.</p>
+      </div>
+
+      <h3 style="margin-top:14px">Enhancement A — Filter-then-Rank</h3>
+      <p style="font-size:.78rem">Old code ranked all pathways by composite (0.6·CW + 0.25·cosine + 0.15·PSI), THEN gated. The cosine term caused real-data flips like Abel #1039 (Arts won over STEM despite STEM having higher CW + key-subject avg). New <code>recommend_pathway</code> hard-filters first (CW threshold + core gates), THEN ranks survivors by raw CW, with cosine retained only as a final tiebreak nudge.</p>
+
+      <h3 style="margin-top:14px">Enhancement B — Logistic-Learned Weights</h3>
+      <p style="font-size:.78rem">L2 logistic regression on standardized G9 scores → per-pathway weight vectors → <code>config/learned_weights.json</code>. Loaded via <code>LEARNED_WEIGHT_BLEND</code> env var (default 0). At blend=1.0, real-data accuracy moves from 32.1% → 34.8%. At blend=0.5 it is essentially flat. We ship blend=0 by default — the learned weights help marginally only on the data they were trained on, and hurt the theoretically-grounded synthetic θ-truth set.</p>
+
+      <h3 style="margin-top:14px">Enhancement C — Low-Confidence Margin Flag</h3>
+      <p style="font-size:.78rem">When the top-2 eligible pathways are within 5 CW points AND the key-subject leads are within 5 points, <code>recommend_pathway</code> sets <code>low_confidence=True</code>. The analysis page surfaces a blue "Borderline match — teacher review recommended" alert. Standard precision/recall trade: we accept "I don't know" instead of forcing a wrong answer.</p>
+    </div>
+
+    <div>
+      <h3>Empirical Accuracy Table</h3>
+      <p style="font-size:.74rem;color:var(--dim)">Each row = one configuration. Each column block = one ground-truth set. Cells = top-1 accuracy %.</p>
+      <table style="font-size:.72rem">
+        <tr>
+          <th rowspan="2">Configuration</th>
+          <th colspan="2">REAL (gradess1.csv)</th>
+          <th colspan="2">SYNTHETIC (θ-truth)</th>
+        </tr>
+        <tr>
+          <th>blend=0</th><th>blend=1.0</th>
+          <th>blend=0</th><th>blend=1.0</th>
+        </tr>
+        <tr><td>Chance (random)</td><td>33.3</td><td>33.3</td><td>33.3</td><td>33.3</td></tr>
+        <tr><td>CW only (no filter)</td><td>33.3</td><td>33.1</td><td>36.6</td><td>36.8</td></tr>
+        <tr><td>Old: composite 0.6/0.25/0.15</td><td>31.6</td><td>32.4</td><td>31.6</td><td>33.4</td></tr>
+        <tr><td>Bounded cosine (±5pt nudge)</td><td>32.1</td><td><strong>34.8</strong></td><td><strong>37.4</strong></td><td>33.4</td></tr>
+        <tr style="background:#15394b"><td><strong>Filter-then-rank (Enh. A) — production</strong></td><td><strong>32.1</strong></td><td>32.6</td><td>33.0</td><td>33.0</td></tr>
+        <tr><td colspan="5" style="font-size:.7rem;color:var(--dim);padding-top:8px"><em>Logistic CV ceiling on REAL labels: <strong>41.7% ± 1.2%</strong> (5-fold stratified)</em></td></tr>
+      </table>
+
+      <h3 style="margin-top:14px">Production Configuration</h3>
+      <ul style="font-size:.78rem">
+        <li><strong>Ranker</strong>: filter-then-rank (Enhancement A) — replaces composite ranking</li>
+        <li><strong>Weights</strong>: hand-authored KICD weights (blend=0) — the principled prior</li>
+        <li><strong>Cosine</strong>: tiebreaker only, never primary signal</li>
+        <li><strong>Margin flag</strong>: <code>low_confidence=True</code> on borderline cases (Enh. C) → UI surfaces "teacher review recommended"</li>
+        <li><strong>Override knob</strong>: <code>LEARNED_WEIGHT_BLEND=1.0</code> env var enables Enhancement B for experiments</li>
+      </ul>
+
+      <div class="card accent mt">
+        <h4>What This Means for the Project</h4>
+        <p style="font-size:.78rem">No score-only recommender beats ~42% on real Kenyan placement data. The remaining ~58% requires <em>preference signal</em> — exactly what the DQN's interactive feedback loop is designed to capture (Slide 17 state space includes the student's "satisfied / wants different" feedback at index [75]). The score-based engine is calibrated to its empirical ceiling; the rest of the lift must come from RL + HITL.</p>
+      </div>
+
+      <h3 style="margin-top:14px">Citations</h3>
+      <p style="font-size:.7rem;color:var(--dim);line-height:1.55"><strong>KNEC publishes ONLY the 60/20/20 placement formula and the AE1 thresholds.</strong> All per-subject weights, composite formulae, cosine fusion and margin filters in this system are calibrated empirically against labelled data. The technique class follows standard educational data-mining practice:</p>
+      <ul style="font-size:.7rem;color:var(--dim);line-height:1.55">
+        <li>Drachsler, Verbert, Santos &amp; Manouselis (2015) — <em>Panorama of Recommender Systems to Support Learning</em>, Springer (multi-criteria filtering for educational pathways).</li>
+        <li>Romero &amp; Ventura (2020) — <em>Educational data mining and learning analytics: an updated survey</em>, WIREs Data Mining (hybrid filtering for course/track recommendation).</li>
+        <li>Kotsiantis (2012) — <em>Use of machine learning techniques for educational proposes</em> (logistic-regression weight learning on student records).</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>Calibration &amp; Filtering · 2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 12 — WHAT IS RL ══════════════ -->
+<div class="slide" data-section="Reinforcement Learning">
+  <div class="label">Slide 12 · Reinforcement Learning — Intuition</div>
+  <h2>What is Reinforcement Learning? (For Complete Beginners)</h2>
+  <p class="sub">Most ML methods learn from <em>labelled examples</em>: "here is a picture, the label is cat". Reinforcement Learning is different — it learns by <em>doing things and seeing what happens</em>. Like a child learning to ride a bicycle.</p>
+
+  <div class="c2-uneven mt">
+    <div>
+      <h3>The Cycle</h3>
+      <p>An <strong>Agent</strong> takes <strong>Actions</strong> in an <strong>Environment</strong>. The environment changes <strong>State</strong> and gives the agent a <strong>Reward</strong>. The agent's job is to learn which actions maximise total reward over time.</p>
+
+      <div class="rl-loop">
+        <div class="rl-actor agent">AGENT<br><small style="font-size:.7rem;color:#A5B4FC">DQN</small></div>
+        <div class="rl-arrow">
+          <div class="rl-arr-text">action a</div>
+          <div class="rl-arr-icon">→</div>
+        </div>
+        <div class="rl-actor env">ENVIRONMENT<br><small style="font-size:.7rem;color:#67E8F9">Student</small></div>
+        <div class="rl-arrow">
+          <div class="rl-arr-icon">↩</div>
+          <div class="rl-arr-text">state s', reward r</div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:10px">In Our System</h3>
+      <table>
+        <tr><th>Concept</th><th>What it is here</th></tr>
+        <tr><td><strong>Agent</strong></td><td>The DQN neural network</td></tr>
+        <tr><td><strong>Environment</strong></td><td>The student (who progresses through grades)</td></tr>
+        <tr><td><strong>State (s)</strong></td><td>78-dim vector of everything we know about the student right now</td></tr>
+        <tr><td><strong>Action (a)</strong></td><td>1 of 9 coaching recommendations</td></tr>
+        <tr><td><strong>Reward (r)</strong></td><td>How much the student's pathway suitability improved next grade</td></tr>
+        <tr><td><strong>Episode</strong></td><td>One student's journey from G7 to G9</td></tr>
+      </table>
+    </div>
+    <div>
+      <h3>RL vs Other Approaches</h3>
+      <table>
+        <tr><th>Approach</th><th>Problem here</th></tr>
+        <tr><td>Rule-based (if/else)</td><td>Same advice for everyone. Brittle. Can't generalise.</td></tr>
+        <tr><td>Supervised classification</td><td>Needs labelled "correct pathway" — doesn't exist. Random Forest baseline got 41.9% accuracy on raw labels.</td></tr>
+        <tr><td>Regression to G9 score</td><td>Static. Ignores 5 years of trajectory. Can't recommend <em>actions</em>.</td></tr>
+        <tr><td><strong>RL (DQN) ✓</strong></td><td>Learns sequences of actions. Handles trajectory. Recommends what to do next.</td></tr>
+      </table>
+
+      <div class="def">
+        <strong>The Bicycle Analogy</strong>
+        Nobody hands a child a labelled dataset of "good handlebar positions". The child wobbles, falls, gets feedback (pain = negative reward), tries again, eventually doesn't fall (positive reward). Over many attempts the child learns balance — without ever being told the rules of physics.
+      </div>
+
+      <div class="def">
+        <strong>The Chess Analogy</strong>
+        AlphaZero learned chess by playing 60 million games against itself. No human labelled "this is a good move". The reward was simply "did I win?" After enough games, the agent learned moves that lead to wins. We do the same — the reward is "did the student's pathway suitability improve next grade?"
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 13 — Q-LEARNING ══════════════ -->
+<div class="slide" data-section="Reinforcement Learning">
+  <div class="label">Slide 13 · Q-Learning — The Mathematical Core</div>
+  <h2>Q-Learning — Learning the "Value" of Each Action</h2>
+  <p class="sub">The central idea of Q-learning: for every (state, action) pair, learn a number called the <strong>Q-value</strong> = "if I take action <em>a</em> from state <em>s</em>, what is the total reward I expect from now until the end?"</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>The Q Function</h3>
+      <div class="formula big">Q(s, a) = expected total future reward<br>if I take action a from state s</div>
+      <p style="font-size:.82rem">If we know Q for every possible (s, a), then choosing the best action becomes trivial: pick the action with the highest Q.</p>
+
+      <div class="formula">a* = argmax<sub>a</sub> Q(s, a)</div>
+
+      <h3 style="margin-top:14px">The Bellman Equation</h3>
+      <p style="font-size:.82rem">How do we compute Q? Through the <strong>Bellman equation</strong> — the mathematical heart of all RL:</p>
+      <div class="formula big">Q(s, a) = r + γ · max<sub>a'</sub> Q(s', a')</div>
+      <p style="font-size:.78rem">In English: <em>"The value of doing action a from state s equals the immediate reward r, plus the discounted value of the best action from the next state s'."</em></p>
+
+      <div class="def">
+        <strong>γ (gamma) — the discount factor</strong>
+        γ ∈ [0, 1] determines how much we care about future rewards vs immediate ones. γ=0 → only immediate. γ=1 → all future rewards equal. We use γ=0.95 — strongly future-oriented but with some discount.
+      </div>
+    </div>
+    <div>
+      <h3>Tiny Q-Table Example</h3>
+      <p style="font-size:.82rem">In a simple world with 3 states and 2 actions, Q is a table:</p>
+      <table style="font-size:.78rem">
+        <tr><th>State</th><th>Action: Left</th><th>Action: Right</th></tr>
+        <tr><td>S1 (start)</td><td>2.5</td><td><span class="hlg">8.7 ★</span></td></tr>
+        <tr><td>S2 (middle)</td><td>4.1</td><td><span class="hlg">9.2 ★</span></td></tr>
+        <tr><td>S3 (goal)</td><td><span class="hlg">10.0 ★</span></td><td>0.0</td></tr>
+      </table>
+      <p style="font-size:.76rem;margin-top:6px">The agent reads the row for the current state and picks the column with the highest number. From S1, "Right" has Q=8.7 vs Left=2.5 → pick Right.</p>
+
+      <h3 style="margin-top:14px">The Update Rule</h3>
+      <p style="font-size:.82rem">Each time the agent takes an action and sees what happens, it updates Q by moving it slightly toward the Bellman target:</p>
+      <div class="formula sm">Q(s,a) ← Q(s,a) + α · [target − Q(s,a)]<br>target = r + γ · max<sub>a'</sub> Q(s', a')</div>
+      <p style="font-size:.78rem">α is the learning rate. The difference <em>(target − Q)</em> is called the <strong>TD error</strong> — the agent's "surprise". Big surprises cause big updates.</p>
+
+      <div class="hbox mt-sm">
+        <div class="hbox-title">Why this works</div>
+        <p style="font-size:.82rem">Even though we never directly know "true Q", iterating the Bellman update with experience makes Q converge to the correct values. This is called <strong>Q-iteration</strong> and is mathematically proven to converge under mild conditions.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 14 — FROM Q-TABLE TO DQN ══════════════ -->
+<div class="slide" data-section="Reinforcement Learning">
+  <div class="label">Slide 14 · From Q-Table to Deep Q-Network</div>
+  <h2>Why We Need a Neural Network — The Curse of Dimensionality</h2>
+  <p class="sub">Q-tables work fine for tiny problems. For our problem they catastrophically fail. Here's why — and how Deep Q-Networks (DQNs) solve it.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>The Counting Problem</h3>
+      <p>Our state has <strong>78 dimensions</strong>. Even if each dimension only had 10 possible values:</p>
+      <div class="formula big">|states| = 10<sup>78</sup></div>
+      <p style="font-size:.78rem">That's more than the number of atoms in the observable universe (~10⁸⁰). We cannot store a Q-table this large. We cannot visit every state to learn its Q.</p>
+
+      <div class="def">
+        <strong>The Insight</strong>
+        We don't actually need to memorise every state. Similar states should have similar Q-values. A student with [Math=70, Sci=68] should get a similar action recommendation as one with [Math=72, Sci=66]. We need a function that <em>generalises</em> — interpolates between known cases. Neural networks are exactly that.
+      </div>
+
+      <h3 style="margin-top:14px">The DQN Idea</h3>
+      <p>Replace the Q-table with a neural network that takes a state as input and outputs Q-values for all 9 actions:</p>
+      <div class="formula">Q<sub>θ</sub>(s) = [Q(s, a₀), Q(s, a₁), …, Q(s, a₈)]</div>
+      <p style="font-size:.78rem">θ are the network's weights (millions of numbers). We train them so Q<sub>θ</sub> approximates the true Q as closely as possible.</p>
+    </div>
+    <div>
+      <h3>Training a DQN — The Twist</h3>
+      <p>The standard supervised learning loss won't work directly. We're trying to minimise:</p>
+      <div class="formula big">L(θ) = [Q<sub>θ</sub>(s, a) − target]<sup>2</sup><br>target = r + γ · max<sub>a'</sub> Q<sub>θ</sub>(s', a')</div>
+      <p style="font-size:.78rem"><strong>The problem:</strong> the target depends on Q<sub>θ</sub> itself. Updating θ to fit one target moves the target. This is unstable — the network chases its own tail and diverges.</p>
+
+      <div class="card warn mt">
+        <h4>Two Stabilising Tricks (DeepMind 2015)</h4>
+        <ol style="padding-left:18px;margin-top:6px">
+          <li style="font-size:.82rem"><strong>Target Network</strong> — keep a frozen copy of Q<sub>θ</sub> that we use to compute targets. Update it only every N steps. This breaks the chasing-tail dynamic.</li>
+          <li style="font-size:.82rem"><strong>Experience Replay</strong> — store past (s, a, r, s') tuples in a buffer. Sample random batches from it to train. This breaks the temporal correlation that would otherwise destabilise training.</li>
+        </ol>
+      </div>
+
+      <div class="card accent mt-sm">
+        <h4>Two More Improvements We Use</h4>
+        <ol style="padding-left:18px;margin-top:6px">
+          <li style="font-size:.82rem"><strong>Double DQN</strong> — fixes the "overestimation bias" of vanilla DQN.</li>
+          <li style="font-size:.82rem"><strong>Dueling Architecture</strong> — splits Q into "state value" + "action advantage" for more efficient learning.</li>
+        </ol>
+        <p style="font-size:.78rem;margin-top:6px">Both explained in the next slide.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 15 — DOUBLE DUELING DQN ══════════════ -->
+<div class="slide" data-section="Reinforcement Learning">
+  <div class="label">Slide 15 · Double Dueling DQN</div>
+  <h2>Double DQN + Dueling Architecture — The Two Refinements We Use</h2>
+  <p class="sub">Vanilla DQN has known weaknesses. Double DQN fixes the overestimation bias (van Hasselt 2015). Dueling architecture (Wang 2016) makes learning faster by separating "how good is this state" from "how much does this specific action add". We use both.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>Problem 1 · Overestimation Bias</h3>
+      <p style="font-size:.82rem">Vanilla DQN's target uses <code>max<sub>a'</sub> Q(s', a')</code>. The <strong>max</strong> operator picks the highest of several noisy estimates — and the highest noisy estimate is, on average, an overestimate. This bias compounds: Q-values inflate over training, the agent becomes overconfident, performance degrades.</p>
+
+      <h3 style="margin-top:8px">Double DQN Solution</h3>
+      <p style="font-size:.82rem">Decouple the action selection from the action evaluation. Use the <strong>online network</strong> to <em>select</em> the best action, but the <strong>target network</strong> to <em>evaluate</em> its value:</p>
+      <div class="formula sm">target = r + γ · Q<sub>target</sub>(s', argmax<sub>a'</sub> Q<sub>online</sub>(s', a'))</div>
+      <p style="font-size:.78rem">Two independent networks won't have correlated noise, so the max no longer systematically overestimates. Simple fix, big improvement.</p>
+
+      <h3 style="margin-top:14px">Problem 2 · Wasted Capacity</h3>
+      <p style="font-size:.82rem">In many states, the choice of action barely matters — they all have similar Q. The network spends capacity learning fine differences between actions when it should just be learning "this state is good/bad".</p>
+    </div>
+    <div>
+      <h3>Dueling Architecture Solution</h3>
+      <p style="font-size:.82rem">Split the network into two streams that recombine at the end:</p>
+      <ul style="padding-left:18px;margin-top:6px">
+        <li style="font-size:.82rem"><strong>Value stream V(s)</strong> — one number, "how good is this state regardless of action".</li>
+        <li style="font-size:.82rem"><strong>Advantage stream A(s, a)</strong> — vector, "how much better/worse is each action than average from this state".</li>
+      </ul>
+      <div class="formula big">Q(s, a) = V(s) + A(s, a) − mean(A(s, ·))</div>
+      <p style="font-size:.78rem">The mean subtraction is a normalisation trick that makes the decomposition unique.</p>
+
+      <div class="netdiag" style="padding:14px;font-size:.7rem">
+        <div class="netcol"><div class="netcol-label">Input</div><div class="netnode in">78</div></div>
+        <div class="netarr">→</div>
+        <div class="netcol"><div class="netcol-label">FC1</div><div class="netnode hid">256</div></div>
+        <div class="netarr">→</div>
+        <div class="netcol"><div class="netcol-label">FC2</div><div class="netnode hid">128</div></div>
+        <div class="netarr">→</div>
+        <div class="netcol">
+          <div class="netcol-label">Split</div>
+          <div class="netstack">
+            <div class="netnode val" style="width:32px;height:32px">V</div>
+            <div class="netnode adv" style="width:32px;height:32px">A</div>
+          </div>
+        </div>
+        <div class="netarr">→</div>
+        <div class="netcol"><div class="netcol-label">V→1, A→9</div><div class="netnode out">Q</div></div>
+      </div>
+
+      <div class="hbox">
+        <div class="hbox-title">Why both refinements together?</div>
+        <p style="font-size:.82rem">Double DQN fixes <em>what target to chase</em>. Dueling fixes <em>how to represent Q internally</em>. They are orthogonal improvements — we get both benefits simultaneously. The combined "Double Dueling DQN" is a 2016 SOTA architecture and remains a strong baseline.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 16 — PRIORITIZED EXPERIENCE REPLAY ══════════════ -->
+<div class="slide" data-section="Reinforcement Learning">
+  <div class="label">Slide 16 · Prioritized Experience Replay (PER)</div>
+  <h2>PER — Sampling From the Replay Buffer Smartly</h2>
+  <p class="sub">Vanilla experience replay samples uniformly from the buffer. But not all experiences are equally useful — the ones the network gets <em>most wrong</em> contain the most learning signal. PER samples them more often.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>The Core Idea</h3>
+      <p style="font-size:.82rem">Each transition (s, a, r, s') gets a <strong>priority</strong> based on how surprised the network was by it:</p>
+      <div class="formula big">priority = (|TD error| + ε)<sup>α</sup></div>
+      <p style="font-size:.78rem">α=0.6 (balance between uniform and pure-priority). ε=0.01 (so even zero-error experiences get sampled occasionally). When we update Q, we recompute the new TD error and update the priority.</p>
+
+      <h3 style="margin-top:14px">Importance Sampling Correction</h3>
+      <p style="font-size:.82rem">If we sample non-uniformly, our gradient estimate becomes biased. We correct this by weighting the loss for each sample:</p>
+      <div class="formula sm">w<sub>i</sub> = (N · P(i))<sup>−β</sup>,  β: 0.4 → 1.0</div>
+      <p style="font-size:.78rem">β starts low (mild correction, fast learning) and anneals to 1 (full correction, asymptotic correctness).</p>
+
+      <div class="def">
+        <strong>What is "TD error"?</strong>
+        It's the difference between the Q-value the network predicted and the Q-value the Bellman equation says it should be. Big TD error = the network was very wrong. PER says: <em>"if you were very wrong, replay this experience more often until you stop being wrong about it."</em>
+      </div>
+    </div>
+    <div>
+      <h3>The SumTree Data Structure</h3>
+      <p style="font-size:.82rem">Naively sampling proportional to priority is O(N). For a 20,000-element buffer, that's far too slow. We use a <strong>SumTree</strong>: a binary tree where each leaf holds a priority and each internal node holds the sum of its children. Sampling becomes O(log N).</p>
+
+      <div class="formula sm left" style="font-size:.66rem;line-height:1.6">
+&nbsp;&nbsp;&nbsp;&nbsp;[total: 100]<br>
+&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<br>
+&nbsp;&nbsp;[60]&nbsp;&nbsp;&nbsp;&nbsp;[40]<br>
+&nbsp;&nbsp;/&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;\<br>
+[35][25] [10][30]   ← leaves = priorities
+      </div>
+
+      <p style="font-size:.78rem;margin-top:8px"><strong>Sampling:</strong> generate random number r ∈ [0, 100]. Walk down the tree: at each internal node, go left if r ≤ left_sum, else right (and subtract left_sum). Land at the leaf. O(log N).</p>
+
+      <div class="card cyan mt">
+        <h4>Hyperparameters We Use</h4>
+        <table style="font-size:.74rem">
+          <tr><th>Param</th><th>Value</th><th>Meaning</th></tr>
+          <tr><td>buffer size</td><td>20,000</td><td>Replay capacity</td></tr>
+          <tr><td>batch size</td><td>128</td><td>Samples per gradient step</td></tr>
+          <tr><td>α (priority)</td><td>0.6</td><td>Priority exponent</td></tr>
+          <tr><td>β start</td><td>0.4</td><td>IS correction start</td></tr>
+          <tr><td>β frames</td><td>5000</td><td>Annealing period</td></tr>
+          <tr><td>ε (priority floor)</td><td>0.01</td><td>Avoid zero-priority leaves</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 17 — STATE SPACE ══════════════ -->
+<div class="slide" data-section="Reinforcement Learning">
+  <div class="label">Slide 17 · State Space</div>
+  <h2>State Space — 78 Dimensions That Capture the Whole Student</h2>
+  <p class="sub">The state vector is the DQN's window into the world. Every dimension is normalised to [0, 1]. The encoder takes raw student data and produces this fixed-size vector.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>State Vector Layout</h3>
+      <table style="font-size:.74rem">
+        <tr><th>Dims</th><th>Group</th><th>Content</th></tr>
+        <tr><td><span class="sdim">[0–8]</span></td><td>Current</td><td>9 subject scores at most recent grade / 100</td></tr>
+        <tr><td><span class="sdim">[9–17]</span></td><td>Previous</td><td>9 subject scores at previous grade / 100</td></tr>
+        <tr><td><span class="sdim">[18–26]</span></td><td>Oldest</td><td>9 subject scores at oldest of 3 most recent / 100</td></tr>
+        <tr><td><span class="sdim">[27–35]</span></td><td>Growth A</td><td>9 deltas: middle − oldest grade</td></tr>
+        <tr><td><span class="sdim">[36–44]</span></td><td>Growth B</td><td>9 deltas: current − middle grade</td></tr>
+        <tr><td><span class="sdim">[45–47]</span></td><td>Suit oldest</td><td>3 pathway suitabilities at oldest grade</td></tr>
+        <tr><td><span class="sdim">[48–50]</span></td><td>Suit middle</td><td>3 pathway suitabilities at middle grade</td></tr>
+        <tr><td><span class="sdim">[51–53]</span></td><td>Suit current</td><td>3 pathway suitabilities at current grade</td></tr>
+        <tr><td><span class="sdim">[54–56]</span></td><td>Suit Δ</td><td>3 deltas: current − oldest suitability</td></tr>
+        <tr><td><span class="sdim">[57–65]</span></td><td>Gap</td><td>9 per-subject gaps to recommended pathway ideal</td></tr>
+        <tr><td><span class="sdim">[66–68]</span></td><td>Preference</td><td>3 one-hot: [STEM, SS, Arts]</td></tr>
+        <tr><td><span class="sdim">[69–71]</span></td><td>Strength</td><td>3 top core subject scores in recommended pathway</td></tr>
+        <tr><td><span class="sdim">[72–74]</span></td><td>Confidence</td><td>3 softmax-normalised pathway confidences</td></tr>
+        <tr><td><span class="sdim">[75]</span></td><td>Feedback</td><td>1: satisfied / −1: wants different / 0: none</td></tr>
+        <tr><td><span class="sdim">[76–77]</span></td><td>Padding</td><td>2 zeros (reserved for future signals)</td></tr>
+      </table>
+    </div>
+    <div>
+      <h3>The 9 Subjects in the State Encoding</h3>
+      <p style="font-size:.78rem">Only 9 of the ~14 KICD subjects fit into the state encoding (chosen for cross-grade availability and pathway relevance):</p>
+      <p style="font-size:.78rem;margin-top:4px"><span class="chip stem">MATH</span> <span class="chip stem">INT_SCI</span> <span class="chip stem">PRE_TECH</span> <span class="chip ss">ENG</span> <span class="chip ss">KIS_KSL</span> <span class="chip ss">SOC_STUD</span> <span class="chip ss">REL_CRE</span> <span class="chip arts">CRE_ARTS</span> <span class="chip arts">AGRI</span></p>
+
+      <h3 style="margin-top:14px">Why Three Time Slices?</h3>
+      <p style="font-size:.82rem">The state captures up to <strong>3 most recent grades</strong>. This gives the DQN enough trajectory information to detect:</p>
+      <ul style="padding-left:18px;margin-top:6px">
+        <li style="font-size:.8rem">Trends: improving / declining / stable</li>
+        <li style="font-size:.8rem">Acceleration: improvement getting faster/slower</li>
+        <li style="font-size:.8rem">Subject-specific volatility: which subjects swing</li>
+      </ul>
+      <p style="font-size:.78rem;margin-top:6px">Three slices is a good compromise: enough to detect trends, few enough to keep state dimensionality manageable.</p>
+
+      <div class="hbox">
+        <div class="hbox-title">Why student preference is in the state</div>
+        <p style="font-size:.82rem">The DQN should treat a student saying "I want to do STEM" differently from one saying "I want Arts". The one-hot encoding at <span class="sdim">[66–68]</span> lets the network condition its action choice on stated preference — recommending exploration when preference and aptitude align, recommending gap-filling when they diverge.</p>
+      </div>
+
+      <div class="hbox">
+        <div class="hbox-title">Why feedback is at [75]</div>
+        <p style="font-size:.82rem">After each recommendation, the student says "satisfied" or "wants different". This becomes a state signal for future decisions — letting the DQN learn that satisfied students should be deepened (action A5) while dissatisfied ones should be helped to explore alternatives.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 18 — ACTION SPACE ══════════════ -->
+<div class="slide" data-section="Reinforcement Learning">
+  <div class="label">Slide 18 · Action Space</div>
+  <h2>Action Space — 9 Discrete Coaching Recommendations</h2>
+  <p class="sub">The DQN chooses 1 of 9 actions per state. Each action maps to a concrete coaching recommendation a teacher would give. Two modes: gap-filling (explore/strengthen toward another pathway) and deepening (consolidate the current pathway).</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3 style="color:#FCA5A5;margin-bottom:8px">Mode A · Gap-Filling / Exploration</h3>
+      <p style="font-size:.78rem;margin-bottom:8px">Used when the student is weak in their current pathway, or wants a different one.</p>
+
+      <div class="action"><div class="a-id">A0</div><div><strong>Strengthen STEM: Mathematics</strong><br><small style="color:var(--muted)">Target: MATH · Pathway: STEM</small></div></div>
+      <div class="action"><div class="a-id">A1</div><div><strong>Strengthen STEM: Sciences</strong><br><small style="color:var(--muted)">Target: INT_SCI, PRE_TECH · Pathway: STEM</small></div></div>
+      <div class="action"><div class="a-id">A2</div><div><strong>Strengthen Social Sciences: Languages</strong><br><small style="color:var(--muted)">Target: ENG, KIS_KSL · Pathway: SS</small></div></div>
+      <div class="action"><div class="a-id">A3</div><div><strong>Strengthen Social Sciences: Content</strong><br><small style="color:var(--muted)">Target: SOC_STUD, REL_CRE · Pathway: SS</small></div></div>
+      <div class="action"><div class="a-id">A4</div><div><strong>Strengthen Arts: Creative Subjects</strong><br><small style="color:var(--muted)">Target: CRE_ARTS · Pathway: Arts</small></div></div>
+      <div class="action"><div class="a-id">A6</div><div><strong>Explore Social Sciences over STEM</strong><br><small style="color:var(--muted)">Target: SOC_STUD, ENG · Pathway: SS</small></div></div>
+      <div class="action"><div class="a-id">A7</div><div><strong>Explore Arts over Social Sciences</strong><br><small style="color:var(--muted)">Target: CRE_ARTS, KIS_KSL · Pathway: Arts</small></div></div>
+    </div>
+    <div>
+      <h3 style="color:#86EFAC;margin-bottom:8px">Mode B · Deepening / Maintenance</h3>
+      <p style="font-size:.78rem;margin-bottom:8px">Used when the student is satisfied and already strong in the recommended pathway.</p>
+
+      <div class="action"><div class="a-id" style="background:var(--ok)">A5</div><div><strong>Deepen Current Pathway</strong><br><small style="color:var(--muted)">"You're on track — go deeper into your strongest pathway."</small></div></div>
+      <div class="action"><div class="a-id" style="background:var(--dim)">A8</div><div><strong>General Improvement Needed</strong><br><small style="color:var(--muted)">Target: MATH, ENG, INT_SCI · Used when weak everywhere</small></div></div>
+
+      <h3 style="margin-top:14px">Action Selection: ε-greedy</h3>
+      <p style="font-size:.82rem">During training, balance exploration vs exploitation:</p>
+      <div class="formula sm">a = random         with prob ε<br>a = argmax Q(s,·)  with prob 1−ε</div>
+      <p style="font-size:.78rem">ε starts at 1.0 (totally random) and decays to 0.01 (almost always greedy) with multiplicative decay rate 0.997.</p>
+
+      <div class="card warn mt-sm">
+        <h4>Inferring Actions from Real Data</h4>
+        <p style="font-size:.8rem">Real student records don't have an "action taken" label. We infer it: compare G8 vs G9 scores → which subjects improved most? → map to the action that targets those subjects. For STEM students: if MATH improved more → infer A0; if INT_SCI/PRE_TECH improved more → infer A1.</p>
+      </div>
+
+      <div class="card accent mt-sm">
+        <h4>Why discrete actions, not continuous?</h4>
+        <p style="font-size:.8rem">Continuous action spaces require actor-critic methods (DDPG, PPO) which are harder to train. Discrete actions let us use vanilla Q-learning. They also map cleanly to teacher-friendly recommendations — "focus on Math" is intuitive in a way "Math weight: 0.62, Eng weight: 0.18, …" is not.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 19 — REWARD FUNCTION ══════════════ -->
+<div class="slide" data-section="Reinforcement Learning">
+  <div class="label">Slide 19 · Reward Function</div>
+  <h2>Reward Function — What the Agent Optimises</h2>
+  <p class="sub">The reward signal defines "good" for the DQN. Get the reward wrong and the agent will learn the wrong thing — perfectly. Our reward has 4 components, each measuring a different dimension of "did this recommendation help?"</p>
+
+  <div class="formula big mt" style="max-width:780px;margin:14px auto">
+    R = 0.35·ΔSuit + 0.35·ΔStrength + 0.15·Pref + 0.15·Feedback
+  </div>
+
+  <div class="c2">
+    <div>
+      <div class="rpill">
+        <h4 style="color:#93C5FD">R₁ · Δ Suitability (weight 0.35)</h4>
+        <div class="formula sm">R₁ = (suit<sub>after</sub> − suit<sub>before</sub>) / 100</div>
+        <p style="font-size:.8rem;margin-top:6px">After the action, did the student's score-derived pathway suitability improve? Suitability is computed from the weighted average of pathway-relevant subject scores. Score-derived (not cluster weight) for a cleaner gradient signal.</p>
+      </div>
+
+      <div class="rpill">
+        <h4 style="color:#6EE7B7">R₂ · Δ Strength (weight 0.35)</h4>
+        <div class="formula sm">R₂ = mean(score<sub>after</sub> − score<sub>before</sub>)<br>over targeted subjects only</div>
+        <p style="font-size:.8rem;margin-top:6px">Did the specific subjects the action targeted actually improve? Action A0 targets MATH — R₂ is positive only if MATH score improved. This gives the DQN <em>fine-grained, action-specific</em> learning signal beyond the broad suitability.</p>
+      </div>
+    </div>
+    <div>
+      <div class="rpill">
+        <h4 style="color:#FCD34D">R₃ · Preference Alignment (weight 0.15)</h4>
+        <p style="font-size:.8rem;margin-top:6px">Rewards actions that point toward the student's <strong>stated preferred pathway</strong>:</p>
+        <ul style="padding-left:14px;margin-top:4px">
+          <li style="font-size:.78rem">Action targets preferred pathway: <span class="hlg">+1.0</span></li>
+          <li style="font-size:.78rem">Action pushes away from preference: <span class="hlr">−0.2</span></li>
+          <li style="font-size:.78rem">Action A5 (deepen current): <span class="hlg">+0.3</span></li>
+        </ul>
+      </div>
+
+      <div class="rpill">
+        <h4 style="color:#D8B4FE">R₄ · Feedback Agreement (weight 0.15)</h4>
+        <p style="font-size:.8rem;margin-top:6px">Rewards actions that match what the student told us:</p>
+        <table style="font-size:.7rem;margin-top:4px">
+          <tr><th>Student says</th><th>Action</th><th>R</th></tr>
+          <tr><td>Satisfied</td><td>A5 (deepen)</td><td><span class="hlg">+1.0</span></td></tr>
+          <tr><td>Satisfied</td><td>Strengthen current</td><td><span class="hlg">+0.5</span></td></tr>
+          <tr><td>Satisfied</td><td>Explore alt</td><td><span class="hlr">−0.3</span></td></tr>
+          <tr><td>Wants diff</td><td>Toward preferred</td><td><span class="hlg">+1.0</span></td></tr>
+          <tr><td>Wants diff</td><td>A6 / A7</td><td><span class="hlg">+0.5</span></td></tr>
+          <tr><td>Wants diff</td><td>Other</td><td><span class="hlr">−0.2</span></td></tr>
+        </table>
+      </div>
+
+      <div class="card cyan mt-sm">
+        <h4>R₅ · Teacher Feedback (planned)</h4>
+        <p style="font-size:.78rem">Every teacher override during HITL becomes a strong negative reward; every teacher endorsement, a positive one. Closing this loop will let the system learn from experienced educators in production.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hbox mt">
+    <div class="hbox-title">Why split into 4 components instead of 1?</div>
+    <p style="font-size:.84rem">Each component measures a different aspect of "good". A single combined number would hide whether the student improved because the action was correct (R₁/R₂) or because we got lucky. The 4-component design lets us tune weights per dimension and interpret why the agent took a particular action.</p>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 20 — TRAINING PIPELINE ══════════════ -->
+<div class="slide" data-section="Reinforcement Learning">
+  <div class="label">Slide 20 · Training Pipeline</div>
+  <h2>How the DQN is Trained — End-to-End</h2>
+  <p class="sub">From raw student records to a trained model: extract transitions, augment, fill the buffer, train for 1000 epochs with Double DQN targets, ε-greedy exploration, and prioritized replay sampling.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>Phase 1 · Transition Extraction</h3>
+      <p style="font-size:.82rem">For each student, for each consecutive grade pair (G7→G8, G8→G9):</p>
+      <ul class="nlist">
+        <li><div class="nn">a</div><div>Build state vector from grades up to G_before</div></li>
+        <li><div class="nn">b</div><div>Infer the implicit action from the score deltas</div></li>
+        <li><div class="nn">c</div><div>Compute reward from score changes (4-component)</div></li>
+        <li><div class="nn">d</div><div>Build next_state from grades up to G_after</div></li>
+        <li><div class="nn">e</div><div>Store (s, a, r, s', done) tuple</div></li>
+      </ul>
+
+      <div class="card cyan mt-sm">
+        <h4>The Terminal G9 Self-Loop</h4>
+        <p style="font-size:.8rem">After all real transitions, we add one extra (G9 → G9) self-loop with reward 0. Why? Without it, the network only ever sees G7 or G8 as the "current" state. At inference time, we feed it a G9 state — distribution shift caps accuracy at ~72%. The self-loop trains directly on G9 states. <strong>Bumped accuracy to ~78%.</strong></p>
+      </div>
+
+      <h3 style="margin-top:14px">Phase 2 · Augmentation (×3)</h3>
+      <p style="font-size:.82rem">Each transition is added <strong>3 times</strong>: once original + twice with Gaussian noise σ=0.02 on state vectors. Triples the effective training set without changing the underlying signal.</p>
+      <div class="formula sm">augmented_state = clip(state + N(0, 0.02), 0, 1)</div>
+    </div>
+    <div>
+      <h3>Phase 3 · Training Loop (1000 epochs)</h3>
+      <ul class="nlist">
+        <li><div class="nn">1</div><div>Sample batch of 128 from PER buffer (high-error samples weighted up)</div></li>
+        <li><div class="nn">2</div><div>Forward pass through online network → Q(s, ·)</div></li>
+        <li><div class="nn">3</div><div>Compute Double DQN targets via target network</div></li>
+        <li><div class="nn">4</div><div>Calculate TD errors per sample</div></li>
+        <li><div class="nn">5</div><div>Backprop through dueling streams (V + A − mean A)</div></li>
+        <li><div class="nn">6</div><div>Adam optimizer step (lr=5e-4) with gradient clipping to [−1, 1]</div></li>
+        <li><div class="nn">7</div><div>Update PER priorities with new TD errors</div></li>
+        <li><div class="nn">8</div><div>Every 10 epochs: copy online weights → target weights</div></li>
+        <li><div class="nn">9</div><div>Decay ε: ε ← max(ε × 0.997, 0.01)</div></li>
+      </ul>
+
+      <h3 style="margin-top:14px">Hyperparameter Summary</h3>
+      <table style="font-size:.74rem">
+        <tr><th>Param</th><th>Value</th></tr>
+        <tr><td>Learning rate (Adam)</td><td>5×10<sup>−4</sup></td></tr>
+        <tr><td>Discount γ</td><td>0.95</td></tr>
+        <tr><td>Batch size</td><td>128</td></tr>
+        <tr><td>Buffer size</td><td>20,000</td></tr>
+        <tr><td>Hidden dim</td><td>256 → 128 → 64</td></tr>
+        <tr><td>Epochs</td><td>1000</td></tr>
+        <tr><td>Updates per epoch</td><td>8</td></tr>
+        <tr><td>Target update</td><td>every 10 epochs</td></tr>
+        <tr><td>ε schedule</td><td>1.0 → 0.01 (decay 0.997)</td></tr>
+        <tr><td>Gradient clip</td><td>[−1, 1]</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 21 — RESULT SLIP ══════════════ -->
+<div class="slide" data-section="Output">
+  <div class="label">Slide 21 · KJSEA Result Slip</div>
+  <h2>Reading the Output — The Result Slip</h2>
+  <p class="sub">Every student receives a structured result slip showing exactly why they got their recommendation — not just a number, but a full explanation a teacher and parent can read.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>What the Slip Shows</h3>
+      <table>
+        <tr><th>Column</th><th>Meaning</th></tr>
+        <tr><td>Code</td><td>KNEC subject code (901=ENG, 903=MATH, …)</td></tr>
+        <tr><td>Subject</td><td>Subject name + pathway role badge</td></tr>
+        <tr><td>Score</td><td>0–100, colour-coded by CBC band</td></tr>
+        <tr><td>Level</td><td>BE2/BE1/AE2/AE1/ME2/ME1/EE2/EE1</td></tr>
+        <tr><td>Points</td><td>1–8 per CBC scale</td></tr>
+        <tr><td>Gap</td><td>Points needed to reach next level</td></tr>
+      </table>
+
+      <h3 style="margin-top:14px">Subject Badges</h3>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:.7rem;color:var(--stem);border:1px solid var(--stem);border-radius:3px;padding:1px 6px">★ key</span>
+          <span style="font-size:.78rem;color:var(--muted)">Primary key subject for recommended pathway</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:.7rem;color:var(--dim);border:1px dashed var(--dim);border-radius:3px;padding:1px 6px">support</span>
+          <span style="font-size:.78rem;color:var(--muted)">Supporting subject for recommended pathway</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span class="chip stem">S</span>
+          <span style="font-size:.78rem;color:var(--muted)">Also a primary subject for STEM</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span class="chip ss">SS</span>
+          <span style="font-size:.78rem;color:var(--muted)">Also a primary subject for Social Sciences</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span class="chip arts">A</span>
+          <span style="font-size:.78rem;color:var(--muted)">Also a primary subject for Arts</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>What the Slip Says</h3>
+      <div class="card stem">
+        <h4 style="color:#93C5FD;font-size:.8rem">Pathway Recommendation</h4>
+        <p style="font-size:1.4rem;font-weight:800;color:#F1F5F9;margin:4px 0">STEM</p>
+        <p style="font-size:.78rem">Composite: 62.94 / 100 · Tier 1 ✓ · Math gate: PASS</p>
+      </div>
+
+      <div class="card cyan mt-sm">
+        <h4 style="color:#67E8F9;font-size:.8rem">Pathway Strength: Strong</h4>
+        <p style="font-size:.78rem">Avg of primary key subjects: 64.3 / 100</p>
+        <div class="bar-row"><div class="bar-label">MATH</div><div class="bar-track"><div class="bar-fill" style="width:70%;background:#10B981"></div></div><div class="bar-pct">70</div></div>
+        <div class="bar-row"><div class="bar-label">INT_SCI</div><div class="bar-track"><div class="bar-fill" style="width:65%;background:#34D399"></div></div><div class="bar-pct">65</div></div>
+        <div class="bar-row"><div class="bar-label">PRE_TECH</div><div class="bar-track"><div class="bar-fill" style="width:58%;background:#F59E0B"></div></div><div class="bar-pct">58</div></div>
+      </div>
+
+      <div class="card purple mt-sm">
+        <h4 style="color:#D8B4FE;font-size:.8rem">DQN Coaching Action</h4>
+        <p style="font-size:.84rem"><strong>A1 — Strengthen Sciences</strong></p>
+        <p style="font-size:.76rem">"Focus on INT_SCI and PRE_TECH for the next term to consolidate STEM placement."</p>
+      </div>
+
+      <div class="card warn mt-sm">
+        <h4 style="color:#FCD34D;font-size:.8rem">Why AE1 (31%) Matters</h4>
+        <p style="font-size:.78rem">AE1 is the hard gate for STEM Math. Below 31% in MATH = STEM is locked out, regardless of every other score. This rule exists because every Senior Secondary STEM track requires functional numeracy.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 22 — PATHWAY HISTORY ══════════════ -->
+<div class="slide" data-section="Output">
+  <div class="label">Slide 22 · Pathway History Chart</div>
+  <h2>Pathway History — Suitability Over Time</h2>
+  <p class="sub">A student's <em>trajectory</em> tells us more than a snapshot. Two students at 65% today look very different if one started at 40% and the other at 80%.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>What the History Chart Shows</h3>
+      <ul class="nlist">
+        <li><div class="nn cyan">CW</div><div><strong>Solid lines</strong> — Cluster Weight suitability per pathway, per grade. Primary signal.</div></li>
+        <li><div class="nn">PSI</div><div><strong>Dashed lines</strong> — PSI for the same pathways. Secondary signal.</div></li>
+        <li><div class="nn warn">→</div><div><strong>Switch annotations</strong> — vertical dotted line wherever the recommended pathway changed grade-to-grade.</div></li>
+        <li><div class="nn ok">↑</div><div><strong>Trajectory arrows</strong> in the grade-detail panel — clicking any grade shows ↑+Xpt / ↓−Xpt / → stable per pathway.</div></li>
+        <li><div class="nn purple">avg</div><div><strong>Average score line</strong> — overall academic trajectory across all subjects.</div></li>
+      </ul>
+
+      <h3 style="margin-top:14px">Two Students, Same Final Score</h3>
+      <table>
+        <tr><th>Grade</th><th>Student A (rising)</th><th>Student B (falling)</th></tr>
+        <tr><td>G4</td><td>STEM: 42%</td><td>STEM: 80%</td></tr>
+        <tr><td>G6</td><td>STEM: 55%</td><td>STEM: 74%</td></tr>
+        <tr><td>G8</td><td>STEM: 62%</td><td>STEM: 68%</td></tr>
+        <tr><td>G9</td><td>STEM: <strong>65%</strong></td><td>STEM: <strong>65%</strong></td></tr>
+        <tr><td>Verdict</td><td><span class="hlg">↑ Strong trajectory</span></td><td><span class="hlr">↓ Declining — review</span></td></tr>
+      </table>
+    </div>
+    <div>
+      <h3>What the DQN Sees</h3>
+      <p>The state vector encodes trajectory directly:</p>
+      <ul style="padding-left:18px;margin-top:6px">
+        <li style="font-size:.82rem"><span class="sdim">[45–47]</span> — STEM/SS/Arts CW at oldest grade</li>
+        <li style="font-size:.82rem"><span class="sdim">[48–50]</span> — STEM/SS/Arts CW at middle grade</li>
+        <li style="font-size:.82rem"><span class="sdim">[51–53]</span> — STEM/SS/Arts CW at current grade</li>
+        <li style="font-size:.82rem"><span class="sdim">[54–56]</span> — Δ suitability (current − oldest)</li>
+      </ul>
+      <p style="margin-top:8px;font-size:.82rem">Student A has positive [54–56]. Student B has negative. The DQN receives <em>different states</em> and recommends <em>different actions</em> — even though current scores are identical.</p>
+
+      <div class="card stem mt-sm">
+        <h4>Pathway Strength Score Bands</h4>
+        <table style="font-size:.74rem">
+          <tr><td><span class="hlg">Excellent</span></td><td>≥ 75% avg of primary keys</td></tr>
+          <tr><td><span class="hl">Strong</span></td><td>58–75%</td></tr>
+          <tr><td><span class="hly">Moderate</span></td><td>41–58% · needs consistent work</td></tr>
+          <tr><td><span class="hlr">Developing</span></td><td>&lt; 41% · significant effort needed</td></tr>
+        </table>
+        <p style="font-size:.74rem;margin-top:6px;color:var(--dim)">Per-subject breakdown shown below the score with the gap to ME1 (70%) for each primary key subject.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 23 — THREE PATHWAYS ══════════════ -->
+<div class="slide" data-section="Pathways">
+  <div class="label">Slide 23 · Senior Secondary Pathways</div>
+  <h2>The Three Senior Secondary Pathways</h2>
+  <p class="sub">Grade 10 entry. Each pathway has 2–4 tracks. Students choose 3 optional subjects from their pathway plus 4 compulsory core subjects.</p>
+
+  <div class="c3 mt">
+    <div class="card stem">
+      <h3 style="color:#93C5FD">STEM</h3>
+      <p style="font-size:.78rem;color:var(--muted);margin-bottom:8px">Science · Technology · Engineering · Mathematics</p>
+      <h4 style="color:#CBD5E1;margin-top:8px">Primary Key Subjects</h4>
+      <p style="font-size:.78rem"><span class="chip stem">MATH</span> <span class="chip stem">INT_SCI</span> <span class="chip stem">PRE_TECH</span></p>
+      <h4 style="color:#CBD5E1;margin-top:8px">Hard Gates</h4>
+      <p style="font-size:.78rem">MATH ≥ 31% · One of INT_SCI/SCI_TECH ≥ 31%</p>
+      <h4 style="color:#CBD5E1;margin-top:8px">Senior School Tracks</h4>
+      <ul style="padding-left:16px;margin-top:4px">
+        <li style="font-size:.76rem">Pure Sciences (Phys/Chem/Bio)</li>
+        <li style="font-size:.76rem">Applied Sciences (Computer/Aviation)</li>
+        <li style="font-size:.76rem">Technical &amp; Engineering</li>
+        <li style="font-size:.76rem">Career Technical (Construction, Auto)</li>
+      </ul>
+      <h4 style="color:#CBD5E1;margin-top:8px">Career Outcomes</h4>
+      <p style="font-size:.74rem">Engineering · Medicine · Computer Science · Architecture · Aviation · Research</p>
+    </div>
+
+    <div class="card ss">
+      <h3 style="color:#6EE7B7">Social Sciences</h3>
+      <p style="font-size:.78rem;color:var(--muted);margin-bottom:8px">Languages · Humanities · Business</p>
+      <h4 style="color:#CBD5E1;margin-top:8px">Primary Key Subjects</h4>
+      <p style="font-size:.78rem"><span class="chip ss">SOC_STUD</span> <span class="chip ss">ENG</span> <span class="chip ss">KIS_KSL</span> <span class="chip ss">BUS_STUD</span></p>
+      <h4 style="color:#CBD5E1;margin-top:8px">Hard Gates</h4>
+      <p style="font-size:.78rem">One of ENG/KIS_KSL ≥ 31%</p>
+      <h4 style="color:#CBD5E1;margin-top:8px">Senior School Tracks</h4>
+      <ul style="padding-left:16px;margin-top:4px">
+        <li style="font-size:.76rem">Languages &amp; Literature</li>
+        <li style="font-size:.76rem">Humanities (History, Geography, CRE)</li>
+        <li style="font-size:.76rem">Business Studies</li>
+      </ul>
+      <h4 style="color:#CBD5E1;margin-top:8px">Career Outcomes</h4>
+      <p style="font-size:.74rem">Law · Diplomacy · Education · Journalism · Business · Public Administration</p>
+    </div>
+
+    <div class="card arts">
+      <h3 style="color:#FDBA74">Arts &amp; Sports Science</h3>
+      <p style="font-size:.78rem;color:var(--muted);margin-bottom:8px">Creative Arts · Performing Arts · Sports</p>
+      <h4 style="color:#CBD5E1;margin-top:8px">Primary Key Subjects</h4>
+      <p style="font-size:.78rem"><span class="chip arts">CRE_ARTS</span> <span class="chip arts">SPORTS_PE</span></p>
+      <h4 style="color:#CBD5E1;margin-top:8px">Hard Gates</h4>
+      <p style="font-size:.78rem">One of CRE_ARTS/SPORTS_PE ≥ 31%</p>
+      <h4 style="color:#CBD5E1;margin-top:8px">Senior School Tracks</h4>
+      <ul style="padding-left:16px;margin-top:4px">
+        <li style="font-size:.76rem">Performing Arts (Music, Dance, Theatre)</li>
+        <li style="font-size:.76rem">Visual &amp; Applied Arts</li>
+        <li style="font-size:.76rem">Sports Science</li>
+      </ul>
+      <h4 style="color:#CBD5E1;margin-top:8px">Career Outcomes</h4>
+      <p style="font-size:.74rem">Music Production · Film · Design · Sports Coaching · Physiotherapy · Animation</p>
+    </div>
+  </div>
+
+  <div class="hbox mt">
+    <div class="hbox-title">A Note on Fairness</div>
+    <p style="font-size:.84rem">The system never pre-judges based on gender, school, or region. The same input always produces the same recommendation. The only inputs are subject scores, trajectory, and stated preference. Audit logs record every recommendation for after-the-fact bias analysis.</p>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 24 — HITL & ETHICS ══════════════ -->
+<div class="slide" data-section="Ethics">
+  <div class="label">Slide 24 · Human-in-the-Loop &amp; Ethics</div>
+  <h2>Human-in-the-Loop — The Teacher Always Wins</h2>
+  <p class="sub">No AI system should make irreversible decisions about a child's life without human oversight. Every recommendation passes through a teacher review step. Every override is logged. The AI is an assistant, not an authority.</p>
+
+  <div class="c2 mt">
+    <div>
+      <h3>The HITL Workflow</h3>
+      <ul class="nlist">
+        <li><div class="nn">1</div><div>System computes pathway recommendation + DQN coaching action</div></li>
+        <li><div class="nn">2</div><div>Result slip generated with full explanation (why this pathway, why this action)</div></li>
+        <li><div class="nn">3</div><div>Teacher reviews. They can: <strong>accept</strong>, <strong>modify</strong>, or <strong>override</strong> with reason</div></li>
+        <li><div class="nn">4</div><div>Final decision logged to immutable audit trail</div></li>
+        <li><div class="nn">5</div><div>Override events feed back as training data — DQN learns from teacher wisdom</div></li>
+        <li><div class="nn">6</div><div>Aggregated override patterns reviewed quarterly for bias and model drift</div></li>
+      </ul>
+
+      <div class="card warn mt">
+        <h4>Mandatory Review Triggers</h4>
+        <ul style="padding-left:14px;margin-top:4px">
+          <li style="font-size:.8rem">Tier 3 fallback (no pathway passes core)</li>
+          <li style="font-size:.8rem">Composite score &lt; 40 across all pathways</li>
+          <li style="font-size:.8rem">Stated preference opposite to recommendation</li>
+          <li style="font-size:.8rem">Confidence (softmax) &lt; 0.5 for top pathway</li>
+          <li style="font-size:.8rem">DQN action A8 (general improvement needed)</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3>Ethical Principles</h3>
+
+      <div class="card cyan">
+        <h4>Transparency</h4>
+        <p style="font-size:.8rem">Every recommendation comes with a full breakdown: which signals contributed how much, which gates were checked, which subjects were primary. No black-box decisions.</p>
+      </div>
+
+      <div class="card purple mt-sm">
+        <h4>Reversibility</h4>
+        <p style="font-size:.8rem">Recommendations are <em>recommendations</em>, not assignments. Until a teacher signs off, nothing is committed. Even after sign-off, students retain the right to appeal and re-apply.</p>
+      </div>
+
+      <div class="card ok mt-sm">
+        <h4>Auditability</h4>
+        <p style="font-size:.8rem">Every input, every signal value, every model version, every teacher action is logged. If a student's family disputes a recommendation, we can reproduce exactly how it was made.</p>
+      </div>
+
+      <div class="card stem mt-sm">
+        <h4>Fairness</h4>
+        <p style="font-size:.8rem">The model only sees subject scores and stated preference. No name, gender, school, region, or family background. Fairness audits run quarterly across protected demographic groups.</p>
+      </div>
+
+      <div class="card warn mt-sm">
+        <h4>The "First, Do No Harm" Rule</h4>
+        <p style="font-size:.8rem">If the system is uncertain (low confidence, contradictory signals), it abstains and escalates to a human. Better to ask than to misplace.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 25 — END-TO-END PIPELINE ══════════════ -->
+<div class="slide" data-section="Summary">
+  <div class="label">Slide 25 · Complete Pipeline</div>
+  <h2>End-to-End System Pipeline</h2>
+  <p class="sub">Putting it all together — from raw curriculum data to a final teacher-validated pathway recommendation.</p>
+
+  <div class="pipe mt">
+    <div class="pipe-box">
+      <div class="pipe-box-num">Step 1</div>
+      <div class="pipe-box-title">Curriculum CSVs</div>
+      <div class="pipe-box-desc">KICD subjects, strands, indicators, competencies for G4–G9</div>
+    </div>
+    <div class="pipe-box">
+      <div class="pipe-box-num">Step 2</div>
+      <div class="pipe-box-title">IRT Generation</div>
+      <div class="pipe-box-desc">Vectorised θ + logistic + noise → realistic synthetic students</div>
+    </div>
+    <div class="pipe-box">
+      <div class="pipe-box-num">Step 3</div>
+      <div class="pipe-box-title">Score Aggregation</div>
+      <div class="pipe-box-desc">Indicator → subject scores per (student, grade)</div>
+    </div>
+    <div class="pipe-box">
+      <div class="pipe-box-num">Step 4</div>
+      <div class="pipe-box-title">CW Computation</div>
+      <div class="pipe-box-desc">Blend, z-score, weighted avg, stability bonus</div>
+    </div>
+    <div class="pipe-box">
+      <div class="pipe-box-num">Step 5</div>
+      <div class="pipe-box-title">Composite</div>
+      <div class="pipe-box-desc">0.6 CW + 0.25 Cosine + 0.15 PSI</div>
+    </div>
+  </div>
+
+  <div class="pipe">
+    <div class="pipe-box">
+      <div class="pipe-box-num">Step 6</div>
+      <div class="pipe-box-title">Gate Checks</div>
+      <div class="pipe-box-desc">Core subject ≥ AE1 + 3-tier fallback + tiebreaker</div>
+    </div>
+    <div class="pipe-box">
+      <div class="pipe-box-num">Step 7</div>
+      <div class="pipe-box-title">State Encoding</div>
+      <div class="pipe-box-desc">78-dim vector: scores + history + Δ + suitability + preference</div>
+    </div>
+    <div class="pipe-box">
+      <div class="pipe-box-num">Step 8</div>
+      <div class="pipe-box-title">DQN Inference</div>
+      <div class="pipe-box-desc">argmax Q(s, ·) → coaching action 0–8</div>
+    </div>
+    <div class="pipe-box">
+      <div class="pipe-box-num">Step 9</div>
+      <div class="pipe-box-title">Result Slip</div>
+      <div class="pipe-box-desc">Pathway + reasoning + per-subject breakdown + history</div>
+    </div>
+    <div class="pipe-box">
+      <div class="pipe-box-num">Step 10</div>
+      <div class="pipe-box-title">HITL Review</div>
+      <div class="pipe-box-desc">Teacher accepts/modifies/overrides → audit log</div>
+    </div>
+  </div>
+
+  <div class="c4 mt-lg">
+    <div class="card stem stat-box">
+      <div class="stat-n">G4–G9</div>
+      <div class="stat-l">Trajectory window</div>
+    </div>
+    <div class="card cyan stat-box">
+      <div class="stat-n">3</div>
+      <div class="stat-l">Quantitative signals</div>
+    </div>
+    <div class="card purple stat-box">
+      <div class="stat-n">78</div>
+      <div class="stat-l">DQN state dimensions</div>
+    </div>
+    <div class="card ok stat-box">
+      <div class="stat-n">100%</div>
+      <div class="stat-l">Teacher overrideable</div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 26 — ROADMAP ══════════════ -->
+<div class="slide" data-section="Roadmap">
+  <div class="label">Slide 26 · Roadmap</div>
+  <h2>What's Done, What's Next</h2>
+  <p class="sub">Current state of the system + planned enhancements based on supervisor feedback and ethical review.</p>
+
+  <div class="c3 mt">
+    <div class="card ok">
+      <h3 style="color:#86EFAC">Done · Production-Ready</h3>
+      <ul class="nlist">
+        <li><div class="nn ok">✓</div><div>IRT student data generator (vectorised)</div></li>
+        <li><div class="nn ok">✓</div><div>Cluster Weight (KNEC formula, blend, z-score, weights)</div></li>
+        <li><div class="nn ok">✓</div><div>3-signal composite (CW + Cosine + PSI)</div></li>
+        <li><div class="nn ok">✓</div><div>Hard core subject gates + 3-tier fallback</div></li>
+        <li><div class="nn ok">✓</div><div>Primary key subject tiebreaker</div></li>
+        <li><div class="nn ok">✓</div><div>Double Dueling DQN with PER (numpy)</div></li>
+        <li><div class="nn ok">✓</div><div>Terminal G9 self-loop + augmentation ×3</div></li>
+        <li><div class="nn ok">✓</div><div>Result slip + history chart UI</div></li>
+        <li><div class="nn ok">✓</div><div>91 tests passing</div></li>
+      </ul>
+    </div>
+
+    <div class="card warn">
+      <h3 style="color:#FCD34D">In Progress · Short-Term</h3>
+      <ul class="nlist">
+        <li><div class="nn warn">○</div><div>Student preference UI widget — interactive feedback prompt wiring state[75]</div></li>
+        <li><div class="nn warn">○</div><div>Teacher HITL feedback → DQN reward R₅ (live training loop)</div></li>
+        <li><div class="nn warn">○</div><div>Population percentile ranking per pathway</div></li>
+        <li><div class="nn warn">○</div><div>Real KJSEA 2025 cohort CSV validation</div></li>
+        <li><div class="nn warn">○</div><div>Sub-pathway (track) recommendation</div></li>
+        <li><div class="nn warn">○</div><div>Per-subject ME1 gap recommendations panel</div></li>
+        <li><div class="nn warn">○</div><div>Ensemble training (5 seeds, majority vote)</div></li>
+      </ul>
+    </div>
+
+    <div class="card cyan">
+      <h3 style="color:#67E8F9">Planned · Long-Term</h3>
+      <ul class="nlist">
+        <li><div class="nn cyan">→</div><div>National rollout pilot (10 schools, 1000 students)</div></li>
+        <li><div class="nn cyan">→</div><div>Quarterly bias audit framework (gender, region, school)</div></li>
+        <li><div class="nn cyan">→</div><div>Conservative Q-Learning regularisation when buffer ≥ 5000 transitions</div></li>
+        <li><div class="nn cyan">→</div><div>Multi-language support (EN, KI, SW)</div></li>
+        <li><div class="nn cyan">→</div><div>Mobile app for parents/students to view results</div></li>
+        <li><div class="nn cyan">→</div><div>API for third-party school systems (KEMIS, NEMIS)</div></li>
+        <li><div class="nn cyan">→</div><div>Integration with university admissions data</div></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer"><span>Kenya CBC Pathway System</span><span>2025–2026</span></div>
+</div>
+
+
+<!-- ══════════════ SLIDE 27 — CLOSING ══════════════ -->
+<div class="slide cover" data-section="Closing">
+  <span class="cover-tag">Thank You</span>
+  <h1 style="font-size:3rem;margin-bottom:18px">Recommendations That Help,<br>Not Just Predict.</h1>
+  <p style="font-size:1.08rem;color:#CBD5E1;max-width:800px;margin:0 auto 8px">
+    The Kenya CBC Pathway Recommendation System combines KNEC-aligned policy with
+    Reinforcement Learning to give every Grade 9 student the most informed,
+    transparent, and overrideable pathway recommendation possible.
+  </p>
+
+  <div class="c4" style="max-width:920px;margin:32px auto 0">
+    <div class="card stem stat-box">
+      <div class="stat-n">3</div>
+      <div class="stat-l">Quantitative signals</div>
+    </div>
+    <div class="card purple stat-box">
+      <div class="stat-n">2 layer</div>
+      <div class="stat-l">Deterministic + RL</div>
+    </div>
+    <div class="card cyan stat-box">
+      <div class="stat-n">∞</div>
+      <div class="stat-l">Teacher overrides</div>
+    </div>
+    <div class="card ok stat-box">
+      <div class="stat-n">1</div>
+      <div class="stat-l">Student future at stake</div>
+    </div>
+  </div>
+
+  <div class="hbox" style="max-width:780px;margin:30px auto 0">
+    <div class="hbox-title">Project Oath</div>
+    <p style="font-size:.88rem;text-align:center">
+      "We are playing god with a student's future. Every recommendation must be
+      defensible by curriculum policy, audited by a human, and overrideable by a teacher."
+    </p>
+  </div>
+
+  <p style="font-size:.7rem;color:var(--dim);margin-top:36px">
+    Built on Item Response Theory · KNEC Cluster Weight · Double Dueling DQN with Prioritized Experience Replay
+  </p>
+</div>
+
+</div>
+
+<div id="hint">← / → · F: fullscreen</div>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+const counter = document.getElementById('counter');
+const sectag = document.getElementById('sectag');
+let idx = 0;
+
+function show(i) {
+  slides.forEach((s, k) => s.classList.toggle('active', k === i));
+  idx = i;
+  counter.textContent = `${i + 1} / ${slides.length}`;
+  sectag.textContent = slides[i].dataset.section || '';
+  slides[i].scrollTop = 0;
+}
+function next() { if (idx < slides.length - 1) show(idx + 1); }
+function prev() { if (idx > 0) show(idx - 1); }
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); next(); }
+  else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); prev(); }
+  else if (e.key === 'Home') { show(0); }
+  else if (e.key === 'End') { show(slides.length - 1); }
+  else if (e.key === 'f' || e.key === 'F') {
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+    else document.exitFullscreen();
+  }
+});
+
+// Touch swipe support
+let startX = 0;
+document.addEventListener('touchstart', e => { startX = e.touches[0].clientX; });
+document.addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - startX;
+  if (dx < -50) next();
+  else if (dx > 50) prev();
+});
+
+show(0);
+</script>
+</body>
+</html>

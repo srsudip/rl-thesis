@@ -1,0 +1,30 @@
+{
+  "cv_accuracy": 0.4167,
+  "cv_std": 0.0121,
+  "method": "L2 logistic regression, one-vs-rest, standardized inputs",
+  "n_students": 1039,
+  "note": "KNEC publishes only the 60/20/20 placement formula. These weights are learned empirically \u2014 see Drachsler et al. 2015, Romero & Ventura 2020, Kotsiantis 2012.",
+  "source_file": "gradess1.csv",
+  "weights": {
+    "ARTS_SPORTS": {
+      "AGRI": 0.218,
+      "BUS_STUD": 0.808,
+      "CRE_ARTS": 1.0,
+      "ENG": 0.086,
+      "INT_SCI": 0.58,
+      "REL_CRE": 0.146
+    },
+    "SOCIAL_SCIENCES": {
+      "BUS_STUD": 0.106,
+      "HEALTH_ED": 1.0,
+      "KIS_KSL": 0.212
+    },
+    "STEM": {
+      "LIFE_SKILLS": 0.134,
+      "MATH": 0.193,
+      "PRE_TECH": 0.07,
+      "SOC_STUD": 0.394,
+      "SPORTS_PE": 1.0
+    }
+  }
+}

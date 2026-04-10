@@ -1,0 +1,109 @@
+﻿subject_id;grade;subject_code;subject_name
+401;4;ENG;English
+402;4;KIS_KSL;Kiswahili or Kenya Sign Language
+404;4;AGRI;Agriculture
+405;4;SCI_TECH;Science and Technology
+406;4;MATH;Mathematics
+407;4;REL_CRE;Christian Religious Education (CRE)
+408;4;REL_IRE;Islamic Religious Education (IRE)
+409;4;REL_HRE;Hindu Religious Education (HRE)
+410;4;CRE_ARTS;Creative Arts
+412;4;SOC_STUD;Social Studies
+501;5;ENG;English
+502;5;KIS_KSL;Kiswahili or Kenya Sign Language
+504;5;AGRI;Agriculture
+505;5;SCI_TECH;Science and Technology
+506;5;MATH;Mathematics
+507;5;REL_CRE;Christian Religious Education (CRE)
+508;5;REL_IRE;Islamic Religious Education (IRE)
+509;5;REL_HRE;Hindu Religious Education (HRE)
+510;5;CRE_ARTS;Creative Arts
+512;5;SOC_STUD;Social Studies
+601;6;ENG;English
+602;6;KIS_KSL;Kiswahili or Kenya Sign Language
+604;6;AGRI;Agriculture
+605;6;SCI_TECH;Science and Technology
+606;6;MATH;Mathematics
+607;6;REL_CRE;Christian Religious Education (CRE)
+608;6;REL_IRE;Islamic Religious Education (IRE)
+609;6;REL_HRE;Hindu Religious Education (HRE)
+610;6;CRE_ARTS;Creative Arts
+612;6;SOC_STUD;Social Studies
+701;7;ENG;English
+702;7;KIS_KSL;Kiswahili or Kenya Sign Language
+704;7;AGRI;Agriculture
+705;7;SCI_TECH;Science and Technology
+706;7;MATH;Mathematics
+707;7;REL_CRE;Christian Religious Education (CRE)
+708;7;REL_IRE;Islamic Religious Education (IRE)
+709;7;REL_HRE;Hindu Religious Education (HRE)
+710;7;CRE_ARTS;Creative Arts
+712;7;SOC_STUD;Social Studies
+801;8;ENG;English
+802;8;KIS_KSL;Kiswahili or Kenya Sign Language
+804;8;AGRI;Agriculture
+805;8;SCI_TECH;Science and Technology
+806;8;MATH;Mathematics
+807;8;REL_CRE;Christian Religious Education (CRE)
+808;8;REL_IRE;Islamic Religious Education (IRE)
+809;8;REL_HRE;Hindu Religious Education (HRE)
+810;8;CRE_ARTS;Creative Arts
+812;8;SOC_STUD;Social Studies
+901;9;ENG;English
+902;9;KIS_KSL;Kiswahili or Kenya Sign Language
+904;9;AGRI;Agriculture
+905;9;SCI_TECH;Science and Technology
+906;9;MATH;Mathematics
+907;9;REL_CRE;Christian Religious Education (CRE)
+908;9;REL_IRE;Islamic Religious Education (IRE)
+909;9;REL_HRE;Hindu Religious Education (HRE)
+910;9;CRE_ARTS;Creative Arts
+912;9;SOC_STUD;Social Studies
+413;4;HOME_SCI;Home Science
+414;4;PHE;Physical and Health Education
+513;5;HOME_SCI;Home Science
+514;5;PHE;Physical and Health Education
+613;6;HOME_SCI;Home Science
+614;6;PHE;Physical and Health Education
+713;7;INT_SCI;Integrated Science
+714;7;HEALTH_ED;Health Education
+715;7;PRE_TECH;Pre-Technical and Pre-Career Education
+716;7;BUS_STUD;Business Studies
+717;7;LIFE_SKILLS;Life Skills
+718;7;SPORTS_PE;Sports and Physical Education
+813;8;INT_SCI;Integrated Science
+814;8;HEALTH_ED;Health Education
+815;8;PRE_TECH;Pre-Technical and Pre-Career Education
+816;8;BUS_STUD;Business Studies
+817;8;LIFE_SKILLS;Life Skills
+818;8;SPORTS_PE;Sports and Physical Education
+913;9;INT_SCI;Integrated Science
+914;9;HEALTH_ED;Health Education
+915;9;PRE_TECH;Pre-Technical and Pre-Career Education
+916;9;BUS_STUD;Business Studies
+917;9;LIFE_SKILLS;Life Skills
+918;9;SPORTS_PE;Sports and Physical Education
+413;4;HOME_SCI;Home Science
+414;4;PHE;Physical and Health Education
+513;5;HOME_SCI;Home Science
+514;5;PHE;Physical and Health Education
+613;6;HOME_SCI;Home Science
+614;6;PHE;Physical and Health Education
+713;7;INT_SCI;Integrated Science
+714;7;HEALTH_ED;Health Education
+715;7;PRE_TECH;Pre-Technical and Pre-Career Education
+716;7;BUS_STUD;Business Studies
+717;7;LIFE_SKILLS;Life Skills
+718;7;SPORTS_PE;Sports and Physical Education
+813;8;INT_SCI;Integrated Science
+814;8;HEALTH_ED;Health Education
+815;8;PRE_TECH;Pre-Technical and Pre-Career Education
+816;8;BUS_STUD;Business Studies
+817;8;LIFE_SKILLS;Life Skills
+818;8;SPORTS_PE;Sports and Physical Education
+913;9;INT_SCI;Integrated Science
+914;9;HEALTH_ED;Health Education
+915;9;PRE_TECH;Pre-Technical and Pre-Career Education
+916;9;BUS_STUD;Business Studies
+917;9;LIFE_SKILLS;Life Skills
+918;9;SPORTS_PE;Sports and Physical Education

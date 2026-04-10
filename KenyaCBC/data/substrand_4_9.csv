@@ -1,0 +1,1681 @@
+﻿substrand_id;strand_id;substrand_code;substrand_name
+40100101;401001;ENG_1_1;Pronunciation and Vocabulary
+40100102;401001;ENG_1_2;Pronunciation and Vocabulary
+40100103;401001;ENG_1_3;Pronunciation and Vocabulary
+40100104;401001;ENG_1_4;Pronunciation and Vocabulary
+40100105;401001;ENG_1_5;Pronunciation and Vocabulary
+40100106;401001;ENG_1_6;Pronunciation and Vocabulary
+40100107;401001;ENG_1_7;Pronunciation and Vocabulary
+40100108;401001;ENG_1_8;Pronunciation and Vocabulary
+40100109;401001;ENG_1_9;Pronunciation and Vocabulary
+40100110;401001;ENG_1_10;Pronunciation and Vocabulary
+40100111;401001;ENG_1_11;Pronunciation and Vocabulary
+40100112;401001;ENG_1_12;Pronunciation and Vocabulary
+40100113;401001;ENG_1_13;Pronunciation and Vocabulary
+40100201;401002;ENG_2_1;Extensive Reading
+40100202;401002;ENG_2_2;Intensive Reading
+40100203;401002;ENG_2_3;Intensive Reading: Comprehension
+40100204;401002;ENG_2_4;Intensive Reading: Visuals
+40100205;401002;ENG_2_5;Extensive Reading
+40100206;401002;ENG_2_6;Intensive Reading
+40100207;401002;ENG_2_7;Extensive Reading: Independent Reading
+40100208;401002;ENG_2_8;Reading Fluency
+40100209;401002;ENG_2_9;Intensive Reading
+40100210;401002;ENG_2_10;Intensive Reading
+40100211;401002;ENG_2_11;Intensive Reading
+40100212;401002;ENG_2_12;Intensive Reading
+40100213;401002;ENG_2_13;Extensive Reading: Independent Reading
+40100301;401003;ENG_3_1;Word Classes: Determiners
+40100302;401003;ENG_3_2;Word Classes: Nouns
+40100303;401003;ENG_3_3;Language Pattern
+40100304;401003;ENG_3_4;Word Classes: Pronouns
+40100305;401003;ENG_3_5;Word Classes: Adjectives
+40100306;401003;ENG_3_6;Word Class: Determiners
+40100307;401003;ENG_3_7;Word Classes: Verb Aspect
+40100308;401003;ENG_3_8;Word Classes
+40100309;401003;ENG_3_9;Word Classes: Adverbs
+40100310;401003;ENG_3_10;Word Class: Conjunctions
+40100311;401003;ENG_3_11;Language Patterns
+40100312;401003;ENG_3_12;Word Classes: Verb Aspect
+40100313;401003;ENG_3_13;Word Class: Prepositions
+40100401;401004;ENG_4_1;Functional Writing
+40100402;401004;ENG_4_2;Creative Writing
+40100403;401004;ENG_4_3;Mechanics of Writing: Handwriting
+40100404;401004;ENG_4_4;Functional Writing
+40100405;401004;ENG_4_5;Creative Writing
+40100406;401004;ENG_4_6;Creative Writing
+40100407;401004;ENG_4_7;Mechanics of Writing: Punctuation
+40100408;401004;ENG_4_8;Creative Writing
+40100409;401004;ENG_4_9;Punctuation
+40100410;401004;ENG_4_10;Creative Writing
+40100411;401004;ENG_4_11;Mechanics of Writing: Spelling
+40100412;401004;ENG_4_12;Guided Composition
+40100413;401004;ENG_4_13;Spelling
+40200101;402001;KIS_KSL_1_1;Matamshi Bora
+40200102;402001;KIS_KSL_1_2;Maamkuzi na Maagano
+40200103;402001;KIS_KSL_1_3;Vitendawili
+40200104;402001;KIS_KSL_1_4;Maneno ya Upole
+40200105;402001;KIS_KSL_1_5;Methali
+40200106;402001;KIS_KSL_1_6;Shairi
+40200107;402001;KIS_KSL_1_7;Nahau
+40200108;402001;KIS_KSL_1_8;Visawe
+40200109;402001;KIS_KSL_1_9;Mazungumzo ya Kimuktadha
+40200110;402001;KIS_KSL_1_10;Tashbihi
+40200111;402001;KIS_KSL_1_11;Masimulizi
+40200201;402002;KIS_KSL_2_1;Kusoma kwa Ufahamu
+40200202;402002;KIS_KSL_2_2;Kusoma kwa Kina
+40200203;402002;KIS_KSL_2_3;Kusoma kwa Ufasaha
+40200204;402002;KIS_KSL_2_4;Kusoma kwa Mapana
+40200205;402002;KIS_KSL_2_5;Kusoma kwa Ufahamu
+40200206;402002;KIS_KSL_2_6;Kusoma kwa Kina
+40200207;402002;KIS_KSL_2_7;Kusoma kwa Mapana
+40200208;402002;KIS_KSL_2_8;Kusoma kwa Ufahamu
+40200209;402002;KIS_KSL_2_9;Kusoma kwa Mapana
+40200210;402002;KIS_KSL_2_10;Kusoma Kidijitali
+40200211;402002;KIS_KSL_2_11;Kusoma kwa Ufasaha
+40200301;402003;KIS_KSL_3_1;Insha ya Wasifu
+40200302;402003;KIS_KSL_3_2;Insha ya Masimulizi
+40200303;402003;KIS_KSL_3_3;Kuandika kwa Tarakiishi
+40200304;402003;KIS_KSL_3_4;Barua ya Kirafiki
+40200305;402003;KIS_KSL_3_5;Insha ya Maelezo
+40200306;402003;KIS_KSL_3_6;Insha ya Wasifu
+40200307;402003;KIS_KSL_3_7;Insha ya Maelezo
+40200308;402003;KIS_KSL_3_8;Insha ya Masimulizi
+40200309;402003;KIS_KSL_3_9;Insha ya Maelezo
+40200310;402003;KIS_KSL_3_10;Insha ya Masimulizi
+40200311;402003;KIS_KSL_3_11;Barua ya Kirafiki
+40200401;402004;KIS_KSL_4_1;Nomino
+40200402;402004;KIS_KSL_4_2;Vitenzi
+40200403;402004;KIS_KSL_4_3;Vivumishi
+40200404;402004;KIS_KSL_4_4;Viwakilishi
+40200405;402004;KIS_KSL_4_5;Vielezi
+40200406;402004;KIS_KSL_4_6;Viunganishi
+40200407;402004;KIS_KSL_4_7;Vihusishi
+40200408;402004;KIS_KSL_4_8;Vihisishi
+40200409;402004;KIS_KSL_4_9;Ngeli ya A-WA
+40200410;402004;KIS_KSL_4_10;Ngeli ya U-I
+40200411;402004;KIS_KSL_4_11;Ngeli ya LI- YA
+40200412;402004;KIS_KSL_4_12;Ngeli ya KI-VI
+40200413;402004;KIS_KSL_4_13;Ngeli ya LI-LI
+40200414;402004;KIS_KSL_4_14;Mnyambuliko wa Vitenzi
+40200415;402004;KIS_KSL_4_15;Vinyume vya Nomino
+40200416;402004;KIS_KSL_4_16;Nyakati na hali
+40200417;402004;KIS_KSL_4_17;Ukanushaji
+40200418;402004;KIS_KSL_4_18;Ukubwa wa Nomino
+40200419;402004;KIS_KSL_4_19;Udogo wa Nomino
+40400101;404001;AGRI_1_1;Soil Conservation
+40400102;404001;AGRI_1_2;Water Conservation
+40400103;404001;AGRI_1_3;Fuel Conservation
+40400104;404001;AGRI_1_4;Conserving Wild Animals
+40400201;404002;AGRI_2_1;Direct Sowing of Tiny Seeds
+40400202;404002;AGRI_2_2;Growing Fruits
+40400203;404002;AGRI_2_3;Uses of Domestic Animals
+40400204;404002;AGRI_2_4;Balanced Meal
+40400205;404002;AGRI_2_5;Cooking Food
+40400301;404003;AGRI_3_1;Personal Hygiene
+40400302;404003;AGRI_3_2;Domestic Hygiene
+40400303;404003;AGRI_3_3;Cleaning Personal Protective Equipment
+40400401;404004;AGRI_4_1;Making Tacking Stitches
+40500101;405001;SCI_TECH_1_1;Plants
+40500102;405001;SCI_TECH_1_2;Animals
+40500103;405001;SCI_TECH_1_3;Human Digestive System
+40500201;405002;SCI_TECH_2_1;Properties of Matter
+40500202;405002;SCI_TECH_2_2;Management of Solid Waste
+40500203;405002;SCI_TECH_2_3;Water Conservation
+40500301;405003;SCI_TECH_3_1;Force and its Effect
+40500302;405003;SCI_TECH_3_2;Light
+40500303;405003;SCI_TECH_3_3;Heat
+40600101;406001;MATH_1_1;Whole Numbers
+40600102;406001;MATH_1_2;Addition
+40600103;406001;MATH_1_3;Subtraction
+40600104;406001;MATH_1_4;Multiplication
+40600105;406001;MATH_1_5;Division
+40600106;406001;MATH_1_6;Fractions
+40600107;406001;MATH_1_7;Decimals
+40600108;406001;MATH_1_8;Use of Letters
+40600201;406002;MATH_2_1;Length
+40600202;406002;MATH_2_2;Area
+40600203;406002;MATH_2_3;Volume
+40600204;406002;MATH_2_4;Capacity
+40600205;406002;MATH_2_5;Mass
+40600206;406002;MATH_2_6;Time
+40600207;406002;MATH_2_7;Money
+40600301;406003;MATH_3_1;Position and Direction
+40600302;406003;MATH_3_2;Angles
+40600303;406003;MATH_3_3;Plane Figures
+40600401;406004;MATH_4_1;Data
+40700101;407001;REL_CRE_1_1;Self-awareness
+40700102;407001;REL_CRE_1_2;Thoughts and feelings
+40700103;407001;REL_CRE_1_3;Making choices
+40700104;407001;REL_CRE_1_4;My Family
+40700105;407001;REL_CRE_1_5;Relationships within the Family
+40700106;407001;REL_CRE_1_6;Attributes of God
+40700201;407002;REL_CRE_2_1;The Inspired Word of God
+40700202;407002;REL_CRE_2_2;Zacchaeus the Tax Collector
+40700203;407002;REL_CRE_2_3;Balaam’s Donkey
+40700204;407002;REL_CRE_2_4;Samson kills a Lion
+40700205;407002;REL_CRE_2_5;Joseph interprets a Dream
+40700206;407002;REL_CRE_2_6;Bible Patriarchs
+40700301;407003;REL_CRE_3_1;The Annunciation
+40700302;407003;REL_CRE_3_2;Birth of John the Baptist
+40700303;407003;REL_CRE_3_3;Healing of Blind Bartimaeus
+40700304;407003;REL_CRE_3_4;Healing the 10 Lepers
+40700305;407003;REL_CRE_3_5;Jesus raises a Widow's Son
+40700306;407003;REL_CRE_3_6;Forgiveness
+40700307;407003;REL_CRE_3_7;Helping the Needy
+40700308;407003;REL_CRE_3_8;Parable of the lost coin
+40700309;407003;REL_CRE_3_9;Parable of the mustard seed
+40700310;407003;REL_CRE_3_10;Nicodemus' encounter with Jesus Christ
+40700401;407004;REL_CRE_4_1;Trust
+40700402;407004;REL_CRE_4_2;Truthfulness
+40700403;407004;REL_CRE_4_3;Obedience
+40700404;407004;REL_CRE_4_4;Love
+40700405;407004;REL_CRE_4_5;Responsibility
+40700406;407004;REL_CRE_4_6;Holiness
+40700501;407005;REL_CRE_5_1;House of God
+40700502;407005;REL_CRE_5_2;The Early Church
+40700503;407005;REL_CRE_5_3;Standing Firm in Faith
+40700504;407005;REL_CRE_5_4;The Lord's Prayer
+40700505;407005;REL_CRE_5_5;Fruit of the Holy Spirit
+40700506;407005;REL_CRE_5_6;Self-control
+40700601;407006;REL_CRE_6_1;Use of Social Media
+40800101;408001;REL_IRE_1_1;Selected Surahs
+40800201;408002;REL_IRE_2_1;Hadith of Prophet Muhammad as a role model of good character.
+40800202;408002;REL_IRE_2_2;Hadith on Etiquette of Eating
+40800203;408002;REL_IRE_2_3;Hadith on brushing teeth
+40800204;408002;REL_IRE_2_4;Hadith on Fitness
+40800301;408003;REL_IRE_3_1;Attributes of Allah (S.W.T)
+40800302;408003;REL_IRE_3_2;Belief in Angels
+40800303;408003;REL_IRE_3_3;Prophets mentioned in the Qur'an
+40800401;408004;REL_IRE_4_1;Twahara (Ritual Purity)
+40800402;408004;REL_IRE_4_2;Wudhu (Ablution)
+40800403;408004;REL_IRE_4_3;Conditions for Swalah
+40800404;408004;REL_IRE_4_4;Pillars of Swalah
+40800501;408005;REL_IRE_5_1;Virtues: Kindness to Allah's Creatures
+40800502;408005;REL_IRE_5_2;Islamic manners of Dressing
+40800503;408005;REL_IRE_5_3;Positive Usage of Media
+40800504;408005;REL_IRE_5_4;Prohibitions in Islam
+40800505;408005;REL_IRE_5_5;Dua (Supplication)
+40800601;408006;REL_IRE_6_1;Obligations of Parents to Children
+40800602;408006;REL_IRE_6_2;Obligations of Children to Parents
+40800603;408006;REL_IRE_6_3;Children's Obligations to Other Family Members
+40800701;408007;REL_IRE_7_1;Call to Prophethood
+40800702;408007;REL_IRE_7_2;Earliest Converts in Islam
+40800703;408007;REL_IRE_7_3;Prophet (S.A.W.)'s Journey to Taif
+40900101;409001;REL_HIN_1_1;Punchamaha bhoot
+40900201;409002;REL_HIN_2_1;Enlightened Beings
+40900301;409003;REL_HIN_3_1;Essence of Scriptures
+40900401;409004;REL_HIN_4_1;Dainik Prarthana (Daily prayers)
+40900501;409005;REL_HIN_5_1;Aspects of Integrity
+40900601;409006;REL_HIN_6_1;Pranayam (Breathing exercises)
+40900701;409007;REL_HIN_7_1;Virtues for Righteousness of Dharma
+40900801;409008;REL_HIN_8_1;Social and National Festivals
+40900802;409008;REL_HIN_8_2;Indian Traditional Calendar
+41000101;410001;CRE_ARTS_1_1;Percussion Musical Instruments (Drawing)
+41000102;410001;CRE_ARTS_1_2;Netball
+41000103;410001;CRE_ARTS_1_3;Painting and Montage
+41000104;410001;CRE_ARTS_1_4;Rhythm
+41000105;410001;CRE_ARTS_1_5;Melody
+41000201;410002;CRE_ARTS_2_1;Athletics
+41000202;410002;CRE_ARTS_2_2;Gymnastics
+41000203;410002;CRE_ARTS_2_3;Songs
+41000204;410002;CRE_ARTS_2_4;Photography
+41000205;410002;CRE_ARTS_2_5;Descant Recorder
+41000206;410002;CRE_ARTS_2_6;Swimming (optional)
+41000207;410002;CRE_ARTS_2_7;Indigenous Kenyan Games (optional)
+41000301;410003;CRE_ARTS_3_1;Analysis of Creative Arts Works
+41200101;412001;SOC_STUD_1_1;Compass Direction
+41200102;412001;SOC_STUD_1_2;Location and size of the County
+41200103;412001;SOC_STUD_1_3;Physical features in the County
+41200104;412001;SOC_STUD_1_4;Seasons in the County
+41200105;412001;SOC_STUD_1_5;Historic Built Environments in the County
+41200201;412002;SOC_STUD_2_1;Interdependence of people
+41200202;412002;SOC_STUD_2_2;Population Distribution
+41200301;412003;SOC_STUD_3_1;Aspects of Traditional Culture in the County
+41200302;412003;SOC_STUD_3_2;The School
+41200401;412004;SOC_STUD_4_1;Economic activities in the county
+41200402;412004;SOC_STUD_4_2;Industries in the county
+41200403;412004;SOC_STUD_4_3;Enterprise Project at School
+41200501;412005;SOC_STUD_5_1;Good Citizenship in School
+41200502;412005;SOC_STUD_5_2;Peace
+41200503;412005;SOC_STUD_5_3;Child Rights
+41200504;412005;SOC_STUD_5_4;Democracy in school
+41200505;412005;SOC_STUD_5_5;Children's Government in school
+41200506;412005;SOC_STUD_5_6;Community Leadership
+41200507;412005;SOC_STUD_5_7;The County Governments in Kenya
+50100101;501001;ENG_1_1;Pronunciation and Vocabulary
+50100102;501001;ENG_1_2;Pronunciation and Vocabulary
+50100103;501001;ENG_1_3;Pronunciation and Vocabulary
+50100104;501001;ENG_1_4;Pronunciation and Vocabulary
+50100105;501001;ENG_1_5;Pronunciation and Vocabulary
+50100106;501001;ENG_1_6;Pronunciation and Vocabulary
+50100107;501001;ENG_1_7;Pronunciation and Vocabulary
+50100108;501001;ENG_1_8;Pronunciation and Vocabulary
+50100109;501001;ENG_1_9;Pronunciation and Vocabulary
+50100110;501001;ENG_1_10;Pronunciation and Vocabulary
+50100111;501001;ENG_1_11;Pronunciation and Vocabulary
+50100112;501001;ENG_1_12;Pronunciation and Vocabulary
+50100113;501001;ENG_1_13;Pronunciation and Vocabulary
+50100201;501002;ENG_2_1;Extensive Reading
+50100202;501002;ENG_2_2;Intensive Reading
+50100203;501002;ENG_2_3;Intensive Reading: Comprehension
+50100204;501002;ENG_2_4;Intensive Reading: Visuals
+50100205;501002;ENG_2_5;Extensive Reading
+50100206;501002;ENG_2_6;Intensive Reading
+50100207;501002;ENG_2_7;Extensive Reading: Independent Reading
+50100208;501002;ENG_2_8;Reading Fluency
+50100209;501002;ENG_2_9;Intensive Reading
+50100210;501002;ENG_2_10;Intensive Reading
+50100211;501002;ENG_2_11;Intensive Reading
+50100212;501002;ENG_2_12;Intensive Reading
+50100213;501002;ENG_2_13;Extensive Reading: Independent Reading
+50100301;501003;ENG_3_1;Word Classes: Determiners
+50100302;501003;ENG_3_2;Word Classes: Nouns
+50100303;501003;ENG_3_3;Language Pattern
+50100304;501003;ENG_3_4;Word Classes: Pronouns
+50100305;501003;ENG_3_5;Word Classes: Adjectives
+50100306;501003;ENG_3_6;Word Class: Determiners
+50100307;501003;ENG_3_7;Word Classes: Verb Aspect
+50100308;501003;ENG_3_8;Word Classes
+50100309;501003;ENG_3_9;Word Classes: Adverbs
+50100310;501003;ENG_3_10;Word Class: Conjunctions
+50100311;501003;ENG_3_11;Language Patterns
+50100312;501003;ENG_3_12;Word Classes: Verb Aspect
+50100313;501003;ENG_3_13;Word Class: Prepositions
+50100401;501004;ENG_4_1;Functional Writing
+50100402;501004;ENG_4_2;Creative Writing
+50100403;501004;ENG_4_3;Mechanics of Writing: Handwriting
+50100404;501004;ENG_4_4;Functional Writing
+50100405;501004;ENG_4_5;Creative Writing
+50100406;501004;ENG_4_6;Creative Writing
+50100407;501004;ENG_4_7;Mechanics of Writing: Punctuation
+50100408;501004;ENG_4_8;Creative Writing
+50100409;501004;ENG_4_9;Punctuation
+50100410;501004;ENG_4_10;Creative Writing
+50100411;501004;ENG_4_11;Mechanics of Writing: Spelling
+50100412;501004;ENG_4_12;Guided Composition
+50100413;501004;ENG_4_13;Spelling
+50200101;502001;KIS_KSL_1_1;Matamshi Bora
+50200102;502001;KIS_KSL_1_2;Maamkuzi na Maagano
+50200103;502001;KIS_KSL_1_3;Vitendawili
+50200104;502001;KIS_KSL_1_4;Maneno ya Upole
+50200105;502001;KIS_KSL_1_5;Methali
+50200106;502001;KIS_KSL_1_6;Shairi
+50200107;502001;KIS_KSL_1_7;Nahau
+50200108;502001;KIS_KSL_1_8;Visawe
+50200109;502001;KIS_KSL_1_9;Mazungumzo ya Kimuktadha
+50200110;502001;KIS_KSL_1_10;Tashbihi
+50200111;502001;KIS_KSL_1_11;Masimulizi
+50200201;502002;KIS_KSL_2_1;Kusoma kwa Ufahamu
+50200202;502002;KIS_KSL_2_2;Kusoma kwa Kina
+50200203;502002;KIS_KSL_2_3;Kusoma kwa Ufasaha
+50200204;502002;KIS_KSL_2_4;Kusoma kwa Mapana
+50200205;502002;KIS_KSL_2_5;Kusoma kwa Ufahamu
+50200206;502002;KIS_KSL_2_6;Kusoma kwa Kina
+50200207;502002;KIS_KSL_2_7;Kusoma kwa Mapana
+50200208;502002;KIS_KSL_2_8;Kusoma kwa Ufahamu
+50200209;502002;KIS_KSL_2_9;Kusoma kwa Mapana
+50200210;502002;KIS_KSL_2_10;Kusoma Kidijitali
+50200211;502002;KIS_KSL_2_11;Kusoma kwa Ufasaha
+50200301;502003;KIS_KSL_3_1;Insha ya Wasifu
+50200302;502003;KIS_KSL_3_2;Insha ya Masimulizi
+50200303;502003;KIS_KSL_3_3;Kuandika kwa Tarakiishi
+50200304;502003;KIS_KSL_3_4;Barua ya Kirafiki
+50200305;502003;KIS_KSL_3_5;Insha ya Maelezo
+50200306;502003;KIS_KSL_3_6;Insha ya Wasifu
+50200307;502003;KIS_KSL_3_7;Insha ya Maelezo
+50200308;502003;KIS_KSL_3_8;Insha ya Masimulizi
+50200309;502003;KIS_KSL_3_9;Insha ya Maelezo
+50200310;502003;KIS_KSL_3_10;Insha ya Masimulizi
+50200311;502003;KIS_KSL_3_11;Barua ya Kirafiki
+50200401;502004;KIS_KSL_4_1;Nomino
+50200402;502004;KIS_KSL_4_2;Vitenzi
+50200403;502004;KIS_KSL_4_3;Vivumishi
+50200404;502004;KIS_KSL_4_4;Viwakilishi
+50200405;502004;KIS_KSL_4_5;Vielezi
+50200406;502004;KIS_KSL_4_6;Viunganishi
+50200407;502004;KIS_KSL_4_7;Vihusishi
+50200408;502004;KIS_KSL_4_8;Vihisishi
+50200409;502004;KIS_KSL_4_9;Ngeli ya A-WA
+50200410;502004;KIS_KSL_4_10;Ngeli ya U-I
+50200411;502004;KIS_KSL_4_11;Ngeli ya LI- YA
+50200412;502004;KIS_KSL_4_12;Ngeli ya KI-VI
+50200413;502004;KIS_KSL_4_13;Ngeli ya LI-LI
+50200414;502004;KIS_KSL_4_14;Mnyambuliko wa Vitenzi
+50200415;502004;KIS_KSL_4_15;Vinyume vya Nomino
+50200416;502004;KIS_KSL_4_16;Nyakati na hali
+50200417;502004;KIS_KSL_4_17;Ukanushaji
+50200418;502004;KIS_KSL_4_18;Ukubwa wa Nomino
+50200419;502004;KIS_KSL_4_19;Udogo wa Nomino
+50400101;504001;AGRI_1_1;Soil Conservation
+50400102;504001;AGRI_1_2;Water Conservation
+50400103;504001;AGRI_1_3;Fuel Conservation
+50400104;504001;AGRI_1_4;Conserving Wild Animals
+50400201;504002;AGRI_2_1;Direct Sowing of Tiny Seeds
+50400202;504002;AGRI_2_2;Growing Fruits
+50400203;504002;AGRI_2_3;Uses of Domestic Animals
+50400204;504002;AGRI_2_4;Balanced Meal
+50400205;504002;AGRI_2_5;Cooking Food
+50400301;504003;AGRI_3_1;Personal Hygiene
+50400302;504003;AGRI_3_2;Domestic Hygiene
+50400303;504003;AGRI_3_3;Cleaning Personal Protective Equipment
+50400401;504004;AGRI_4_1;Making Tacking Stitches
+50500101;505001;SCI_TECH_1_1;Plants
+50500102;505001;SCI_TECH_1_2;Animals
+50500103;505001;SCI_TECH_1_3;Human Digestive System
+50500201;505002;SCI_TECH_2_1;Properties of Matter
+50500202;505002;SCI_TECH_2_2;Management of Solid Waste
+50500203;505002;SCI_TECH_2_3;Water Conservation
+50500301;505003;SCI_TECH_3_1;Force and its Effect
+50500302;505003;SCI_TECH_3_2;Light
+50500303;505003;SCI_TECH_3_3;Heat
+50600101;506001;MATH_1_1;Whole Numbers
+50600102;506001;MATH_1_2;Addition
+50600103;506001;MATH_1_3;Subtraction
+50600104;506001;MATH_1_4;Multiplication
+50600105;506001;MATH_1_5;Division
+50600106;506001;MATH_1_6;Fractions
+50600107;506001;MATH_1_7;Decimals
+50600108;506001;MATH_1_8;Use of Letters
+50600201;506002;MATH_2_1;Length
+50600202;506002;MATH_2_2;Area
+50600203;506002;MATH_2_3;Volume
+50600204;506002;MATH_2_4;Capacity
+50600205;506002;MATH_2_5;Mass
+50600206;506002;MATH_2_6;Time
+50600207;506002;MATH_2_7;Money
+50600301;506003;MATH_3_1;Position and Direction
+50600302;506003;MATH_3_2;Angles
+50600303;506003;MATH_3_3;Plane Figures
+50600401;506004;MATH_4_1;Data
+50700101;507001;REL_CRE_1_1;Self-awareness
+50700102;507001;REL_CRE_1_2;Thoughts and feelings
+50700103;507001;REL_CRE_1_3;Making choices
+50700104;507001;REL_CRE_1_4;My Family
+50700105;507001;REL_CRE_1_5;Relationships within the Family
+50700106;507001;REL_CRE_1_6;Attributes of God
+50700201;507002;REL_CRE_2_1;The Inspired Word of God
+50700202;507002;REL_CRE_2_2;Zacchaeus the Tax Collector
+50700203;507002;REL_CRE_2_3;Balaam’s Donkey
+50700204;507002;REL_CRE_2_4;Samson kills a Lion
+50700205;507002;REL_CRE_2_5;Joseph interprets a Dream
+50700206;507002;REL_CRE_2_6;Bible Patriarchs
+50700301;507003;REL_CRE_3_1;The Annunciation
+50700302;507003;REL_CRE_3_2;Birth of John the Baptist
+50700303;507003;REL_CRE_3_3;Healing of Blind Bartimaeus
+50700304;507003;REL_CRE_3_4;Healing the 10 Lepers
+50700305;507003;REL_CRE_3_5;Jesus raises a Widow's Son
+50700306;507003;REL_CRE_3_6;Forgiveness
+50700307;507003;REL_CRE_3_7;Helping the Needy
+50700308;507003;REL_CRE_3_8;Parable of the lost coin
+50700309;507003;REL_CRE_3_9;Parable of the mustard seed
+50700310;507003;REL_CRE_3_10;Nicodemus' encounter with Jesus Christ
+50700401;507004;REL_CRE_4_1;Trust
+50700402;507004;REL_CRE_4_2;Truthfulness
+50700403;507004;REL_CRE_4_3;Obedience
+50700404;507004;REL_CRE_4_4;Love
+50700405;507004;REL_CRE_4_5;Responsibility
+50700406;507004;REL_CRE_4_6;Holiness
+50700501;507005;REL_CRE_5_1;House of God
+50700502;507005;REL_CRE_5_2;The Early Church
+50700503;507005;REL_CRE_5_3;Standing Firm in Faith
+50700504;507005;REL_CRE_5_4;The Lord's Prayer
+50700505;507005;REL_CRE_5_5;Fruit of the Holy Spirit
+50700506;507005;REL_CRE_5_6;Self-control
+50700601;507006;REL_CRE_6_1;Use of Social Media
+50800101;508001;REL_IRE_1_1;Selected Surahs
+50800201;508002;REL_IRE_2_1;Hadith of Prophet Muhammad as a role model of good character.
+50800202;508002;REL_IRE_2_2;Hadith on Etiquette of Eating
+50800203;508002;REL_IRE_2_3;Hadith on brushing teeth
+50800204;508002;REL_IRE_2_4;Hadith on Fitness
+50800301;508003;REL_IRE_3_1;Attributes of Allah (S.W.T)
+50800302;508003;REL_IRE_3_2;Belief in Angels
+50800303;508003;REL_IRE_3_3;Prophets mentioned in the Qur'an
+50800401;508004;REL_IRE_4_1;Twahara (Ritual Purity)
+50800402;508004;REL_IRE_4_2;Wudhu (Ablution)
+50800403;508004;REL_IRE_4_3;Conditions for Swalah
+50800404;508004;REL_IRE_4_4;Pillars of Swalah
+50800501;508005;REL_IRE_5_1;Virtues: Kindness to Allah's Creatures
+50800502;508005;REL_IRE_5_2;Islamic manners of Dressing
+50800503;508005;REL_IRE_5_3;Positive Usage of Media
+50800504;508005;REL_IRE_5_4;Prohibitions in Islam
+50800505;508005;REL_IRE_5_5;Dua (Supplication)
+50800601;508006;REL_IRE_6_1;Obligations of Parents to Children
+50800602;508006;REL_IRE_6_2;Obligations of Children to Parents
+50800603;508006;REL_IRE_6_3;Children's Obligations to Other Family Members
+50800701;508007;REL_IRE_7_1;Call to Prophethood
+50800702;508007;REL_IRE_7_2;Earliest Converts in Islam
+50800703;508007;REL_IRE_7_3;Prophet (S.A.W.)'s Journey to Taif
+50900101;509001;REL_HIN_1_1;Punchamaha bhoot
+50900201;509002;REL_HIN_2_1;Enlightened Beings
+50900301;509003;REL_HIN_3_1;Essence of Scriptures
+50900401;509004;REL_HIN_4_1;Dainik Prarthana (Daily prayers)
+50900501;509005;REL_HIN_5_1;Aspects of Integrity
+50900601;509006;REL_HIN_6_1;Pranayam (Breathing exercises)
+50900701;509007;REL_HIN_7_1;Virtues for Righteousness of Dharma
+50900801;509008;REL_HIN_8_1;Social and National Festivals
+50900802;509008;REL_HIN_8_2;Indian Traditional Calendar
+51000101;510001;CRE_ARTS_1_1;Percussion Musical Instruments (Drawing)
+51000102;510001;CRE_ARTS_1_2;Netball
+51000103;510001;CRE_ARTS_1_3;Painting and Montage
+51000104;510001;CRE_ARTS_1_4;Rhythm
+51000105;510001;CRE_ARTS_1_5;Melody
+51000201;510002;CRE_ARTS_2_1;Athletics
+51000202;510002;CRE_ARTS_2_2;Gymnastics
+51000203;510002;CRE_ARTS_2_3;Songs
+51000204;510002;CRE_ARTS_2_4;Photography
+51000205;510002;CRE_ARTS_2_5;Descant Recorder
+51000206;510002;CRE_ARTS_2_6;Swimming (optional)
+51000207;510002;CRE_ARTS_2_7;Indigenous Kenyan Games (optional)
+51000301;510003;CRE_ARTS_3_1;Analysis of Creative Arts Works
+51200101;512001;SOC_STUD_1_1;Compass Direction
+51200102;512001;SOC_STUD_1_2;Location and size of the County
+51200103;512001;SOC_STUD_1_3;Physical features in the County
+51200104;512001;SOC_STUD_1_4;Seasons in the County
+51200105;512001;SOC_STUD_1_5;Historic Built Environments in the County
+51200201;512002;SOC_STUD_2_1;Interdependence of people
+51200202;512002;SOC_STUD_2_2;Population Distribution
+51200301;512003;SOC_STUD_3_1;Aspects of Traditional Culture in the County
+51200302;512003;SOC_STUD_3_2;The School
+51200401;512004;SOC_STUD_4_1;Economic activities in the county
+51200402;512004;SOC_STUD_4_2;Industries in the county
+51200403;512004;SOC_STUD_4_3;Enterprise Project at School
+51200501;512005;SOC_STUD_5_1;Good Citizenship in School
+51200502;512005;SOC_STUD_5_2;Peace
+51200503;512005;SOC_STUD_5_3;Child Rights
+51200504;512005;SOC_STUD_5_4;Democracy in school
+51200505;512005;SOC_STUD_5_5;Children's Government in school
+51200506;512005;SOC_STUD_5_6;Community Leadership
+51200507;512005;SOC_STUD_5_7;The County Governments in Kenya
+60100101;601001;ENG_1_1;Pronunciation and Vocabulary
+60100102;601001;ENG_1_2;Pronunciation and Vocabulary
+60100103;601001;ENG_1_3;Pronunciation and Vocabulary
+60100104;601001;ENG_1_4;Pronunciation and Vocabulary
+60100105;601001;ENG_1_5;Pronunciation and Vocabulary
+60100106;601001;ENG_1_6;Pronunciation and Vocabulary
+60100107;601001;ENG_1_7;Pronunciation and Vocabulary
+60100108;601001;ENG_1_8;Pronunciation and Vocabulary
+60100109;601001;ENG_1_9;Pronunciation and Vocabulary
+60100110;601001;ENG_1_10;Pronunciation and Vocabulary
+60100111;601001;ENG_1_11;Pronunciation and Vocabulary
+60100112;601001;ENG_1_12;Pronunciation and Vocabulary
+60100113;601001;ENG_1_13;Pronunciation and Vocabulary
+60100201;601002;ENG_2_1;Extensive Reading
+60100202;601002;ENG_2_2;Intensive Reading
+60100203;601002;ENG_2_3;Intensive Reading: Comprehension
+60100204;601002;ENG_2_4;Intensive Reading: Visuals
+60100205;601002;ENG_2_5;Extensive Reading
+60100206;601002;ENG_2_6;Intensive Reading
+60100207;601002;ENG_2_7;Extensive Reading: Independent Reading
+60100208;601002;ENG_2_8;Reading Fluency
+60100209;601002;ENG_2_9;Intensive Reading
+60100210;601002;ENG_2_10;Intensive Reading
+60100211;601002;ENG_2_11;Intensive Reading
+60100212;601002;ENG_2_12;Intensive Reading
+60100213;601002;ENG_2_13;Extensive Reading: Independent Reading
+60100301;601003;ENG_3_1;Word Classes: Determiners
+60100302;601003;ENG_3_2;Word Classes: Nouns
+60100303;601003;ENG_3_3;Language Pattern
+60100304;601003;ENG_3_4;Word Classes: Pronouns
+60100305;601003;ENG_3_5;Word Classes: Adjectives
+60100306;601003;ENG_3_6;Word Class: Determiners
+60100307;601003;ENG_3_7;Word Classes: Verb Aspect
+60100308;601003;ENG_3_8;Word Classes
+60100309;601003;ENG_3_9;Word Classes: Adverbs
+60100310;601003;ENG_3_10;Word Class: Conjunctions
+60100311;601003;ENG_3_11;Language Patterns
+60100312;601003;ENG_3_12;Word Classes: Verb Aspect
+60100313;601003;ENG_3_13;Word Class: Prepositions
+60100401;601004;ENG_4_1;Functional Writing
+60100402;601004;ENG_4_2;Creative Writing
+60100403;601004;ENG_4_3;Mechanics of Writing: Handwriting
+60100404;601004;ENG_4_4;Functional Writing
+60100405;601004;ENG_4_5;Creative Writing
+60100406;601004;ENG_4_6;Creative Writing
+60100407;601004;ENG_4_7;Mechanics of Writing: Punctuation
+60100408;601004;ENG_4_8;Creative Writing
+60100409;601004;ENG_4_9;Punctuation
+60100410;601004;ENG_4_10;Creative Writing
+60100411;601004;ENG_4_11;Mechanics of Writing: Spelling
+60100412;601004;ENG_4_12;Guided Composition
+60100413;601004;ENG_4_13;Spelling
+60200101;602001;KIS_KSL_1_1;Matamshi Bora
+60200102;602001;KIS_KSL_1_2;Maamkuzi na Maagano
+60200103;602001;KIS_KSL_1_3;Vitendawili
+60200104;602001;KIS_KSL_1_4;Maneno ya Upole
+60200105;602001;KIS_KSL_1_5;Methali
+60200106;602001;KIS_KSL_1_6;Shairi
+60200107;602001;KIS_KSL_1_7;Nahau
+60200108;602001;KIS_KSL_1_8;Visawe
+60200109;602001;KIS_KSL_1_9;Mazungumzo ya Kimuktadha
+60200110;602001;KIS_KSL_1_10;Tashbihi
+60200111;602001;KIS_KSL_1_11;Masimulizi
+60200201;602002;KIS_KSL_2_1;Kusoma kwa Ufahamu
+60200202;602002;KIS_KSL_2_2;Kusoma kwa Kina
+60200203;602002;KIS_KSL_2_3;Kusoma kwa Ufasaha
+60200204;602002;KIS_KSL_2_4;Kusoma kwa Mapana
+60200205;602002;KIS_KSL_2_5;Kusoma kwa Ufahamu
+60200206;602002;KIS_KSL_2_6;Kusoma kwa Kina
+60200207;602002;KIS_KSL_2_7;Kusoma kwa Mapana
+60200208;602002;KIS_KSL_2_8;Kusoma kwa Ufahamu
+60200209;602002;KIS_KSL_2_9;Kusoma kwa Mapana
+60200210;602002;KIS_KSL_2_10;Kusoma Kidijitali
+60200211;602002;KIS_KSL_2_11;Kusoma kwa Ufasaha
+60200301;602003;KIS_KSL_3_1;Insha ya Wasifu
+60200302;602003;KIS_KSL_3_2;Insha ya Masimulizi
+60200303;602003;KIS_KSL_3_3;Kuandika kwa Tarakiishi
+60200304;602003;KIS_KSL_3_4;Barua ya Kirafiki
+60200305;602003;KIS_KSL_3_5;Insha ya Maelezo
+60200306;602003;KIS_KSL_3_6;Insha ya Wasifu
+60200307;602003;KIS_KSL_3_7;Insha ya Maelezo
+60200308;602003;KIS_KSL_3_8;Insha ya Masimulizi
+60200309;602003;KIS_KSL_3_9;Insha ya Maelezo
+60200310;602003;KIS_KSL_3_10;Insha ya Masimulizi
+60200311;602003;KIS_KSL_3_11;Barua ya Kirafiki
+60200401;602004;KIS_KSL_4_1;Nomino
+60200402;602004;KIS_KSL_4_2;Vitenzi
+60200403;602004;KIS_KSL_4_3;Vivumishi
+60200404;602004;KIS_KSL_4_4;Viwakilishi
+60200405;602004;KIS_KSL_4_5;Vielezi
+60200406;602004;KIS_KSL_4_6;Viunganishi
+60200407;602004;KIS_KSL_4_7;Vihusishi
+60200408;602004;KIS_KSL_4_8;Vihisishi
+60200409;602004;KIS_KSL_4_9;Ngeli ya A-WA
+60200410;602004;KIS_KSL_4_10;Ngeli ya U-I
+60200411;602004;KIS_KSL_4_11;Ngeli ya LI- YA
+60200412;602004;KIS_KSL_4_12;Ngeli ya KI-VI
+60200413;602004;KIS_KSL_4_13;Ngeli ya LI-LI
+60200414;602004;KIS_KSL_4_14;Mnyambuliko wa Vitenzi
+60200415;602004;KIS_KSL_4_15;Vinyume vya Nomino
+60200416;602004;KIS_KSL_4_16;Nyakati na hali
+60200417;602004;KIS_KSL_4_17;Ukanushaji
+60200418;602004;KIS_KSL_4_18;Ukubwa wa Nomino
+60200419;602004;KIS_KSL_4_19;Udogo wa Nomino
+60400101;604001;AGRI_1_1;Soil Conservation
+60400102;604001;AGRI_1_2;Water Conservation
+60400103;604001;AGRI_1_3;Fuel Conservation
+60400104;604001;AGRI_1_4;Conserving Wild Animals
+60400201;604002;AGRI_2_1;Direct Sowing of Tiny Seeds
+60400202;604002;AGRI_2_2;Growing Fruits
+60400203;604002;AGRI_2_3;Uses of Domestic Animals
+60400204;604002;AGRI_2_4;Balanced Meal
+60400205;604002;AGRI_2_5;Cooking Food
+60400301;604003;AGRI_3_1;Personal Hygiene
+60400302;604003;AGRI_3_2;Domestic Hygiene
+60400303;604003;AGRI_3_3;Cleaning Personal Protective Equipment
+60400401;604004;AGRI_4_1;Making Tacking Stitches
+60500101;605001;SCI_TECH_1_1;Plants
+60500102;605001;SCI_TECH_1_2;Animals
+60500103;605001;SCI_TECH_1_3;Human Digestive System
+60500201;605002;SCI_TECH_2_1;Properties of Matter
+60500202;605002;SCI_TECH_2_2;Management of Solid Waste
+60500203;605002;SCI_TECH_2_3;Water Conservation
+60500301;605003;SCI_TECH_3_1;Force and its Effect
+60500302;605003;SCI_TECH_3_2;Light
+60500303;605003;SCI_TECH_3_3;Heat
+60600101;606001;MATH_1_1;Whole Numbers
+60600102;606001;MATH_1_2;Addition
+60600103;606001;MATH_1_3;Subtraction
+60600104;606001;MATH_1_4;Multiplication
+60600105;606001;MATH_1_5;Division
+60600106;606001;MATH_1_6;Fractions
+60600107;606001;MATH_1_7;Decimals
+60600108;606001;MATH_1_8;Use of Letters
+60600201;606002;MATH_2_1;Length
+60600202;606002;MATH_2_2;Area
+60600203;606002;MATH_2_3;Volume
+60600204;606002;MATH_2_4;Capacity
+60600205;606002;MATH_2_5;Mass
+60600206;606002;MATH_2_6;Time
+60600207;606002;MATH_2_7;Money
+60600301;606003;MATH_3_1;Position and Direction
+60600302;606003;MATH_3_2;Angles
+60600303;606003;MATH_3_3;Plane Figures
+60600401;606004;MATH_4_1;Data
+60700101;607001;REL_CRE_1_1;Self-awareness
+60700102;607001;REL_CRE_1_2;Thoughts and feelings
+60700103;607001;REL_CRE_1_3;Making choices
+60700104;607001;REL_CRE_1_4;My Family
+60700105;607001;REL_CRE_1_5;Relationships within the Family
+60700106;607001;REL_CRE_1_6;Attributes of God
+60700201;607002;REL_CRE_2_1;The Inspired Word of God
+60700202;607002;REL_CRE_2_2;Zacchaeus the Tax Collector
+60700203;607002;REL_CRE_2_3;Balaam’s Donkey
+60700204;607002;REL_CRE_2_4;Samson kills a Lion
+60700205;607002;REL_CRE_2_5;Joseph interprets a Dream
+60700206;607002;REL_CRE_2_6;Bible Patriarchs
+60700301;607003;REL_CRE_3_1;The Annunciation
+60700302;607003;REL_CRE_3_2;Birth of John the Baptist
+60700303;607003;REL_CRE_3_3;Healing of Blind Bartimaeus
+60700304;607003;REL_CRE_3_4;Healing the 10 Lepers
+60700305;607003;REL_CRE_3_5;Jesus raises a Widow's Son
+60700306;607003;REL_CRE_3_6;Forgiveness
+60700307;607003;REL_CRE_3_7;Helping the Needy
+60700308;607003;REL_CRE_3_8;Parable of the lost coin
+60700309;607003;REL_CRE_3_9;Parable of the mustard seed
+60700310;607003;REL_CRE_3_10;Nicodemus' encounter with Jesus Christ
+60700401;607004;REL_CRE_4_1;Trust
+60700402;607004;REL_CRE_4_2;Truthfulness
+60700403;607004;REL_CRE_4_3;Obedience
+60700404;607004;REL_CRE_4_4;Love
+60700405;607004;REL_CRE_4_5;Responsibility
+60700406;607004;REL_CRE_4_6;Holiness
+60700501;607005;REL_CRE_5_1;House of God
+60700502;607005;REL_CRE_5_2;The Early Church
+60700503;607005;REL_CRE_5_3;Standing Firm in Faith
+60700504;607005;REL_CRE_5_4;The Lord's Prayer
+60700505;607005;REL_CRE_5_5;Fruit of the Holy Spirit
+60700506;607005;REL_CRE_5_6;Self-control
+60700601;607006;REL_CRE_6_1;Use of Social Media
+60800101;608001;REL_IRE_1_1;Selected Surahs
+60800201;608002;REL_IRE_2_1;Hadith of Prophet Muhammad as a role model of good character.
+60800202;608002;REL_IRE_2_2;Hadith on Etiquette of Eating
+60800203;608002;REL_IRE_2_3;Hadith on brushing teeth
+60800204;608002;REL_IRE_2_4;Hadith on Fitness
+60800301;608003;REL_IRE_3_1;Attributes of Allah (S.W.T)
+60800302;608003;REL_IRE_3_2;Belief in Angels
+60800303;608003;REL_IRE_3_3;Prophets mentioned in the Qur'an
+60800401;608004;REL_IRE_4_1;Twahara (Ritual Purity)
+60800402;608004;REL_IRE_4_2;Wudhu (Ablution)
+60800403;608004;REL_IRE_4_3;Conditions for Swalah
+60800404;608004;REL_IRE_4_4;Pillars of Swalah
+60800501;608005;REL_IRE_5_1;Virtues: Kindness to Allah's Creatures
+60800502;608005;REL_IRE_5_2;Islamic manners of Dressing
+60800503;608005;REL_IRE_5_3;Positive Usage of Media
+60800504;608005;REL_IRE_5_4;Prohibitions in Islam
+60800505;608005;REL_IRE_5_5;Dua (Supplication)
+60800601;608006;REL_IRE_6_1;Obligations of Parents to Children
+60800602;608006;REL_IRE_6_2;Obligations of Children to Parents
+60800603;608006;REL_IRE_6_3;Children's Obligations to Other Family Members
+60800701;608007;REL_IRE_7_1;Call to Prophethood
+60800702;608007;REL_IRE_7_2;Earliest Converts in Islam
+60800703;608007;REL_IRE_7_3;Prophet (S.A.W.)'s Journey to Taif
+60900101;609001;REL_HIN_1_1;Punchamaha bhoot
+60900201;609002;REL_HIN_2_1;Enlightened Beings
+60900301;609003;REL_HIN_3_1;Essence of Scriptures
+60900401;609004;REL_HIN_4_1;Dainik Prarthana (Daily prayers)
+60900501;609005;REL_HIN_5_1;Aspects of Integrity
+60900601;609006;REL_HIN_6_1;Pranayam (Breathing exercises)
+60900701;609007;REL_HIN_7_1;Virtues for Righteousness of Dharma
+60900801;609008;REL_HIN_8_1;Social and National Festivals
+60900802;609008;REL_HIN_8_2;Indian Traditional Calendar
+61000101;610001;CRE_ARTS_1_1;Percussion Musical Instruments (Drawing)
+61000102;610001;CRE_ARTS_1_2;Netball
+61000103;610001;CRE_ARTS_1_3;Painting and Montage
+61000104;610001;CRE_ARTS_1_4;Rhythm
+61000105;610001;CRE_ARTS_1_5;Melody
+61000201;610002;CRE_ARTS_2_1;Athletics
+61000202;610002;CRE_ARTS_2_2;Gymnastics
+61000203;610002;CRE_ARTS_2_3;Songs
+61000204;610002;CRE_ARTS_2_4;Photography
+61000205;610002;CRE_ARTS_2_5;Descant Recorder
+61000206;610002;CRE_ARTS_2_6;Swimming (optional)
+61000207;610002;CRE_ARTS_2_7;Indigenous Kenyan Games (optional)
+61000301;610003;CRE_ARTS_3_1;Analysis of Creative Arts Works
+61200101;612001;SOC_STUD_1_1;Compass Direction
+61200102;612001;SOC_STUD_1_2;Location and size of the County
+61200103;612001;SOC_STUD_1_3;Physical features in the County
+61200104;612001;SOC_STUD_1_4;Seasons in the County
+61200105;612001;SOC_STUD_1_5;Historic Built Environments in the County
+61200201;612002;SOC_STUD_2_1;Interdependence of people
+61200202;612002;SOC_STUD_2_2;Population Distribution
+61200301;612003;SOC_STUD_3_1;Aspects of Traditional Culture in the County
+61200302;612003;SOC_STUD_3_2;The School
+61200401;612004;SOC_STUD_4_1;Economic activities in the county
+61200402;612004;SOC_STUD_4_2;Industries in the county
+61200403;612004;SOC_STUD_4_3;Enterprise Project at School
+61200501;612005;SOC_STUD_5_1;Good Citizenship in School
+61200502;612005;SOC_STUD_5_2;Peace
+61200503;612005;SOC_STUD_5_3;Child Rights
+61200504;612005;SOC_STUD_5_4;Democracy in school
+61200505;612005;SOC_STUD_5_5;Children's Government in school
+61200506;612005;SOC_STUD_5_6;Community Leadership
+61200507;612005;SOC_STUD_5_7;The County Governments in Kenya
+70100101;701001;ENG_1_1;Pronunciation and Vocabulary
+70100102;701001;ENG_1_2;Pronunciation and Vocabulary
+70100103;701001;ENG_1_3;Pronunciation and Vocabulary
+70100104;701001;ENG_1_4;Pronunciation and Vocabulary
+70100105;701001;ENG_1_5;Pronunciation and Vocabulary
+70100106;701001;ENG_1_6;Pronunciation and Vocabulary
+70100107;701001;ENG_1_7;Pronunciation and Vocabulary
+70100108;701001;ENG_1_8;Pronunciation and Vocabulary
+70100109;701001;ENG_1_9;Pronunciation and Vocabulary
+70100110;701001;ENG_1_10;Pronunciation and Vocabulary
+70100111;701001;ENG_1_11;Pronunciation and Vocabulary
+70100112;701001;ENG_1_12;Pronunciation and Vocabulary
+70100113;701001;ENG_1_13;Pronunciation and Vocabulary
+70100201;701002;ENG_2_1;Extensive Reading
+70100202;701002;ENG_2_2;Intensive Reading
+70100203;701002;ENG_2_3;Intensive Reading: Comprehension
+70100204;701002;ENG_2_4;Intensive Reading: Visuals
+70100205;701002;ENG_2_5;Extensive Reading
+70100206;701002;ENG_2_6;Intensive Reading
+70100207;701002;ENG_2_7;Extensive Reading: Independent Reading
+70100208;701002;ENG_2_8;Reading Fluency
+70100209;701002;ENG_2_9;Intensive Reading
+70100210;701002;ENG_2_10;Intensive Reading
+70100211;701002;ENG_2_11;Intensive Reading
+70100212;701002;ENG_2_12;Intensive Reading
+70100213;701002;ENG_2_13;Extensive Reading: Independent Reading
+70100301;701003;ENG_3_1;Word Classes: Determiners
+70100302;701003;ENG_3_2;Word Classes: Nouns
+70100303;701003;ENG_3_3;Language Pattern
+70100304;701003;ENG_3_4;Word Classes: Pronouns
+70100305;701003;ENG_3_5;Word Classes: Adjectives
+70100306;701003;ENG_3_6;Word Class: Determiners
+70100307;701003;ENG_3_7;Word Classes: Verb Aspect
+70100308;701003;ENG_3_8;Word Classes
+70100309;701003;ENG_3_9;Word Classes: Adverbs
+70100310;701003;ENG_3_10;Word Class: Conjunctions
+70100311;701003;ENG_3_11;Language Patterns
+70100312;701003;ENG_3_12;Word Classes: Verb Aspect
+70100313;701003;ENG_3_13;Word Class: Prepositions
+70100401;701004;ENG_4_1;Functional Writing
+70100402;701004;ENG_4_2;Creative Writing
+70100403;701004;ENG_4_3;Mechanics of Writing: Handwriting
+70100404;701004;ENG_4_4;Functional Writing
+70100405;701004;ENG_4_5;Creative Writing
+70100406;701004;ENG_4_6;Creative Writing
+70100407;701004;ENG_4_7;Mechanics of Writing: Punctuation
+70100408;701004;ENG_4_8;Creative Writing
+70100409;701004;ENG_4_9;Punctuation
+70100410;701004;ENG_4_10;Creative Writing
+70100411;701004;ENG_4_11;Mechanics of Writing: Spelling
+70100412;701004;ENG_4_12;Guided Composition
+70100413;701004;ENG_4_13;Spelling
+70200101;702001;KIS_KSL_1_1;Matamshi Bora
+70200102;702001;KIS_KSL_1_2;Maamkuzi na Maagano
+70200103;702001;KIS_KSL_1_3;Vitendawili
+70200104;702001;KIS_KSL_1_4;Maneno ya Upole
+70200105;702001;KIS_KSL_1_5;Methali
+70200106;702001;KIS_KSL_1_6;Shairi
+70200107;702001;KIS_KSL_1_7;Nahau
+70200108;702001;KIS_KSL_1_8;Visawe
+70200109;702001;KIS_KSL_1_9;Mazungumzo ya Kimuktadha
+70200110;702001;KIS_KSL_1_10;Tashbihi
+70200111;702001;KIS_KSL_1_11;Masimulizi
+70200201;702002;KIS_KSL_2_1;Kusoma kwa Ufahamu
+70200202;702002;KIS_KSL_2_2;Kusoma kwa Kina
+70200203;702002;KIS_KSL_2_3;Kusoma kwa Ufasaha
+70200204;702002;KIS_KSL_2_4;Kusoma kwa Mapana
+70200205;702002;KIS_KSL_2_5;Kusoma kwa Ufahamu
+70200206;702002;KIS_KSL_2_6;Kusoma kwa Kina
+70200207;702002;KIS_KSL_2_7;Kusoma kwa Mapana
+70200208;702002;KIS_KSL_2_8;Kusoma kwa Ufahamu
+70200209;702002;KIS_KSL_2_9;Kusoma kwa Mapana
+70200210;702002;KIS_KSL_2_10;Kusoma Kidijitali
+70200211;702002;KIS_KSL_2_11;Kusoma kwa Ufasaha
+70200301;702003;KIS_KSL_3_1;Insha ya Wasifu
+70200302;702003;KIS_KSL_3_2;Insha ya Masimulizi
+70200303;702003;KIS_KSL_3_3;Kuandika kwa Tarakiishi
+70200304;702003;KIS_KSL_3_4;Barua ya Kirafiki
+70200305;702003;KIS_KSL_3_5;Insha ya Maelezo
+70200306;702003;KIS_KSL_3_6;Insha ya Wasifu
+70200307;702003;KIS_KSL_3_7;Insha ya Maelezo
+70200308;702003;KIS_KSL_3_8;Insha ya Masimulizi
+70200309;702003;KIS_KSL_3_9;Insha ya Maelezo
+70200310;702003;KIS_KSL_3_10;Insha ya Masimulizi
+70200311;702003;KIS_KSL_3_11;Barua ya Kirafiki
+70200401;702004;KIS_KSL_4_1;Nomino
+70200402;702004;KIS_KSL_4_2;Vitenzi
+70200403;702004;KIS_KSL_4_3;Vivumishi
+70200404;702004;KIS_KSL_4_4;Viwakilishi
+70200405;702004;KIS_KSL_4_5;Vielezi
+70200406;702004;KIS_KSL_4_6;Viunganishi
+70200407;702004;KIS_KSL_4_7;Vihusishi
+70200408;702004;KIS_KSL_4_8;Vihisishi
+70200409;702004;KIS_KSL_4_9;Ngeli ya A-WA
+70200410;702004;KIS_KSL_4_10;Ngeli ya U-I
+70200411;702004;KIS_KSL_4_11;Ngeli ya LI- YA
+70200412;702004;KIS_KSL_4_12;Ngeli ya KI-VI
+70200413;702004;KIS_KSL_4_13;Ngeli ya LI-LI
+70200414;702004;KIS_KSL_4_14;Mnyambuliko wa Vitenzi
+70200415;702004;KIS_KSL_4_15;Vinyume vya Nomino
+70200416;702004;KIS_KSL_4_16;Nyakati na hali
+70200417;702004;KIS_KSL_4_17;Ukanushaji
+70200418;702004;KIS_KSL_4_18;Ukubwa wa Nomino
+70200419;702004;KIS_KSL_4_19;Udogo wa Nomino
+70400101;704001;AGRI_1_1;Soil Conservation
+70400102;704001;AGRI_1_2;Water Conservation
+70400103;704001;AGRI_1_3;Fuel Conservation
+70400104;704001;AGRI_1_4;Conserving Wild Animals
+70400201;704002;AGRI_2_1;Direct Sowing of Tiny Seeds
+70400202;704002;AGRI_2_2;Growing Fruits
+70400203;704002;AGRI_2_3;Uses of Domestic Animals
+70400204;704002;AGRI_2_4;Balanced Meal
+70400205;704002;AGRI_2_5;Cooking Food
+70400301;704003;AGRI_3_1;Personal Hygiene
+70400302;704003;AGRI_3_2;Domestic Hygiene
+70400303;704003;AGRI_3_3;Cleaning Personal Protective Equipment
+70400401;704004;AGRI_4_1;Making Tacking Stitches
+70500101;705001;SCI_TECH_1_1;Plants
+70500102;705001;SCI_TECH_1_2;Animals
+70500103;705001;SCI_TECH_1_3;Human Digestive System
+70500201;705002;SCI_TECH_2_1;Properties of Matter
+70500202;705002;SCI_TECH_2_2;Management of Solid Waste
+70500203;705002;SCI_TECH_2_3;Water Conservation
+70500301;705003;SCI_TECH_3_1;Force and its Effect
+70500302;705003;SCI_TECH_3_2;Light
+70500303;705003;SCI_TECH_3_3;Heat
+70600101;706001;MATH_1_1;Whole Numbers
+70600102;706001;MATH_1_2;Addition
+70600103;706001;MATH_1_3;Subtraction
+70600104;706001;MATH_1_4;Multiplication
+70600105;706001;MATH_1_5;Division
+70600106;706001;MATH_1_6;Fractions
+70600107;706001;MATH_1_7;Decimals
+70600108;706001;MATH_1_8;Use of Letters
+70600201;706002;MATH_2_1;Length
+70600202;706002;MATH_2_2;Area
+70600203;706002;MATH_2_3;Volume
+70600204;706002;MATH_2_4;Capacity
+70600205;706002;MATH_2_5;Mass
+70600206;706002;MATH_2_6;Time
+70600207;706002;MATH_2_7;Money
+70600301;706003;MATH_3_1;Position and Direction
+70600302;706003;MATH_3_2;Angles
+70600303;706003;MATH_3_3;Plane Figures
+70600401;706004;MATH_4_1;Data
+70700101;707001;REL_CRE_1_1;Self-awareness
+70700102;707001;REL_CRE_1_2;Thoughts and feelings
+70700103;707001;REL_CRE_1_3;Making choices
+70700104;707001;REL_CRE_1_4;My Family
+70700105;707001;REL_CRE_1_5;Relationships within the Family
+70700106;707001;REL_CRE_1_6;Attributes of God
+70700201;707002;REL_CRE_2_1;The Inspired Word of God
+70700202;707002;REL_CRE_2_2;Zacchaeus the Tax Collector
+70700203;707002;REL_CRE_2_3;Balaam’s Donkey
+70700204;707002;REL_CRE_2_4;Samson kills a Lion
+70700205;707002;REL_CRE_2_5;Joseph interprets a Dream
+70700206;707002;REL_CRE_2_6;Bible Patriarchs
+70700301;707003;REL_CRE_3_1;The Annunciation
+70700302;707003;REL_CRE_3_2;Birth of John the Baptist
+70700303;707003;REL_CRE_3_3;Healing of Blind Bartimaeus
+70700304;707003;REL_CRE_3_4;Healing the 10 Lepers
+70700305;707003;REL_CRE_3_5;Jesus raises a Widow's Son
+70700306;707003;REL_CRE_3_6;Forgiveness
+70700307;707003;REL_CRE_3_7;Helping the Needy
+70700308;707003;REL_CRE_3_8;Parable of the lost coin
+70700309;707003;REL_CRE_3_9;Parable of the mustard seed
+70700310;707003;REL_CRE_3_10;Nicodemus' encounter with Jesus Christ
+70700401;707004;REL_CRE_4_1;Trust
+70700402;707004;REL_CRE_4_2;Truthfulness
+70700403;707004;REL_CRE_4_3;Obedience
+70700404;707004;REL_CRE_4_4;Love
+70700405;707004;REL_CRE_4_5;Responsibility
+70700406;707004;REL_CRE_4_6;Holiness
+70700501;707005;REL_CRE_5_1;House of God
+70700502;707005;REL_CRE_5_2;The Early Church
+70700503;707005;REL_CRE_5_3;Standing Firm in Faith
+70700504;707005;REL_CRE_5_4;The Lord's Prayer
+70700505;707005;REL_CRE_5_5;Fruit of the Holy Spirit
+70700506;707005;REL_CRE_5_6;Self-control
+70700601;707006;REL_CRE_6_1;Use of Social Media
+70800101;708001;REL_IRE_1_1;Selected Surahs
+70800201;708002;REL_IRE_2_1;Hadith of Prophet Muhammad as a role model of good character.
+70800202;708002;REL_IRE_2_2;Hadith on Etiquette of Eating
+70800203;708002;REL_IRE_2_3;Hadith on brushing teeth
+70800204;708002;REL_IRE_2_4;Hadith on Fitness
+70800301;708003;REL_IRE_3_1;Attributes of Allah (S.W.T)
+70800302;708003;REL_IRE_3_2;Belief in Angels
+70800303;708003;REL_IRE_3_3;Prophets mentioned in the Qur'an
+70800401;708004;REL_IRE_4_1;Twahara (Ritual Purity)
+70800402;708004;REL_IRE_4_2;Wudhu (Ablution)
+70800403;708004;REL_IRE_4_3;Conditions for Swalah
+70800404;708004;REL_IRE_4_4;Pillars of Swalah
+70800501;708005;REL_IRE_5_1;Virtues: Kindness to Allah's Creatures
+70800502;708005;REL_IRE_5_2;Islamic manners of Dressing
+70800503;708005;REL_IRE_5_3;Positive Usage of Media
+70800504;708005;REL_IRE_5_4;Prohibitions in Islam
+70800505;708005;REL_IRE_5_5;Dua (Supplication)
+70800601;708006;REL_IRE_6_1;Obligations of Parents to Children
+70800602;708006;REL_IRE_6_2;Obligations of Children to Parents
+70800603;708006;REL_IRE_6_3;Children's Obligations to Other Family Members
+70800701;708007;REL_IRE_7_1;Call to Prophethood
+70800702;708007;REL_IRE_7_2;Earliest Converts in Islam
+70800703;708007;REL_IRE_7_3;Prophet (S.A.W.)'s Journey to Taif
+70900101;709001;REL_HIN_1_1;Punchamaha bhoot
+70900201;709002;REL_HIN_2_1;Enlightened Beings
+70900301;709003;REL_HIN_3_1;Essence of Scriptures
+70900401;709004;REL_HIN_4_1;Dainik Prarthana (Daily prayers)
+70900501;709005;REL_HIN_5_1;Aspects of Integrity
+70900601;709006;REL_HIN_6_1;Pranayam (Breathing exercises)
+70900701;709007;REL_HIN_7_1;Virtues for Righteousness of Dharma
+70900801;709008;REL_HIN_8_1;Social and National Festivals
+70900802;709008;REL_HIN_8_2;Indian Traditional Calendar
+71000101;710001;CRE_ARTS_1_1;Percussion Musical Instruments (Drawing)
+71000102;710001;CRE_ARTS_1_2;Netball
+71000103;710001;CRE_ARTS_1_3;Painting and Montage
+71000104;710001;CRE_ARTS_1_4;Rhythm
+71000105;710001;CRE_ARTS_1_5;Melody
+71000201;710002;CRE_ARTS_2_1;Athletics
+71000202;710002;CRE_ARTS_2_2;Gymnastics
+71000203;710002;CRE_ARTS_2_3;Songs
+71000204;710002;CRE_ARTS_2_4;Photography
+71000205;710002;CRE_ARTS_2_5;Descant Recorder
+71000206;710002;CRE_ARTS_2_6;Swimming (optional)
+71000207;710002;CRE_ARTS_2_7;Indigenous Kenyan Games (optional)
+71000301;710003;CRE_ARTS_3_1;Analysis of Creative Arts Works
+71200101;712001;SOC_STUD_1_1;Compass Direction
+71200102;712001;SOC_STUD_1_2;Location and size of the County
+71200103;712001;SOC_STUD_1_3;Physical features in the County
+71200104;712001;SOC_STUD_1_4;Seasons in the County
+71200105;712001;SOC_STUD_1_5;Historic Built Environments in the County
+71200201;712002;SOC_STUD_2_1;Interdependence of people
+71200202;712002;SOC_STUD_2_2;Population Distribution
+71200301;712003;SOC_STUD_3_1;Aspects of Traditional Culture in the County
+71200302;712003;SOC_STUD_3_2;The School
+71200401;712004;SOC_STUD_4_1;Economic activities in the county
+71200402;712004;SOC_STUD_4_2;Industries in the county
+71200403;712004;SOC_STUD_4_3;Enterprise Project at School
+71200501;712005;SOC_STUD_5_1;Good Citizenship in School
+71200502;712005;SOC_STUD_5_2;Peace
+71200503;712005;SOC_STUD_5_3;Child Rights
+71200504;712005;SOC_STUD_5_4;Democracy in school
+71200505;712005;SOC_STUD_5_5;Children's Government in school
+71200506;712005;SOC_STUD_5_6;Community Leadership
+71200507;712005;SOC_STUD_5_7;The County Governments in Kenya
+80100101;801001;ENG_1_1;Pronunciation and Vocabulary
+80100102;801001;ENG_1_2;Pronunciation and Vocabulary
+80100103;801001;ENG_1_3;Pronunciation and Vocabulary
+80100104;801001;ENG_1_4;Pronunciation and Vocabulary
+80100105;801001;ENG_1_5;Pronunciation and Vocabulary
+80100106;801001;ENG_1_6;Pronunciation and Vocabulary
+80100107;801001;ENG_1_7;Pronunciation and Vocabulary
+80100108;801001;ENG_1_8;Pronunciation and Vocabulary
+80100109;801001;ENG_1_9;Pronunciation and Vocabulary
+80100110;801001;ENG_1_10;Pronunciation and Vocabulary
+80100111;801001;ENG_1_11;Pronunciation and Vocabulary
+80100112;801001;ENG_1_12;Pronunciation and Vocabulary
+80100113;801001;ENG_1_13;Pronunciation and Vocabulary
+80100201;801002;ENG_2_1;Extensive Reading
+80100202;801002;ENG_2_2;Intensive Reading
+80100203;801002;ENG_2_3;Intensive Reading: Comprehension
+80100204;801002;ENG_2_4;Intensive Reading: Visuals
+80100205;801002;ENG_2_5;Extensive Reading
+80100206;801002;ENG_2_6;Intensive Reading
+80100207;801002;ENG_2_7;Extensive Reading: Independent Reading
+80100208;801002;ENG_2_8;Reading Fluency
+80100209;801002;ENG_2_9;Intensive Reading
+80100210;801002;ENG_2_10;Intensive Reading
+80100211;801002;ENG_2_11;Intensive Reading
+80100212;801002;ENG_2_12;Intensive Reading
+80100213;801002;ENG_2_13;Extensive Reading: Independent Reading
+80100301;801003;ENG_3_1;Word Classes: Determiners
+80100302;801003;ENG_3_2;Word Classes: Nouns
+80100303;801003;ENG_3_3;Language Pattern
+80100304;801003;ENG_3_4;Word Classes: Pronouns
+80100305;801003;ENG_3_5;Word Classes: Adjectives
+80100306;801003;ENG_3_6;Word Class: Determiners
+80100307;801003;ENG_3_7;Word Classes: Verb Aspect
+80100308;801003;ENG_3_8;Word Classes
+80100309;801003;ENG_3_9;Word Classes: Adverbs
+80100310;801003;ENG_3_10;Word Class: Conjunctions
+80100311;801003;ENG_3_11;Language Patterns
+80100312;801003;ENG_3_12;Word Classes: Verb Aspect
+80100313;801003;ENG_3_13;Word Class: Prepositions
+80100401;801004;ENG_4_1;Functional Writing
+80100402;801004;ENG_4_2;Creative Writing
+80100403;801004;ENG_4_3;Mechanics of Writing: Handwriting
+80100404;801004;ENG_4_4;Functional Writing
+80100405;801004;ENG_4_5;Creative Writing
+80100406;801004;ENG_4_6;Creative Writing
+80100407;801004;ENG_4_7;Mechanics of Writing: Punctuation
+80100408;801004;ENG_4_8;Creative Writing
+80100409;801004;ENG_4_9;Punctuation
+80100410;801004;ENG_4_10;Creative Writing
+80100411;801004;ENG_4_11;Mechanics of Writing: Spelling
+80100412;801004;ENG_4_12;Guided Composition
+80100413;801004;ENG_4_13;Spelling
+80200101;802001;KIS_KSL_1_1;Matamshi Bora
+80200102;802001;KIS_KSL_1_2;Maamkuzi na Maagano
+80200103;802001;KIS_KSL_1_3;Vitendawili
+80200104;802001;KIS_KSL_1_4;Maneno ya Upole
+80200105;802001;KIS_KSL_1_5;Methali
+80200106;802001;KIS_KSL_1_6;Shairi
+80200107;802001;KIS_KSL_1_7;Nahau
+80200108;802001;KIS_KSL_1_8;Visawe
+80200109;802001;KIS_KSL_1_9;Mazungumzo ya Kimuktadha
+80200110;802001;KIS_KSL_1_10;Tashbihi
+80200111;802001;KIS_KSL_1_11;Masimulizi
+80200201;802002;KIS_KSL_2_1;Kusoma kwa Ufahamu
+80200202;802002;KIS_KSL_2_2;Kusoma kwa Kina
+80200203;802002;KIS_KSL_2_3;Kusoma kwa Ufasaha
+80200204;802002;KIS_KSL_2_4;Kusoma kwa Mapana
+80200205;802002;KIS_KSL_2_5;Kusoma kwa Ufahamu
+80200206;802002;KIS_KSL_2_6;Kusoma kwa Kina
+80200207;802002;KIS_KSL_2_7;Kusoma kwa Mapana
+80200208;802002;KIS_KSL_2_8;Kusoma kwa Ufahamu
+80200209;802002;KIS_KSL_2_9;Kusoma kwa Mapana
+80200210;802002;KIS_KSL_2_10;Kusoma Kidijitali
+80200211;802002;KIS_KSL_2_11;Kusoma kwa Ufasaha
+80200301;802003;KIS_KSL_3_1;Insha ya Wasifu
+80200302;802003;KIS_KSL_3_2;Insha ya Masimulizi
+80200303;802003;KIS_KSL_3_3;Kuandika kwa Tarakiishi
+80200304;802003;KIS_KSL_3_4;Barua ya Kirafiki
+80200305;802003;KIS_KSL_3_5;Insha ya Maelezo
+80200306;802003;KIS_KSL_3_6;Insha ya Wasifu
+80200307;802003;KIS_KSL_3_7;Insha ya Maelezo
+80200308;802003;KIS_KSL_3_8;Insha ya Masimulizi
+80200309;802003;KIS_KSL_3_9;Insha ya Maelezo
+80200310;802003;KIS_KSL_3_10;Insha ya Masimulizi
+80200311;802003;KIS_KSL_3_11;Barua ya Kirafiki
+80200401;802004;KIS_KSL_4_1;Nomino
+80200402;802004;KIS_KSL_4_2;Vitenzi
+80200403;802004;KIS_KSL_4_3;Vivumishi
+80200404;802004;KIS_KSL_4_4;Viwakilishi
+80200405;802004;KIS_KSL_4_5;Vielezi
+80200406;802004;KIS_KSL_4_6;Viunganishi
+80200407;802004;KIS_KSL_4_7;Vihusishi
+80200408;802004;KIS_KSL_4_8;Vihisishi
+80200409;802004;KIS_KSL_4_9;Ngeli ya A-WA
+80200410;802004;KIS_KSL_4_10;Ngeli ya U-I
+80200411;802004;KIS_KSL_4_11;Ngeli ya LI- YA
+80200412;802004;KIS_KSL_4_12;Ngeli ya KI-VI
+80200413;802004;KIS_KSL_4_13;Ngeli ya LI-LI
+80200414;802004;KIS_KSL_4_14;Mnyambuliko wa Vitenzi
+80200415;802004;KIS_KSL_4_15;Vinyume vya Nomino
+80200416;802004;KIS_KSL_4_16;Nyakati na hali
+80200417;802004;KIS_KSL_4_17;Ukanushaji
+80200418;802004;KIS_KSL_4_18;Ukubwa wa Nomino
+80200419;802004;KIS_KSL_4_19;Udogo wa Nomino
+80400101;804001;AGRI_1_1;Soil Conservation
+80400102;804001;AGRI_1_2;Water Conservation
+80400103;804001;AGRI_1_3;Fuel Conservation
+80400104;804001;AGRI_1_4;Conserving Wild Animals
+80400201;804002;AGRI_2_1;Direct Sowing of Tiny Seeds
+80400202;804002;AGRI_2_2;Growing Fruits
+80400203;804002;AGRI_2_3;Uses of Domestic Animals
+80400204;804002;AGRI_2_4;Balanced Meal
+80400205;804002;AGRI_2_5;Cooking Food
+80400301;804003;AGRI_3_1;Personal Hygiene
+80400302;804003;AGRI_3_2;Domestic Hygiene
+80400303;804003;AGRI_3_3;Cleaning Personal Protective Equipment
+80400401;804004;AGRI_4_1;Making Tacking Stitches
+80500101;805001;SCI_TECH_1_1;Plants
+80500102;805001;SCI_TECH_1_2;Animals
+80500103;805001;SCI_TECH_1_3;Human Digestive System
+80500201;805002;SCI_TECH_2_1;Properties of Matter
+80500202;805002;SCI_TECH_2_2;Management of Solid Waste
+80500203;805002;SCI_TECH_2_3;Water Conservation
+80500301;805003;SCI_TECH_3_1;Force and its Effect
+80500302;805003;SCI_TECH_3_2;Light
+80500303;805003;SCI_TECH_3_3;Heat
+80600101;806001;MATH_1_1;Whole Numbers
+80600102;806001;MATH_1_2;Addition
+80600103;806001;MATH_1_3;Subtraction
+80600104;806001;MATH_1_4;Multiplication
+80600105;806001;MATH_1_5;Division
+80600106;806001;MATH_1_6;Fractions
+80600107;806001;MATH_1_7;Decimals
+80600108;806001;MATH_1_8;Use of Letters
+80600201;806002;MATH_2_1;Length
+80600202;806002;MATH_2_2;Area
+80600203;806002;MATH_2_3;Volume
+80600204;806002;MATH_2_4;Capacity
+80600205;806002;MATH_2_5;Mass
+80600206;806002;MATH_2_6;Time
+80600207;806002;MATH_2_7;Money
+80600301;806003;MATH_3_1;Position and Direction
+80600302;806003;MATH_3_2;Angles
+80600303;806003;MATH_3_3;Plane Figures
+80600401;806004;MATH_4_1;Data
+80700101;807001;REL_CRE_1_1;Self-awareness
+80700102;807001;REL_CRE_1_2;Thoughts and feelings
+80700103;807001;REL_CRE_1_3;Making choices
+80700104;807001;REL_CRE_1_4;My Family
+80700105;807001;REL_CRE_1_5;Relationships within the Family
+80700106;807001;REL_CRE_1_6;Attributes of God
+80700201;807002;REL_CRE_2_1;The Inspired Word of God
+80700202;807002;REL_CRE_2_2;Zacchaeus the Tax Collector
+80700203;807002;REL_CRE_2_3;Balaam’s Donkey
+80700204;807002;REL_CRE_2_4;Samson kills a Lion
+80700205;807002;REL_CRE_2_5;Joseph interprets a Dream
+80700206;807002;REL_CRE_2_6;Bible Patriarchs
+80700301;807003;REL_CRE_3_1;The Annunciation
+80700302;807003;REL_CRE_3_2;Birth of John the Baptist
+80700303;807003;REL_CRE_3_3;Healing of Blind Bartimaeus
+80700304;807003;REL_CRE_3_4;Healing the 10 Lepers
+80700305;807003;REL_CRE_3_5;Jesus raises a Widow's Son
+80700306;807003;REL_CRE_3_6;Forgiveness
+80700307;807003;REL_CRE_3_7;Helping the Needy
+80700308;807003;REL_CRE_3_8;Parable of the lost coin
+80700309;807003;REL_CRE_3_9;Parable of the mustard seed
+80700310;807003;REL_CRE_3_10;Nicodemus' encounter with Jesus Christ
+80700401;807004;REL_CRE_4_1;Trust
+80700402;807004;REL_CRE_4_2;Truthfulness
+80700403;807004;REL_CRE_4_3;Obedience
+80700404;807004;REL_CRE_4_4;Love
+80700405;807004;REL_CRE_4_5;Responsibility
+80700406;807004;REL_CRE_4_6;Holiness
+80700501;807005;REL_CRE_5_1;House of God
+80700502;807005;REL_CRE_5_2;The Early Church
+80700503;807005;REL_CRE_5_3;Standing Firm in Faith
+80700504;807005;REL_CRE_5_4;The Lord's Prayer
+80700505;807005;REL_CRE_5_5;Fruit of the Holy Spirit
+80700506;807005;REL_CRE_5_6;Self-control
+80700601;807006;REL_CRE_6_1;Use of Social Media
+80800101;808001;REL_IRE_1_1;Selected Surahs
+80800201;808002;REL_IRE_2_1;Hadith of Prophet Muhammad as a role model of good character.
+80800202;808002;REL_IRE_2_2;Hadith on Etiquette of Eating
+80800203;808002;REL_IRE_2_3;Hadith on brushing teeth
+80800204;808002;REL_IRE_2_4;Hadith on Fitness
+80800301;808003;REL_IRE_3_1;Attributes of Allah (S.W.T)
+80800302;808003;REL_IRE_3_2;Belief in Angels
+80800303;808003;REL_IRE_3_3;Prophets mentioned in the Qur'an
+80800401;808004;REL_IRE_4_1;Twahara (Ritual Purity)
+80800402;808004;REL_IRE_4_2;Wudhu (Ablution)
+80800403;808004;REL_IRE_4_3;Conditions for Swalah
+80800404;808004;REL_IRE_4_4;Pillars of Swalah
+80800501;808005;REL_IRE_5_1;Virtues: Kindness to Allah's Creatures
+80800502;808005;REL_IRE_5_2;Islamic manners of Dressing
+80800503;808005;REL_IRE_5_3;Positive Usage of Media
+80800504;808005;REL_IRE_5_4;Prohibitions in Islam
+80800505;808005;REL_IRE_5_5;Dua (Supplication)
+80800601;808006;REL_IRE_6_1;Obligations of Parents to Children
+80800602;808006;REL_IRE_6_2;Obligations of Children to Parents
+80800603;808006;REL_IRE_6_3;Children's Obligations to Other Family Members
+80800701;808007;REL_IRE_7_1;Call to Prophethood
+80800702;808007;REL_IRE_7_2;Earliest Converts in Islam
+80800703;808007;REL_IRE_7_3;Prophet (S.A.W.)'s Journey to Taif
+80900101;809001;REL_HIN_1_1;Punchamaha bhoot
+80900201;809002;REL_HIN_2_1;Enlightened Beings
+80900301;809003;REL_HIN_3_1;Essence of Scriptures
+80900401;809004;REL_HIN_4_1;Dainik Prarthana (Daily prayers)
+80900501;809005;REL_HIN_5_1;Aspects of Integrity
+80900601;809006;REL_HIN_6_1;Pranayam (Breathing exercises)
+80900701;809007;REL_HIN_7_1;Virtues for Righteousness of Dharma
+80900801;809008;REL_HIN_8_1;Social and National Festivals
+80900802;809008;REL_HIN_8_2;Indian Traditional Calendar
+81000101;810001;CRE_ARTS_1_1;Percussion Musical Instruments (Drawing)
+81000102;810001;CRE_ARTS_1_2;Netball
+81000103;810001;CRE_ARTS_1_3;Painting and Montage
+81000104;810001;CRE_ARTS_1_4;Rhythm
+81000105;810001;CRE_ARTS_1_5;Melody
+81000201;810002;CRE_ARTS_2_1;Athletics
+81000202;810002;CRE_ARTS_2_2;Gymnastics
+81000203;810002;CRE_ARTS_2_3;Songs
+81000204;810002;CRE_ARTS_2_4;Photography
+81000205;810002;CRE_ARTS_2_5;Descant Recorder
+81000206;810002;CRE_ARTS_2_6;Swimming (optional)
+81000207;810002;CRE_ARTS_2_7;Indigenous Kenyan Games (optional)
+81000301;810003;CRE_ARTS_3_1;Analysis of Creative Arts Works
+81200101;812001;SOC_STUD_1_1;Compass Direction
+81200102;812001;SOC_STUD_1_2;Location and size of the County
+81200103;812001;SOC_STUD_1_3;Physical features in the County
+81200104;812001;SOC_STUD_1_4;Seasons in the County
+81200105;812001;SOC_STUD_1_5;Historic Built Environments in the County
+81200201;812002;SOC_STUD_2_1;Interdependence of people
+81200202;812002;SOC_STUD_2_2;Population Distribution
+81200301;812003;SOC_STUD_3_1;Aspects of Traditional Culture in the County
+81200302;812003;SOC_STUD_3_2;The School
+81200401;812004;SOC_STUD_4_1;Economic activities in the county
+81200402;812004;SOC_STUD_4_2;Industries in the county
+81200403;812004;SOC_STUD_4_3;Enterprise Project at School
+81200501;812005;SOC_STUD_5_1;Good Citizenship in School
+81200502;812005;SOC_STUD_5_2;Peace
+81200503;812005;SOC_STUD_5_3;Child Rights
+81200504;812005;SOC_STUD_5_4;Democracy in school
+81200505;812005;SOC_STUD_5_5;Children's Government in school
+81200506;812005;SOC_STUD_5_6;Community Leadership
+81200507;812005;SOC_STUD_5_7;The County Governments in Kenya
+90100101;901001;ENG_1_1;Pronunciation and Vocabulary
+90100102;901001;ENG_1_2;Pronunciation and Vocabulary
+90100103;901001;ENG_1_3;Pronunciation and Vocabulary
+90100104;901001;ENG_1_4;Pronunciation and Vocabulary
+90100105;901001;ENG_1_5;Pronunciation and Vocabulary
+90100106;901001;ENG_1_6;Pronunciation and Vocabulary
+90100107;901001;ENG_1_7;Pronunciation and Vocabulary
+90100108;901001;ENG_1_8;Pronunciation and Vocabulary
+90100109;901001;ENG_1_9;Pronunciation and Vocabulary
+90100110;901001;ENG_1_10;Pronunciation and Vocabulary
+90100111;901001;ENG_1_11;Pronunciation and Vocabulary
+90100112;901001;ENG_1_12;Pronunciation and Vocabulary
+90100113;901001;ENG_1_13;Pronunciation and Vocabulary
+90100201;901002;ENG_2_1;Extensive Reading
+90100202;901002;ENG_2_2;Intensive Reading
+90100203;901002;ENG_2_3;Intensive Reading: Comprehension
+90100204;901002;ENG_2_4;Intensive Reading: Visuals
+90100205;901002;ENG_2_5;Extensive Reading
+90100206;901002;ENG_2_6;Intensive Reading
+90100207;901002;ENG_2_7;Extensive Reading: Independent Reading
+90100208;901002;ENG_2_8;Reading Fluency
+90100209;901002;ENG_2_9;Intensive Reading
+90100210;901002;ENG_2_10;Intensive Reading
+90100211;901002;ENG_2_11;Intensive Reading
+90100212;901002;ENG_2_12;Intensive Reading
+90100213;901002;ENG_2_13;Extensive Reading: Independent Reading
+90100301;901003;ENG_3_1;Word Classes: Determiners
+90100302;901003;ENG_3_2;Word Classes: Nouns
+90100303;901003;ENG_3_3;Language Pattern
+90100304;901003;ENG_3_4;Word Classes: Pronouns
+90100305;901003;ENG_3_5;Word Classes: Adjectives
+90100306;901003;ENG_3_6;Word Class: Determiners
+90100307;901003;ENG_3_7;Word Classes: Verb Aspect
+90100308;901003;ENG_3_8;Word Classes
+90100309;901003;ENG_3_9;Word Classes: Adverbs
+90100310;901003;ENG_3_10;Word Class: Conjunctions
+90100311;901003;ENG_3_11;Language Patterns
+90100312;901003;ENG_3_12;Word Classes: Verb Aspect
+90100313;901003;ENG_3_13;Word Class: Prepositions
+90100401;901004;ENG_4_1;Functional Writing
+90100402;901004;ENG_4_2;Creative Writing
+90100403;901004;ENG_4_3;Mechanics of Writing: Handwriting
+90100404;901004;ENG_4_4;Functional Writing
+90100405;901004;ENG_4_5;Creative Writing
+90100406;901004;ENG_4_6;Creative Writing
+90100407;901004;ENG_4_7;Mechanics of Writing: Punctuation
+90100408;901004;ENG_4_8;Creative Writing
+90100409;901004;ENG_4_9;Punctuation
+90100410;901004;ENG_4_10;Creative Writing
+90100411;901004;ENG_4_11;Mechanics of Writing: Spelling
+90100412;901004;ENG_4_12;Guided Composition
+90100413;901004;ENG_4_13;Spelling
+90200101;902001;KIS_KSL_1_1;Matamshi Bora
+90200102;902001;KIS_KSL_1_2;Maamkuzi na Maagano
+90200103;902001;KIS_KSL_1_3;Vitendawili
+90200104;902001;KIS_KSL_1_4;Maneno ya Upole
+90200105;902001;KIS_KSL_1_5;Methali
+90200106;902001;KIS_KSL_1_6;Shairi
+90200107;902001;KIS_KSL_1_7;Nahau
+90200108;902001;KIS_KSL_1_8;Visawe
+90200109;902001;KIS_KSL_1_9;Mazungumzo ya Kimuktadha
+90200110;902001;KIS_KSL_1_10;Tashbihi
+90200111;902001;KIS_KSL_1_11;Masimulizi
+90200201;902002;KIS_KSL_2_1;Kusoma kwa Ufahamu
+90200202;902002;KIS_KSL_2_2;Kusoma kwa Kina
+90200203;902002;KIS_KSL_2_3;Kusoma kwa Ufasaha
+90200204;902002;KIS_KSL_2_4;Kusoma kwa Mapana
+90200205;902002;KIS_KSL_2_5;Kusoma kwa Ufahamu
+90200206;902002;KIS_KSL_2_6;Kusoma kwa Kina
+90200207;902002;KIS_KSL_2_7;Kusoma kwa Mapana
+90200208;902002;KIS_KSL_2_8;Kusoma kwa Ufahamu
+90200209;902002;KIS_KSL_2_9;Kusoma kwa Mapana
+90200210;902002;KIS_KSL_2_10;Kusoma Kidijitali
+90200211;902002;KIS_KSL_2_11;Kusoma kwa Ufasaha
+90200301;902003;KIS_KSL_3_1;Insha ya Wasifu
+90200302;902003;KIS_KSL_3_2;Insha ya Masimulizi
+90200303;902003;KIS_KSL_3_3;Kuandika kwa Tarakiishi
+90200304;902003;KIS_KSL_3_4;Barua ya Kirafiki
+90200305;902003;KIS_KSL_3_5;Insha ya Maelezo
+90200306;902003;KIS_KSL_3_6;Insha ya Wasifu
+90200307;902003;KIS_KSL_3_7;Insha ya Maelezo
+90200308;902003;KIS_KSL_3_8;Insha ya Masimulizi
+90200309;902003;KIS_KSL_3_9;Insha ya Maelezo
+90200310;902003;KIS_KSL_3_10;Insha ya Masimulizi
+90200311;902003;KIS_KSL_3_11;Barua ya Kirafiki
+90200401;902004;KIS_KSL_4_1;Nomino
+90200402;902004;KIS_KSL_4_2;Vitenzi
+90200403;902004;KIS_KSL_4_3;Vivumishi
+90200404;902004;KIS_KSL_4_4;Viwakilishi
+90200405;902004;KIS_KSL_4_5;Vielezi
+90200406;902004;KIS_KSL_4_6;Viunganishi
+90200407;902004;KIS_KSL_4_7;Vihusishi
+90200408;902004;KIS_KSL_4_8;Vihisishi
+90200409;902004;KIS_KSL_4_9;Ngeli ya A-WA
+90200410;902004;KIS_KSL_4_10;Ngeli ya U-I
+90200411;902004;KIS_KSL_4_11;Ngeli ya LI- YA
+90200412;902004;KIS_KSL_4_12;Ngeli ya KI-VI
+90200413;902004;KIS_KSL_4_13;Ngeli ya LI-LI
+90200414;902004;KIS_KSL_4_14;Mnyambuliko wa Vitenzi
+90200415;902004;KIS_KSL_4_15;Vinyume vya Nomino
+90200416;902004;KIS_KSL_4_16;Nyakati na hali
+90200417;902004;KIS_KSL_4_17;Ukanushaji
+90200418;902004;KIS_KSL_4_18;Ukubwa wa Nomino
+90200419;902004;KIS_KSL_4_19;Udogo wa Nomino
+90400101;904001;AGRI_1_1;Soil Conservation
+90400102;904001;AGRI_1_2;Water Conservation
+90400103;904001;AGRI_1_3;Fuel Conservation
+90400104;904001;AGRI_1_4;Conserving Wild Animals
+90400201;904002;AGRI_2_1;Direct Sowing of Tiny Seeds
+90400202;904002;AGRI_2_2;Growing Fruits
+90400203;904002;AGRI_2_3;Uses of Domestic Animals
+90400204;904002;AGRI_2_4;Balanced Meal
+90400205;904002;AGRI_2_5;Cooking Food
+90400301;904003;AGRI_3_1;Personal Hygiene
+90400302;904003;AGRI_3_2;Domestic Hygiene
+90400303;904003;AGRI_3_3;Cleaning Personal Protective Equipment
+90400401;904004;AGRI_4_1;Making Tacking Stitches
+90500101;905001;SCI_TECH_1_1;Plants
+90500102;905001;SCI_TECH_1_2;Animals
+90500103;905001;SCI_TECH_1_3;Human Digestive System
+90500201;905002;SCI_TECH_2_1;Properties of Matter
+90500202;905002;SCI_TECH_2_2;Management of Solid Waste
+90500203;905002;SCI_TECH_2_3;Water Conservation
+90500301;905003;SCI_TECH_3_1;Force and its Effect
+90500302;905003;SCI_TECH_3_2;Light
+90500303;905003;SCI_TECH_3_3;Heat
+90600101;906001;MATH_1_1;Whole Numbers
+90600102;906001;MATH_1_2;Addition
+90600103;906001;MATH_1_3;Subtraction
+90600104;906001;MATH_1_4;Multiplication
+90600105;906001;MATH_1_5;Division
+90600106;906001;MATH_1_6;Fractions
+90600107;906001;MATH_1_7;Decimals
+90600108;906001;MATH_1_8;Use of Letters
+90600201;906002;MATH_2_1;Length
+90600202;906002;MATH_2_2;Area
+90600203;906002;MATH_2_3;Volume
+90600204;906002;MATH_2_4;Capacity
+90600205;906002;MATH_2_5;Mass
+90600206;906002;MATH_2_6;Time
+90600207;906002;MATH_2_7;Money
+90600301;906003;MATH_3_1;Position and Direction
+90600302;906003;MATH_3_2;Angles
+90600303;906003;MATH_3_3;Plane Figures
+90600401;906004;MATH_4_1;Data
+90700101;907001;REL_CRE_1_1;Self-awareness
+90700102;907001;REL_CRE_1_2;Thoughts and feelings
+90700103;907001;REL_CRE_1_3;Making choices
+90700104;907001;REL_CRE_1_4;My Family
+90700105;907001;REL_CRE_1_5;Relationships within the Family
+90700106;907001;REL_CRE_1_6;Attributes of God
+90700201;907002;REL_CRE_2_1;The Inspired Word of God
+90700202;907002;REL_CRE_2_2;Zacchaeus the Tax Collector
+90700203;907002;REL_CRE_2_3;Balaam’s Donkey
+90700204;907002;REL_CRE_2_4;Samson kills a Lion
+90700205;907002;REL_CRE_2_5;Joseph interprets a Dream
+90700206;907002;REL_CRE_2_6;Bible Patriarchs
+90700301;907003;REL_CRE_3_1;The Annunciation
+90700302;907003;REL_CRE_3_2;Birth of John the Baptist
+90700303;907003;REL_CRE_3_3;Healing of Blind Bartimaeus
+90700304;907003;REL_CRE_3_4;Healing the 10 Lepers
+90700305;907003;REL_CRE_3_5;Jesus raises a Widow's Son
+90700306;907003;REL_CRE_3_6;Forgiveness
+90700307;907003;REL_CRE_3_7;Helping the Needy
+90700308;907003;REL_CRE_3_8;Parable of the lost coin
+90700309;907003;REL_CRE_3_9;Parable of the mustard seed
+90700310;907003;REL_CRE_3_10;Nicodemus' encounter with Jesus Christ
+90700401;907004;REL_CRE_4_1;Trust
+90700402;907004;REL_CRE_4_2;Truthfulness
+90700403;907004;REL_CRE_4_3;Obedience
+90700404;907004;REL_CRE_4_4;Love
+90700405;907004;REL_CRE_4_5;Responsibility
+90700406;907004;REL_CRE_4_6;Holiness
+90700501;907005;REL_CRE_5_1;House of God
+90700502;907005;REL_CRE_5_2;The Early Church
+90700503;907005;REL_CRE_5_3;Standing Firm in Faith
+90700504;907005;REL_CRE_5_4;The Lord's Prayer
+90700505;907005;REL_CRE_5_5;Fruit of the Holy Spirit
+90700506;907005;REL_CRE_5_6;Self-control
+90700601;907006;REL_CRE_6_1;Use of Social Media
+90800101;908001;REL_IRE_1_1;Selected Surahs
+90800201;908002;REL_IRE_2_1;Hadith of Prophet Muhammad as a role model of good character.
+90800202;908002;REL_IRE_2_2;Hadith on Etiquette of Eating
+90800203;908002;REL_IRE_2_3;Hadith on brushing teeth
+90800204;908002;REL_IRE_2_4;Hadith on Fitness
+90800301;908003;REL_IRE_3_1;Attributes of Allah (S.W.T)
+90800302;908003;REL_IRE_3_2;Belief in Angels
+90800303;908003;REL_IRE_3_3;Prophets mentioned in the Qur'an
+90800401;908004;REL_IRE_4_1;Twahara (Ritual Purity)
+90800402;908004;REL_IRE_4_2;Wudhu (Ablution)
+90800403;908004;REL_IRE_4_3;Conditions for Swalah
+90800404;908004;REL_IRE_4_4;Pillars of Swalah
+90800501;908005;REL_IRE_5_1;Virtues: Kindness to Allah's Creatures
+90800502;908005;REL_IRE_5_2;Islamic manners of Dressing
+90800503;908005;REL_IRE_5_3;Positive Usage of Media
+90800504;908005;REL_IRE_5_4;Prohibitions in Islam
+90800505;908005;REL_IRE_5_5;Dua (Supplication)
+90800601;908006;REL_IRE_6_1;Obligations of Parents to Children
+90800602;908006;REL_IRE_6_2;Obligations of Children to Parents
+90800603;908006;REL_IRE_6_3;Children's Obligations to Other Family Members
+90800701;908007;REL_IRE_7_1;Call to Prophethood
+90800702;908007;REL_IRE_7_2;Earliest Converts in Islam
+90800703;908007;REL_IRE_7_3;Prophet (S.A.W.)'s Journey to Taif
+90900101;909001;REL_HIN_1_1;Punchamaha bhoot
+90900201;909002;REL_HIN_2_1;Enlightened Beings
+90900301;909003;REL_HIN_3_1;Essence of Scriptures
+90900401;909004;REL_HIN_4_1;Dainik Prarthana (Daily prayers)
+90900501;909005;REL_HIN_5_1;Aspects of Integrity
+90900601;909006;REL_HIN_6_1;Pranayam (Breathing exercises)
+90900701;909007;REL_HIN_7_1;Virtues for Righteousness of Dharma
+90900801;909008;REL_HIN_8_1;Social and National Festivals
+90900802;909008;REL_HIN_8_2;Indian Traditional Calendar
+91000101;910001;CRE_ARTS_1_1;Percussion Musical Instruments (Drawing)
+91000102;910001;CRE_ARTS_1_2;Netball
+91000103;910001;CRE_ARTS_1_3;Painting and Montage
+91000104;910001;CRE_ARTS_1_4;Rhythm
+91000105;910001;CRE_ARTS_1_5;Melody
+91000201;910002;CRE_ARTS_2_1;Athletics
+91000202;910002;CRE_ARTS_2_2;Gymnastics
+91000203;910002;CRE_ARTS_2_3;Songs
+91000204;910002;CRE_ARTS_2_4;Photography
+91000205;910002;CRE_ARTS_2_5;Descant Recorder
+91000206;910002;CRE_ARTS_2_6;Swimming (optional)
+91000207;910002;CRE_ARTS_2_7;Indigenous Kenyan Games (optional)
+91000301;910003;CRE_ARTS_3_1;Analysis of Creative Arts Works
+91200101;912001;SOC_STUD_1_1;Compass Direction
+91200102;912001;SOC_STUD_1_2;Location and size of the County
+91200103;912001;SOC_STUD_1_3;Physical features in the County
+91200104;912001;SOC_STUD_1_4;Seasons in the County
+91200105;912001;SOC_STUD_1_5;Historic Built Environments in the County
+91200201;912002;SOC_STUD_2_1;Interdependence of people
+91200202;912002;SOC_STUD_2_2;Population Distribution
+91200301;912003;SOC_STUD_3_1;Aspects of Traditional Culture in the County
+91200302;912003;SOC_STUD_3_2;The School
+91200401;912004;SOC_STUD_4_1;Economic activities in the county
+91200402;912004;SOC_STUD_4_2;Industries in the county
+91200403;912004;SOC_STUD_4_3;Enterprise Project at School
+91200501;912005;SOC_STUD_5_1;Good Citizenship in School
+91200502;912005;SOC_STUD_5_2;Peace
+91200503;912005;SOC_STUD_5_3;Child Rights
+91200504;912005;SOC_STUD_5_4;Democracy in school
+91200505;912005;SOC_STUD_5_5;Children's Government in school
+91200506;912005;SOC_STUD_5_6;Community Leadership
+91200507;912005;SOC_STUD_5_7;The County Governments in Kenya
+91200508;912006;HOME_SCI_4_S1SS1;Food Preparation
+91200509;912006;HOME_SCI_4_S1SS2;Healthy Eating
+91200510;912007;HOME_SCI_4_S2SS1;Basic Sewing
+91200511;912007;HOME_SCI_4_S2SS2;Fabric Care
+91200512;912008;PHE_4_S1SS1;Ball Games
+91200513;912008;PHE_4_S1SS2;Athletics
+91200514;912009;PHE_4_S2SS1;Personal Hygiene
+91200515;912009;PHE_4_S2SS2;Safety
+91200516;912010;HOME_SCI_5_S1SS1;Food Preparation
+91200517;912010;HOME_SCI_5_S1SS2;Healthy Eating
+91200518;912011;HOME_SCI_5_S2SS1;Basic Sewing
+91200519;912011;HOME_SCI_5_S2SS2;Fabric Care
+91200520;912012;PHE_5_S1SS1;Ball Games
+91200521;912012;PHE_5_S1SS2;Athletics
+91200522;912013;PHE_5_S2SS1;Personal Hygiene
+91200523;912013;PHE_5_S2SS2;Safety
+91200524;912014;HOME_SCI_6_S1SS1;Food Preparation
+91200525;912014;HOME_SCI_6_S1SS2;Healthy Eating
+91200526;912015;HOME_SCI_6_S2SS1;Basic Sewing
+91200527;912015;HOME_SCI_6_S2SS2;Fabric Care
+91200528;912016;PHE_6_S1SS1;Ball Games
+91200529;912016;PHE_6_S1SS2;Athletics
+91200530;912017;PHE_6_S2SS1;Personal Hygiene
+91200531;912017;PHE_6_S2SS2;Safety
+91200532;912018;INT_SCI_7_S1SS1;Experimental Methods
+91200533;912018;INT_SCI_7_S1SS2;Data Analysis
+91200534;912019;INT_SCI_7_S2SS1;Properties of Matter
+91200535;912019;INT_SCI_7_S2SS2;Energy Transfer
+91200536;912020;INT_SCI_7_S3SS1;Living Organisms
+91200537;912020;INT_SCI_7_S3SS2;Ecosystems
+91200538;912021;HEALTH_ED_7_S1SS1;Hygiene and Sanitation
+91200539;912021;HEALTH_ED_7_S1SS2;Nutrition
+91200540;912022;HEALTH_ED_7_S2SS1;Disease Prevention
+91200541;912022;HEALTH_ED_7_S2SS2;First Aid
+91200542;912023;PRE_TECH_7_S1SS1;Basic Drawing
+91200543;912023;PRE_TECH_7_S1SS2;Design Concepts
+91200544;912024;PRE_TECH_7_S2SS1;Tools and Materials
+91200545;912024;PRE_TECH_7_S2SS2;Safety Procedures
+91200546;912025;PRE_TECH_7_S3SS1;Career Awareness
+91200547;912025;PRE_TECH_7_S3SS2;Entrepreneurship
+91200548;912026;BUS_STUD_7_S1SS1;Entrepreneurship
+91200549;912026;BUS_STUD_7_S1SS2;Trade and Commerce
+91200550;912027;BUS_STUD_7_S2SS1;Saving and Investing
+91200551;912027;BUS_STUD_7_S2SS2;Budgeting
+91200552;912028;LIFE_SKILLS_7_S1SS1;Personal Identity
+91200553;912028;LIFE_SKILLS_7_S1SS2;Goal Setting
+91200554;912029;LIFE_SKILLS_7_S2SS1;Communication
+91200555;912029;LIFE_SKILLS_7_S2SS2;Conflict Resolution
+91200556;912030;SPORTS_PE_7_S1SS1;Ball Games
+91200557;912030;SPORTS_PE_7_S1SS2;Athletics
+91200558;912031;SPORTS_PE_7_S2SS1;Gymnastics
+91200559;912031;SPORTS_PE_7_S2SS2;Swimming
+91200560;912032;INT_SCI_8_S1SS1;Experimental Methods
+91200561;912032;INT_SCI_8_S1SS2;Data Analysis
+91200562;912033;INT_SCI_8_S2SS1;Properties of Matter
+91200563;912033;INT_SCI_8_S2SS2;Energy Transfer
+91200564;912034;INT_SCI_8_S3SS1;Living Organisms
+91200565;912034;INT_SCI_8_S3SS2;Ecosystems
+91200566;912035;HEALTH_ED_8_S1SS1;Hygiene and Sanitation
+91200567;912035;HEALTH_ED_8_S1SS2;Nutrition
+91200568;912036;HEALTH_ED_8_S2SS1;Disease Prevention
+91200569;912036;HEALTH_ED_8_S2SS2;First Aid
+91200570;912037;PRE_TECH_8_S1SS1;Basic Drawing
+91200571;912037;PRE_TECH_8_S1SS2;Design Concepts
+91200572;912038;PRE_TECH_8_S2SS1;Tools and Materials
+91200573;912038;PRE_TECH_8_S2SS2;Safety Procedures
+91200574;912039;PRE_TECH_8_S3SS1;Career Awareness
+91200575;912039;PRE_TECH_8_S3SS2;Entrepreneurship
+91200576;912040;BUS_STUD_8_S1SS1;Entrepreneurship
+91200577;912040;BUS_STUD_8_S1SS2;Trade and Commerce
+91200578;912041;BUS_STUD_8_S2SS1;Saving and Investing
+91200579;912041;BUS_STUD_8_S2SS2;Budgeting
+91200580;912042;LIFE_SKILLS_8_S1SS1;Personal Identity
+91200581;912042;LIFE_SKILLS_8_S1SS2;Goal Setting
+91200582;912043;LIFE_SKILLS_8_S2SS1;Communication
+91200583;912043;LIFE_SKILLS_8_S2SS2;Conflict Resolution
+91200584;912044;SPORTS_PE_8_S1SS1;Ball Games
+91200585;912044;SPORTS_PE_8_S1SS2;Athletics
+91200586;912045;SPORTS_PE_8_S2SS1;Gymnastics
+91200587;912045;SPORTS_PE_8_S2SS2;Swimming
+91200588;912046;INT_SCI_9_S1SS1;Experimental Methods
+91200589;912046;INT_SCI_9_S1SS2;Data Analysis
+91200590;912047;INT_SCI_9_S2SS1;Properties of Matter
+91200591;912047;INT_SCI_9_S2SS2;Energy Transfer
+91200592;912048;INT_SCI_9_S3SS1;Living Organisms
+91200593;912048;INT_SCI_9_S3SS2;Ecosystems
+91200594;912049;HEALTH_ED_9_S1SS1;Hygiene and Sanitation
+91200595;912049;HEALTH_ED_9_S1SS2;Nutrition
+91200596;912050;HEALTH_ED_9_S2SS1;Disease Prevention
+91200597;912050;HEALTH_ED_9_S2SS2;First Aid
+91200598;912051;PRE_TECH_9_S1SS1;Basic Drawing
+91200599;912051;PRE_TECH_9_S1SS2;Design Concepts
+91200600;912052;PRE_TECH_9_S2SS1;Tools and Materials
+91200601;912052;PRE_TECH_9_S2SS2;Safety Procedures
+91200602;912053;PRE_TECH_9_S3SS1;Career Awareness
+91200603;912053;PRE_TECH_9_S3SS2;Entrepreneurship
+91200604;912054;BUS_STUD_9_S1SS1;Entrepreneurship
+91200605;912054;BUS_STUD_9_S1SS2;Trade and Commerce
+91200606;912055;BUS_STUD_9_S2SS1;Saving and Investing
+91200607;912055;BUS_STUD_9_S2SS2;Budgeting
+91200608;912056;LIFE_SKILLS_9_S1SS1;Personal Identity
+91200609;912056;LIFE_SKILLS_9_S1SS2;Goal Setting
+91200610;912057;LIFE_SKILLS_9_S2SS1;Communication
+91200611;912057;LIFE_SKILLS_9_S2SS2;Conflict Resolution
+91200612;912058;SPORTS_PE_9_S1SS1;Ball Games
+91200613;912058;SPORTS_PE_9_S1SS2;Athletics
+91200614;912059;SPORTS_PE_9_S2SS1;Gymnastics
+91200615;912059;SPORTS_PE_9_S2SS2;Swimming
+91200616;912060;HOME_SCI_4_S1SS1;Food Preparation
+91200617;912060;HOME_SCI_4_S1SS2;Healthy Eating
+91200618;912061;HOME_SCI_4_S2SS1;Basic Sewing
+91200619;912061;HOME_SCI_4_S2SS2;Fabric Care
+91200620;912062;PHE_4_S1SS1;Ball Games
+91200621;912062;PHE_4_S1SS2;Athletics
+91200622;912063;PHE_4_S2SS1;Personal Hygiene
+91200623;912063;PHE_4_S2SS2;Safety
+91200624;912064;HOME_SCI_5_S1SS1;Food Preparation
+91200625;912064;HOME_SCI_5_S1SS2;Healthy Eating
+91200626;912065;HOME_SCI_5_S2SS1;Basic Sewing
+91200627;912065;HOME_SCI_5_S2SS2;Fabric Care
+91200628;912066;PHE_5_S1SS1;Ball Games
+91200629;912066;PHE_5_S1SS2;Athletics
+91200630;912067;PHE_5_S2SS1;Personal Hygiene
+91200631;912067;PHE_5_S2SS2;Safety
+91200632;912068;HOME_SCI_6_S1SS1;Food Preparation
+91200633;912068;HOME_SCI_6_S1SS2;Healthy Eating
+91200634;912069;HOME_SCI_6_S2SS1;Basic Sewing
+91200635;912069;HOME_SCI_6_S2SS2;Fabric Care
+91200636;912070;PHE_6_S1SS1;Ball Games
+91200637;912070;PHE_6_S1SS2;Athletics
+91200638;912071;PHE_6_S2SS1;Personal Hygiene
+91200639;912071;PHE_6_S2SS2;Safety
+91200640;912072;INT_SCI_7_S1SS1;Experimental Methods
+91200641;912072;INT_SCI_7_S1SS2;Data Analysis
+91200642;912073;INT_SCI_7_S2SS1;Properties of Matter
+91200643;912073;INT_SCI_7_S2SS2;Energy Transfer
+91200644;912074;INT_SCI_7_S3SS1;Living Organisms
+91200645;912074;INT_SCI_7_S3SS2;Ecosystems
+91200646;912075;HEALTH_ED_7_S1SS1;Hygiene and Sanitation
+91200647;912075;HEALTH_ED_7_S1SS2;Nutrition
+91200648;912076;HEALTH_ED_7_S2SS1;Disease Prevention
+91200649;912076;HEALTH_ED_7_S2SS2;First Aid
+91200650;912077;PRE_TECH_7_S1SS1;Basic Drawing
+91200651;912077;PRE_TECH_7_S1SS2;Design Concepts
+91200652;912078;PRE_TECH_7_S2SS1;Tools and Materials
+91200653;912078;PRE_TECH_7_S2SS2;Safety Procedures
+91200654;912079;PRE_TECH_7_S3SS1;Career Awareness
+91200655;912079;PRE_TECH_7_S3SS2;Entrepreneurship
+91200656;912080;BUS_STUD_7_S1SS1;Entrepreneurship
+91200657;912080;BUS_STUD_7_S1SS2;Trade and Commerce
+91200658;912081;BUS_STUD_7_S2SS1;Saving and Investing
+91200659;912081;BUS_STUD_7_S2SS2;Budgeting
+91200660;912082;LIFE_SKILLS_7_S1SS1;Personal Identity
+91200661;912082;LIFE_SKILLS_7_S1SS2;Goal Setting
+91200662;912083;LIFE_SKILLS_7_S2SS1;Communication
+91200663;912083;LIFE_SKILLS_7_S2SS2;Conflict Resolution
+91200664;912084;SPORTS_PE_7_S1SS1;Ball Games
+91200665;912084;SPORTS_PE_7_S1SS2;Athletics
+91200666;912085;SPORTS_PE_7_S2SS1;Gymnastics
+91200667;912085;SPORTS_PE_7_S2SS2;Swimming
+91200668;912086;INT_SCI_8_S1SS1;Experimental Methods
+91200669;912086;INT_SCI_8_S1SS2;Data Analysis
+91200670;912087;INT_SCI_8_S2SS1;Properties of Matter
+91200671;912087;INT_SCI_8_S2SS2;Energy Transfer
+91200672;912088;INT_SCI_8_S3SS1;Living Organisms
+91200673;912088;INT_SCI_8_S3SS2;Ecosystems
+91200674;912089;HEALTH_ED_8_S1SS1;Hygiene and Sanitation
+91200675;912089;HEALTH_ED_8_S1SS2;Nutrition
+91200676;912090;HEALTH_ED_8_S2SS1;Disease Prevention
+91200677;912090;HEALTH_ED_8_S2SS2;First Aid
+91200678;912091;PRE_TECH_8_S1SS1;Basic Drawing
+91200679;912091;PRE_TECH_8_S1SS2;Design Concepts
+91200680;912092;PRE_TECH_8_S2SS1;Tools and Materials
+91200681;912092;PRE_TECH_8_S2SS2;Safety Procedures
+91200682;912093;PRE_TECH_8_S3SS1;Career Awareness
+91200683;912093;PRE_TECH_8_S3SS2;Entrepreneurship
+91200684;912094;BUS_STUD_8_S1SS1;Entrepreneurship
+91200685;912094;BUS_STUD_8_S1SS2;Trade and Commerce
+91200686;912095;BUS_STUD_8_S2SS1;Saving and Investing
+91200687;912095;BUS_STUD_8_S2SS2;Budgeting
+91200688;912096;LIFE_SKILLS_8_S1SS1;Personal Identity
+91200689;912096;LIFE_SKILLS_8_S1SS2;Goal Setting
+91200690;912097;LIFE_SKILLS_8_S2SS1;Communication
+91200691;912097;LIFE_SKILLS_8_S2SS2;Conflict Resolution
+91200692;912098;SPORTS_PE_8_S1SS1;Ball Games
+91200693;912098;SPORTS_PE_8_S1SS2;Athletics
+91200694;912099;SPORTS_PE_8_S2SS1;Gymnastics
+91200695;912099;SPORTS_PE_8_S2SS2;Swimming
+91200696;912100;INT_SCI_9_S1SS1;Experimental Methods
+91200697;912100;INT_SCI_9_S1SS2;Data Analysis
+91200698;912101;INT_SCI_9_S2SS1;Properties of Matter
+91200699;912101;INT_SCI_9_S2SS2;Energy Transfer
+91200700;912102;INT_SCI_9_S3SS1;Living Organisms
+91200701;912102;INT_SCI_9_S3SS2;Ecosystems
+91200702;912103;HEALTH_ED_9_S1SS1;Hygiene and Sanitation
+91200703;912103;HEALTH_ED_9_S1SS2;Nutrition
+91200704;912104;HEALTH_ED_9_S2SS1;Disease Prevention
+91200705;912104;HEALTH_ED_9_S2SS2;First Aid
+91200706;912105;PRE_TECH_9_S1SS1;Basic Drawing
+91200707;912105;PRE_TECH_9_S1SS2;Design Concepts
+91200708;912106;PRE_TECH_9_S2SS1;Tools and Materials
+91200709;912106;PRE_TECH_9_S2SS2;Safety Procedures
+91200710;912107;PRE_TECH_9_S3SS1;Career Awareness
+91200711;912107;PRE_TECH_9_S3SS2;Entrepreneurship
+91200712;912108;BUS_STUD_9_S1SS1;Entrepreneurship
+91200713;912108;BUS_STUD_9_S1SS2;Trade and Commerce
+91200714;912109;BUS_STUD_9_S2SS1;Saving and Investing
+91200715;912109;BUS_STUD_9_S2SS2;Budgeting
+91200716;912110;LIFE_SKILLS_9_S1SS1;Personal Identity
+91200717;912110;LIFE_SKILLS_9_S1SS2;Goal Setting
+91200718;912111;LIFE_SKILLS_9_S2SS1;Communication
+91200719;912111;LIFE_SKILLS_9_S2SS2;Conflict Resolution
+91200720;912112;SPORTS_PE_9_S1SS1;Ball Games
+91200721;912112;SPORTS_PE_9_S1SS2;Athletics
+91200722;912113;SPORTS_PE_9_S2SS1;Gymnastics
+91200723;912113;SPORTS_PE_9_S2SS2;Swimming
