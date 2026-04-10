@@ -1,4 +1,4 @@
-# Kenya CBC Pathway Recommendation System
+# [Leveraging Reinforcement Learning and Explainable AI for Personalised, Adaptive, and Interpretable Pathway Recommendation System](https://scads.ai/theses/leveraging-reinforcement-learning-and-explainable-ai-for-personalised-adaptive-and-interpretable-pathway-recommendation-system/)
 
 A deep reinforcement learning prototype for recommending senior secondary school pathways under Kenya's Competency-Based Curriculum (CBC). Aligned with KNEC's 2025 KJSEA grading and pathway placement standards.
 
